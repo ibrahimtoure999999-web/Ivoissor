@@ -19,6 +19,8 @@ class Role extends Model
     protected $fillable = ['name', 'description'];
 
     // Quels utilisateurs possèdent ce rôle ?
+    // les types d'utilisateurs autorisés dans le système (ex: Citoyen, Agent, Admin).
+    // 
     public function users(): BelongsToMany
     {
         return $this->belongsToMany(User::class);
