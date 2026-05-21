@@ -1,0 +1,286 @@
+/* ═══════════════════════════════════════════
+   AUTH STYLES — LOGIN & REGISTER PAGES
+   ═══════════════════════════════════════════ */
+
+.auth-split-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* 1. Left Side: Decorative National Banner */
+.auth-banner-side {
+    position: relative;
+    width: 60%;
+    background: linear-gradient(135deg, #FF6B00 0%, #FFFFFF 50%, #009640 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+    overflow: hidden;
+    color: var(--text-primary);
+}
+
+/* Graphic elements for depth & mesh effect */
+.auth-banner-side::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, transparent 60%);
+    filter: blur(40px);
+    z-index: 1;
+}
+
+.auth-banner-side::after {
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, transparent 60%);
+    filter: blur(40px);
+    z-index: 1;
+}
+
+.auth-banner-header {
+    z-index: 2;
+}
+
+.auth-banner-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--text-primary);
+}
+
+.auth-banner-logo span {
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.auth-banner-body {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 480px;
+    z-index: 2;
+}
+
+.auth-banner-body h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #1A1A1A;
+}
+
+.auth-banner-body p {
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.auth-banner-footer {
+    z-index: 2;
+    font-size: 0.875rem;
+    color: #555555;
+    font-weight: 500;
+}
+
+/* 2. Right Side: Auth Form */
+.auth-form-side {
+    width: 40%;
+    background-color: var(--bg-base);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    position: relative;
+}
+
+/* Glassmorphic Auth Card */
+.auth-card {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    border-radius: var(--radius-lg);
+    width: 100%;
+    max-width: 440px;
+    padding: 3rem 2.5rem;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.auth-card:hover {
+    box-shadow: var(--glass-shadow-hover);
+}
+
+.auth-card-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.auth-card-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.auth-card-header p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+/* 3. Inputs & Forms with Micro-interactions */
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.form-input-wrapper {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.875rem 1.25rem;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+}
+
+.form-input:focus {
+    outline: none;
+    background: var(--white);
+    border-color: var(--orange);
+    box-shadow: 0 0 0 4px var(--orange-glow);
+}
+
+/* Error States */
+.text-error {
+    color: var(--danger);
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.form-input.is-invalid {
+    border-color: var(--danger);
+}
+
+.form-input.is-invalid:focus {
+    box-shadow: 0 0 0 4px var(--danger-light);
+}
+
+/* Primary Button Animation */
+.btn-primary {
+    width: 100%;
+    padding: 0.875rem;
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px var(--orange-glow);
+    transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-primary:hover {
+    background-color: var(--orange-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(255, 107, 0, 0.35);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* Auth Links and Bottom Text */
+.auth-links {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.auth-links a {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color var(--transition-fast);
+}
+
+.auth-links a:hover {
+    color: var(--orange-hover);
+    text-decoration: underline;
+}
+
+/* Alerts */
+.alert-success {
+    background-color: var(--green-light);
+    border: 1px solid rgba(0, 150, 64, 0.2);
+    color: var(--green-hover);
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE DESIGN
+   ═══════════════════════════════════════════ */
+@media (max-width: 1024px) {
+    .auth-banner-side {
+        width: 50%;
+        padding: 2rem;
+    }
+    .auth-form-side {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .auth-banner-side {
+        display: none;
+    }
+    .auth-form-side {
+        width: 100%;
+        padding: 1.5rem;
+    }
+    .auth-card {
+        padding: 2.5rem 1.5rem;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+        backdrop-filter: none;
+    }
+}

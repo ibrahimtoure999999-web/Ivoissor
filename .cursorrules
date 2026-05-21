@@ -1,0 +1,20 @@
+# Règles Globales pour l'Assistant IA (Antigravity / Cursor / Windsurf)
+
+## 🎯 OBJECTIF CRITIQUE ET ABSOLU
+Dans le cadre du développement de ce projet ("Ivoissor"), tu DOIS **scrupuleusement et obligatoirement** te référer aux standards, bonnes pratiques, et documentations contenus dans les dossiers de référence suivants de l'utilisateur :
+
+1. **Documentation Officielle Laravel** :
+   📂 `C:\Users\tieco\Desktop\Antigravity\Projet\documentation de Laravel`
+   *Utilise ces fichiers Markdown pour toute question sur le fonctionnement natif de Laravel (Eloquent, Routing, Middleware, Validation, etc.).*
+
+2. **Standards d'Expertise Laravel** :
+   📂 `C:\Users\tieco\Desktop\Antigravity\Projet\Laravel-Expert`
+   *Ce dossier contient les fichiers `Laravel Expert.md` et `Laravel codeur.md`.*
+   *Tu dois coder en respectant rigoureusement les principes de "Laravel Expert" : typage strict (PHP 8.2+), séparation des responsabilités (Controllers fins, Services, Form Requests), optimisation Eloquent (eager loading), et code propre (Clean Code).*
+
+## 🛠️ INSTRUCTIONS D'EXÉCUTION
+- **Ne devine jamais** une syntaxe Laravel si tu n'es pas sûr à 100%. Recherche d'abord dans le dossier de documentation locale.
+- **Ne code jamais** de logique métier lourde dans un Contrôleur. Applique les patterns définis dans le dossier `Laravel-Expert`.
+- **Validation** : Utilise toujours des FormRequests, jamais de `$request->validate()` dans le contrôleur.
+- **Typage** : Obligation absolue d'utiliser le typage strict (`declare(strict_types=1);` quand approprié) et les retours de types pour toutes les méthodes.
+- **Documentation de Code** : Pour toute demande de commentaire ou de documentation de code, utilise le skill `Skills/Code-Documenter/SKILL.md` pour garantir une vulgarisation et une structure cohérente.

@@ -1,0 +1,93 @@
+/* ═══════════════════════════════════════════
+   DESIGN SYSTEM — IVOISSOR GLOBAL VARIABLES
+   ═══════════════════════════════════════════ */
+
+:root {
+    /* National Colors (Republic of Côte d'Ivoire) */
+    --orange: #FF6B00;
+    --orange-hover: #E55D00;
+    --orange-light: rgba(255, 107, 0, 0.1);
+    --orange-glow: rgba(255, 107, 0, 0.2);
+
+    --green: #009640;
+    --green-hover: #007A33;
+    --green-light: rgba(0, 150, 64, 0.1);
+    --green-glow: rgba(0, 150, 64, 0.2);
+
+    --white: #FFFFFF;
+
+    /* Base Layout Colors */
+    --bg-base: #FAFAFB;
+    --bg-surface: #FFFFFF;
+    --bg-surface-elevated: #F8FAFC;
+    
+    /* Text Colors */
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-muted: #94A3B8;
+    --text-on-color: #FFFFFF;
+
+    /* Borders and Dividers */
+    --border-color: #E2E8F0;
+    --border-hover: #CBD5E1;
+
+    /* Semantic Colors */
+    --danger: #EF4444;
+    --danger-hover: #DC2626;
+    --danger-light: rgba(239, 68, 68, 0.1);
+    
+    --success: #10B981;
+    --success-hover: #059669;
+    --success-light: rgba(16, 185, 129, 0.1);
+    
+    --warning: #F59E0B;
+    --warning-light: rgba(245, 158, 11, 0.1);
+
+    /* Glassmorphism Presets */
+    --glass-bg: rgba(255, 255, 255, 0.65);
+    --glass-bg-hover: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.6);
+    --glass-border-focus: rgba(255, 107, 0, 0.4);
+    --glass-blur: blur(16px) saturate(180%);
+    --glass-shadow: 0 8px 32px 0 rgba(15, 23, 42, 0.06);
+    --glass-shadow-hover: 0 12px 40px 0 rgba(15, 23, 42, 0.1);
+
+    /* Spacing and Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 24px;
+    --radius-full: 9999px;
+
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base resets & Utility classes for clean logic */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* Glassmorphism card template class */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    border-radius: var(--radius-md);
+    transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+}
+
+.glass-panel:hover {
+    box-shadow: var(--glass-shadow-hover);
+}

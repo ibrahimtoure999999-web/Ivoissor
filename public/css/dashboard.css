@@ -1,0 +1,422 @@
+/* ═══════════════════════════════════════════
+   DASHBOARD STYLES — APP CONTEXT
+   ═══════════════════════════════════════════ */
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--bg-base);
+}
+
+/* 1. Sidebar Navigation */
+.dashboard-sidebar {
+    width: 280px;
+    background-color: #0F172A; /* Clean Dark Slate */
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 2.5rem;
+    padding-left: 0.5rem;
+}
+
+.sidebar-logo span {
+    color: var(--orange);
+}
+
+.sidebar-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.875rem 1rem;
+    border-radius: var(--radius-sm);
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+.sidebar-link:hover, .sidebar-link.active {
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.sidebar-link.active {
+    background-color: var(--orange-light);
+    color: var(--orange);
+    font-weight: 600;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 1.5rem;
+}
+
+.btn-logout {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0.75rem 1rem;
+    background: transparent;
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    color: #EF4444;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.btn-logout:hover {
+    background-color: var(--danger-light);
+    color: #FF5A5A;
+    border-color: #EF4444;
+}
+
+/* 2. Main Content Area */
+.dashboard-main {
+    flex-grow: 1;
+    margin-left: 280px; /* Offset for fixed sidebar */
+    padding: 2.5rem 3rem;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.dashboard-title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.dashboard-title p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+}
+
+.user-badge {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    box-shadow: var(--shadow-sm);
+}
+
+.user-badge span.role-tag {
+    background-color: var(--green-light);
+    color: var(--green-hover);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+/* 3. Cards & Grid Layout */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.metric-card {
+    padding: 1.75rem;
+}
+
+.metric-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.metric-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.metric-icon.orange {
+    background-color: var(--orange-light);
+    color: var(--orange);
+}
+
+.metric-icon.green {
+    background-color: var(--green-light);
+    color: var(--green);
+}
+
+.metric-card h3 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.metric-value {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-top: 0.25rem;
+}
+
+/* 4. Action Center / Main Content Panel */
+.panel {
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+}
+
+.panel-header {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.panel-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/* 5. Process Tracker widget */
+.process-tracker {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 2.5rem 0;
+    padding: 0 1rem;
+}
+
+.process-tracker::before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 4rem;
+    right: 4rem;
+    height: 4px;
+    background-color: var(--border-color);
+    z-index: 1;
+}
+
+.tracker-progress-line {
+    position: absolute;
+    top: 24px;
+    left: 4rem;
+    height: 4px;
+    background-color: var(--orange);
+    z-index: 2;
+    transition: width var(--transition-normal);
+}
+
+.step-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    width: 120px;
+}
+
+.step-circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--bg-surface);
+    border: 3px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all var(--transition-normal);
+}
+
+.step-node.active .step-circle {
+    border-color: var(--orange);
+    color: var(--orange);
+    box-shadow: 0 0 0 6px var(--orange-light);
+}
+
+.step-node.completed .step-circle {
+    border-color: var(--green);
+    background-color: var(--green);
+    color: var(--white);
+    box-shadow: 0 0 0 6px var(--green-light);
+}
+
+.step-label {
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.step-node.active .step-label {
+    color: var(--orange-hover);
+}
+
+.step-node.completed .step-label {
+    color: var(--green-hover);
+}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE DESIGN
+   ═══════════════════════════════════════════ */
+@media (max-width: 1024px) {
+    .dashboard-sidebar {
+        width: 80px;
+        padding: 2rem 0.5rem;
+        align-items: center;
+    }
+    .sidebar-logo {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        padding-left: 0;
+    }
+    .sidebar-logo span.logo-text {
+        display: none;
+    }
+    .sidebar-link span.link-text {
+        display: none;
+    }
+    .sidebar-link {
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+    }
+    .dashboard-main {
+        margin-left: 80px;
+        padding: 2rem;
+    }
+    .btn-logout span.btn-text {
+        display: none;
+    }
+    .btn-logout {
+        width: 48px;
+        height: 48px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+    .dashboard-sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 1rem 1.5rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sidebar-logo {
+        margin-bottom: 0;
+    }
+    .sidebar-logo span.logo-text {
+        display: inline;
+    }
+    .sidebar-menu {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+    .sidebar-link span.link-text {
+        display: none;
+    }
+    .sidebar-link {
+        padding: 0.5rem;
+    }
+    .sidebar-footer {
+        margin-top: 0;
+        border-top: none;
+        padding-top: 0;
+    }
+    .btn-logout {
+        width: auto;
+        height: auto;
+        padding: 0.5rem;
+    }
+    .btn-logout span.btn-text {
+        display: none;
+    }
+    .dashboard-main {
+        margin-left: 0;
+        padding: 1.5rem;
+    }
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .process-tracker {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+        padding-left: 2rem;
+    }
+    .process-tracker::before {
+        top: 0;
+        left: 24px;
+        width: 4px;
+        height: calc(100% - 48px);
+    }
+    .tracker-progress-line {
+        top: 0;
+        left: 24px;
+        width: 4px;
+        height: 50%; /* Just mock visual */
+    }
+    .step-node {
+        flex-direction: row;
+        width: auto;
+        gap: 1rem;
+        text-align: left;
+    }
+    .step-label {
+        margin-top: 0;
+    }
+}
