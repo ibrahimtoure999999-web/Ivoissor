@@ -1,9 +1,9 @@
 # 🇨🇮 Note d'Avancement et de Cadrage — Projet Ivoissor
 
-**À l'attention de :** Maître de Stage  
-**Rédigé par :** Ibrahim Touré (Stagiaire Développeur)  
+  
+**Rédigé par :** Ibrahim Touré   
 **Date :** 21 Mai 2026  
-**Objet :** Point de situation technique et académique sur le portail consulaire **Ivoissor** ---
+**Objet :** Point de situation sur L'avancement du projet **Ivoissor** ---
 
 ## 1. Contexte, Enjeux et Portée du Projet
 
