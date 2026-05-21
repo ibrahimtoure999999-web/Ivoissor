@@ -20,6 +20,7 @@ use App\Models\RendezVous;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\View\View;
 
 class RendezVousController extends Controller
@@ -90,15 +91,29 @@ class RendezVousController extends Controller
 
         abort_if($hasActiveRdv, 400, "Un rendez-vous actif est déjà programmé pour cette demande.");
 
-        $dateHeure = $request->input('date') . ' ' . $request->input('creneau') . ':00';
+        $lieu = $request->input('lieu');
+        $tz = RendezVous::getTimezoneForLieu($lieu);
+        $dateHeureLocal = $request->input('date') . ' ' . $request->input('creneau') . ':00';
+        $dateHeureUtc = \Illuminate\Support\Carbon::createFromFormat('Y-m-d H:i:s', $dateHeureLocal, $tz)->setTimezone('UTC');
 
-        // Création officielle du rendez-vous.
-        $rdv = RendezVous::create([
-            'demande_id' => $demande->id,
-            'date_heure' => $dateHeure,
-            'lieu' => $request->input('lieu'),
-            'statut' => 'PLANIFIE',
-        ]);
+        $rdv = DB::transaction(function () use ($demande, $dateHeureUtc, $lieu) {
+            // Double-check de sécurité pour éviter le surbooking avec verrou pessimiste
+            $slotTaken = RendezVous::where('date_heure', $dateHeureUtc)
+                ->where('lieu', $lieu)
+                ->where('statut', '!=', 'ANNULE')
+                ->lockForUpdate()
+                ->exists();
+
+            abort_if($slotTaken, 400, "Ce créneau horaire est déjà réservé pour ce consulat/ambassade.");
+
+            // Création officielle du rendez-vous.
+            return RendezVous::create([
+                'demande_id' => $demande->id,
+                'date_heure' => $dateHeureUtc,
+                'lieu' => $lieu,
+                'statut' => 'PLANIFIE',
+            ]);
+        });
 
         // On note l'action dans le journal d'audit.
         AuditLog::create([
@@ -127,8 +142,8 @@ class RendezVousController extends Controller
         $dateHeureStr = $rendezVous->date_heure->format('d/m/Y à H:i');
         $lieuStr = $rendezVous->lieu;
 
-        // On supprime physiquement le rendez-vous pour rendre le créneau à nouveau disponible.
-        $rendezVous->delete();
+        // On passe le statut à ANNULE pour conserver l'historique et libérer le créneau.
+        $rendezVous->update(['statut' => 'ANNULE']);
 
         AuditLog::create([
             'user_id' => auth()->id(),
@@ -156,8 +171,15 @@ class RendezVousController extends Controller
         $date = $request->input('date');
         $lieu = $request->input('lieu');
 
+        $tz = RendezVous::getTimezoneForLieu($lieu);
+        $startLocal = \Illuminate\Support\Carbon::createFromFormat('Y-m-d H:i:s', $date . ' 00:00:00', $tz);
+        $endLocal = \Illuminate\Support\Carbon::createFromFormat('Y-m-d H:i:s', $date . ' 23:59:59', $tz);
+
+        $startUtc = $startLocal->setTimezone('UTC');
+        $endUtc = $endLocal->setTimezone('UTC');
+
         // On cherche tous les rendez-vous pris à cette date et dans ce lieu, sauf ceux annulés.
-        $occupied = RendezVous::whereBetween('date_heure', [$date . ' 00:00:00', $date . ' 23:59:59'])
+        $occupied = RendezVous::whereBetween('date_heure', [$startUtc, $endUtc])
             ->where('lieu', $lieu)
             ->where('statut', '!=', 'ANNULE')
             ->get()

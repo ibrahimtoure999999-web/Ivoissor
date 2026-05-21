@@ -35,7 +35,19 @@ class RendezVousRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'lieu' => 'required|string|max:150',
+            'lieu' => [
+                'required',
+                'string',
+                Rule::in([
+                    "Consulat Général de Côte d'Ivoire à Paris",
+                    "Ambassade de Côte d'Ivoire à Bruxelles",
+                    "Ambassade de Côte d'Ivoire à Dakar",
+                    "Ambassade de Côte d'Ivoire à Rabat",
+                    "Ambassade de Côte d'Ivoire à Ottawa",
+                    "Ambassade de Côte d'Ivoire à Washington",
+                    "Ambassade de Côte d'Ivoire à Abidjan (SNEDAI)"
+                ])
+            ],
             'date' => [
                 'required',
                 'date',
@@ -60,9 +72,15 @@ class RendezVousRequest extends FormRequest
                         return;
                     }
 
-                    $dateHeure = $date . ' ' . $value . ':00';
+                    $tz = RendezVous::getTimezoneForLieu($lieu);
+                    try {
+                        $dateHeureLocal = $date . ' ' . $value . ':00';
+                        $dateHeureUtc = \Illuminate\Support\Carbon::createFromFormat('Y-m-d H:i:s', $dateHeureLocal, $tz)->setTimezone('UTC');
+                    } catch (\Exception $e) {
+                        return;
+                    }
 
-                    $exists = RendezVous::where('date_heure', $dateHeure)
+                    $exists = RendezVous::where('date_heure', $dateHeureUtc)
                         ->where('lieu', $lieu)
                         ->where('statut', '!=', 'ANNULE')
                         ->exists();
@@ -82,6 +100,7 @@ class RendezVousRequest extends FormRequest
     {
         return [
             'lieu.required' => 'Le lieu de rendez-vous est obligatoire.',
+            'lieu.in' => 'Le lieu de rendez-vous sélectionné n\'est pas valide.',
             'date.required' => 'La date de rendez-vous est obligatoire.',
             'date.after' => 'Le rendez-vous doit être programmé à une date future.',
             'creneau.required' => 'Le créneau horaire est obligatoire.',

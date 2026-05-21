@@ -98,7 +98,7 @@ it('permet a un agent de valider un dossier', function () {
 it('empeche le rejet d\'un dossier sans motif valide', function () {
     actingAs($this->agent)
         ->post(route('agent.demandes.rejeter', $this->demande->id), [
-            'motif_rejet' => 'trop court' // Moins de 10 chars
+            'motif_rejet' => 'court' // Moins de 10 chars
         ])
         ->assertSessionHasErrors(['motif_rejet']);
 
@@ -119,4 +119,10 @@ it('permet a un agent de rejeter un dossier avec un motif valide', function () {
 
     // Vérifier l'audit log
     expect(AuditLog::where('action', 'demande_rejet')->exists())->toBeTrue();
+});
+
+it('redirige les agents du tableau de bord citoyen vers le tableau de bord agent', function () {
+    actingAs($this->agent)
+        ->get(route('dashboard'))
+        ->assertRedirect(route('agent.dashboard'));
 });

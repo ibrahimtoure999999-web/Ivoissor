@@ -24,10 +24,8 @@ class DocumentController extends Controller
     public function download(Document $document, Request $request): StreamedResponse
     {
         $user = auth()->user();
-
-        // Sécurité : propriétaire du dossier OU membre du personnel (Agent / Admin)
-        $isOwner = $user->id === $document->demande->user_id;
-        $isStaff = $user->hasRole('AGENT') || $user->hasRole('ADMIN');
+        $isOwner = $user && $user->id === $document->demande->user_id;
+        $isStaff = $user instanceof \App\Models\User && ($user->hasRole('AGENT') || $user->hasRole('ADMIN'));
 
         abort_unless($isOwner || $isStaff, 403, "Vous n'êtes pas autorisé à télécharger ce document.");
 

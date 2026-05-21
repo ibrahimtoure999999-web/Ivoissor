@@ -89,8 +89,8 @@ class DemandeController extends Controller
     {
         // Contrôle d'accès : propriétaire du dossier OU membre du personnel (Agent / Admin)
         $user = auth()->user();
-        $isOwner = $user->id === $demande->user_id;
-        $isStaff = $user->hasRole('AGENT') || $user->hasRole('ADMIN');
+        $isOwner = $user && $user->id === $demande->user_id;
+        $isStaff = $user instanceof \App\Models\User && ($user->hasRole('AGENT') || $user->hasRole('ADMIN'));
 
         abort_unless($isOwner || $isStaff, 403, 'Vous n\'êtes pas autorisé à consulter cette demande.');
 

@@ -36,6 +36,35 @@ class RendezVous extends Model
         'date_heure' => 'datetime',
     ];
 
+    /**
+     * Retourne le fuseau horaire correspondant à un lieu/consulat donné.
+     */
+    public static function getTimezoneForLieu(?string $lieu): string
+    {
+        return match ($lieu) {
+            "Consulat Général de Côte d'Ivoire à Paris" => 'Europe/Paris',
+            "Ambassade de Côte d'Ivoire à Bruxelles" => 'Europe/Brussels',
+            "Ambassade de Côte d'Ivoire à Dakar" => 'Africa/Dakar',
+            "Ambassade de Côte d'Ivoire à Rabat" => 'Africa/Casablanca',
+            "Ambassade de Côte d'Ivoire à Ottawa" => 'America/Toronto',
+            "Ambassade de Côte d'Ivoire à Washington" => 'America/New_York',
+            "Ambassade de Côte d'Ivoire à Abidjan (SNEDAI)" => 'Africa/Abidjan',
+            default => 'UTC',
+        };
+    }
+
+    /**
+     * Accesseur pour renvoyer la date dans le fuseau horaire local du consulat.
+     */
+    public function getDateHeureAttribute($value)
+    {
+        if (!$value) {
+            return null;
+        }
+        $utcDateTime = $this->asDateTime($value);
+        return $utcDateTime->copy()->setTimezone(self::getTimezoneForLieu($this->lieu));
+    }
+
     // Quelle demande est concernée par ce rendez-vous ?
     public function demande(): BelongsTo
     {

@@ -23,7 +23,11 @@ Route::middleware('auth')->group(function () {
     
     // Dashboard
     Route::get('dashboard', function() {
-        $demandes = auth()->user()->demandes()->with('citoyen')->orderBy('created_at', 'desc')->get();
+        $user = auth()->user();
+        if ($user instanceof \App\Models\User && ($user->hasRole('AGENT') || $user->hasRole('ADMIN'))) {
+            return redirect()->route('agent.dashboard');
+        }
+        $demandes = $user->demandes()->with('citoyen')->orderBy('created_at', 'desc')->get();
         return view('dashboard', compact('demandes'));
     })->name('dashboard');
 

@@ -99,6 +99,15 @@ test('booking fails without required fields', function () {
         ->assertSessionHasErrors(['lieu', 'date', 'creneau']);
 });
 
+test('booking fails for an invalid/fantasy location', function () {
+    $payload = validRdvPayload();
+    $payload['lieu'] = "Consulat de la Lune";
+
+    $this->actingAs($this->user)
+        ->post(route('rendezvous.store', $this->demande->id), $payload)
+        ->assertSessionHasErrors(['lieu']);
+});
+
 test('booking fails for a past date', function () {
     $payload = validRdvPayload(date('Y-m-d', strtotime('-1 day')));
 
@@ -197,7 +206,10 @@ test('citizen can cancel their rendez-vous and free the slot', function () {
         ->assertRedirect(route('demandes.show', $this->demande->id))
         ->assertSessionHas('success');
 
-    $this->assertDatabaseMissing('rendez_vous', ['id' => $rdv->id]);
+    $this->assertDatabaseHas('rendez_vous', [
+        'id' => $rdv->id,
+        'statut' => 'ANNULE',
+    ]);
 });
 
 test('user cannot cancel another user rendez-vous', function () {
@@ -272,4 +284,53 @@ test('cancellation is blocked (400) if rendezvous status is not PLANIFIE', funct
     $this->actingAs($this->user)
         ->delete(route('rendezvous.destroy', $rdv->id))
         ->assertStatus(400);
+});
+
+test('booking Washington consulate stores in UTC and reads in Eastern Time', function () {
+    $ts = strtotime('next monday');
+    $nextMonday = date('Y-m-d', $ts);
+
+    $payload = [
+        'lieu'    => "Ambassade de Côte d'Ivoire à Washington",
+        'date'    => $nextMonday,
+        'creneau' => '09:00',
+    ];
+
+    $response = $this->actingAs($this->user)
+        ->post(route('rendezvous.store', $this->demande->id), $payload);
+
+    $response->assertRedirect(route('demandes.show', $this->demande->id));
+
+    // Retrieve from DB directly to check raw UTC format (which is stored in UTC)
+    $rawRdv = \Illuminate\Support\Facades\DB::table('rendez_vous')->where('demande_id', $this->demande->id)->first();
+    
+    $expectedUtcTime = \Illuminate\Support\Carbon::createFromFormat('Y-m-d H:i:s', $nextMonday . ' 09:00:00', 'America/New_York')->setTimezone('UTC');
+    
+    expect($rawRdv->date_heure)->toBe($expectedUtcTime->format('Y-m-d H:i:s'));
+
+    // Retrieve via Eloquent model and assert that date_heure returns the local time 09:00
+    $rdv = RendezVous::where('demande_id', $this->demande->id)->first();
+    expect($rdv->date_heure->format('H:i'))->toBe('09:00');
+    expect($rdv->date_heure->timezone->getName())->toBe('America/New_York');
+});
+
+test('occupied slots endpoint converts raw date range to UTC and returns local slot times', function () {
+    $ts = strtotime('next monday');
+    $nextMonday = date('Y-m-d', $ts);
+
+    $payload = [
+        'lieu'    => "Ambassade de Côte d'Ivoire à Washington",
+        'date'    => $nextMonday,
+        'creneau' => '09:00',
+    ];
+
+    $this->actingAs($this->user)
+        ->post(route('rendezvous.store', $this->demande->id), $payload);
+
+    $response = $this->actingAs($this->user)->getJson(
+        route('rendezvous.occupied-slots') . '?date=' . $nextMonday . '&lieu=' . urlencode($payload['lieu'])
+    );
+
+    $response->assertOk();
+    $response->assertExactJson(['09:00']);
 });
