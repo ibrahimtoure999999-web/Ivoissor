@@ -420,3 +420,56 @@
         margin-top: 0;
     }
 }
+
+/* Extracted from dashboard.blade.php */
+.btn-header-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 0.65rem 1.25rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.demandes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+.demandes-table th, .demandes-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+.demandes-table th {
+    font-weight: 700;
+    color: var(--text-secondary);
+    background-color: var(--bg-surface-elevated);
+}
+.demandes-table tr:hover td {
+    background-color: var(--bg-surface-elevated);
+}
+.status-badge {
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: inline-block;
+}
+.status-badge.SOUMIS {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+}
+.status-badge.INSTRUCTION {
+    background-color: var(--orange-light);
+    color: var(--orange-hover);
+}
+.status-badge.VALIDE {
+    background-color: var(--green-light);
+    color: var(--green-hover);
+}
+.status-badge.REJETE {
+    background-color: var(--danger-light);
+    color: var(--danger-hover);
+}
+

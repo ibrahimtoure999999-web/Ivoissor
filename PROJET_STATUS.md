@@ -74,6 +74,10 @@ Ce document sert de journal de bord et récapitule l'ensemble des fonctionnalit�
 ### 6. Rôles et Journaux d'Audit (F-11 & F-13)
 - **Logs d'Audit** : Interface de visualisation des logs avec filtrage par action et recherche multicritère.
 
+### 7. Refonte Graphique & Séparation HTML/CSS (Architecture Clean)
+- **Séparation Strict HTML/CSS** : Extraction complète de tous les blocs `<style>` inclus dans les vues Blade citoyen et agent vers des fichiers CSS externes dédiés (`public/css/dashboard.css`, `public/css/demandes.css`, `public/css/rendezvous.css`, `public/css/backoffice.css`).
+- **Refonte Visuelle Premium** : Modernisation du design avec palettes de couleurs harmonieuses, typographies soignées, ombres douces et composants responsives uniformes.
+
 ---
 
 ## 🔐 Principes d'ingénierie appliqués

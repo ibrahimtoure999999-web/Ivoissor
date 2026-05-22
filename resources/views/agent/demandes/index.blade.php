@@ -12,22 +12,6 @@
     </a>
 @endsection
 
-@section('backoffice-styles')
-    <style>
-        .filter-bar {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-        }
-        .filter-group {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-    </style>
-@endsection
-
 @section('main-content')
     <!-- Filtres -->
     <div class="card" style="margin-bottom: 2rem;">

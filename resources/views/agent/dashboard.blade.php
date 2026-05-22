@@ -12,35 +12,6 @@
     </a>
 @endsection
 
-@section('backoffice-styles')
-    <style>
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .stat-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: var(--radius-md);
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--gray-200);
-            text-align: center;
-        }
-        .stat-card h3 {
-            font-size: 1rem;
-            color: var(--gray-600);
-            margin-bottom: 0.5rem;
-        }
-        .stat-card .stat-value {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--gray-900);
-        }
-    </style>
-@endsection
-
 @section('main-content')
     <!-- Statistiques -->
     <div class="stats-grid">
