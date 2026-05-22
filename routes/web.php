@@ -39,6 +39,7 @@ Route::middleware('auth')->group(function () {
 
     // Documents
     Route::get('documents/{document}/download', [\App\Http\Controllers\DocumentController::class, 'download'])->name('documents.download');
+    Route::post('demandes/ocr-analyze', [\App\Http\Controllers\OcrController::class, 'analyze'])->name('demandes.ocr-analyze');
 
     // Rendez-vous
     Route::get('rendez-vous', [RendezVousController::class, 'index'])->name('rendezvous.index');

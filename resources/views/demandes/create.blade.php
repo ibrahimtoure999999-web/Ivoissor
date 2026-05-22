@@ -123,6 +123,17 @@
                         <span class="type-title">État Civil</span>
                     </label>
 
+                    <!-- État Civil (Sous-type) -->
+                    <div id="sous-type-container" class="form-group" style="display: none; grid-column: span 3; margin-top: 1rem; padding: 1rem; border: 1px solid var(--border-color); border-radius: var(--radius-sm);">
+                        <label for="sous_type">Quel acte souhaitez-vous transcrire ? <span style="color: var(--danger);">*</span></label>
+                        <select name="sous_type" id="sous_type" class="form-control">
+                            <option value="">-- Veuillez choisir le type d'acte --</option>
+                            <option value="NAISSANCE" @if(old('sous_type') === 'NAISSANCE') selected @endif>Naissance</option>
+                            <option value="MARIAGE" @if(old('sous_type') === 'MARIAGE') selected @endif>Mariage</option>
+                            <option value="DECES" @if(old('sous_type') === 'DECES') selected @endif>Décès</option>
+                        </select>
+                    </div>
+
                     <!-- Option Carte Consulaire -->
                     <label class="type-option @if(old('type_demande') === 'CARTE_CONSULAIRE') active @endif" data-type="CARTE_CONSULAIRE">
                         <input type="radio" name="type_demande" value="CARTE_CONSULAIRE" @if(old('type_demande') === 'CARTE_CONSULAIRE') checked @endif>
@@ -131,6 +142,25 @@
                         </div>
                         <span class="type-title">Carte Consulaire</span>
                     </label>
+                </div>
+
+                <!-- Zone d'Importation OCR -->
+                <div class="ocr-upload-zone" id="ocr-drop-zone">
+                    <div class="ocr-loading" id="ocr-loader">
+                        <div class="ocr-spinner"></div>
+                        <p style="font-weight: 700; color: var(--orange);">Analyse de votre document en cours...</p>
+                        <p style="font-size: 0.85rem; color: var(--text-muted);">Veuillez patienter quelques instants.</p>
+                    </div>
+                    
+                    <span class="material-symbols-outlined ocr-icon">document_scanner</span>
+                    <h3 class="ocr-title">💡 Gain de temps : Importez votre pièce d'identité</h3>
+                    <p class="ocr-subtitle">
+                        Déposez votre CNI ou Passeport ici pour <strong>pré-remplir automatiquement</strong> le formulaire grâce à l'analyse optique (OCR).
+                    </p>
+                    <input type="file" id="ocr-file-input" style="display: none;" accept="image/*,.pdf">
+                    <button type="button" class="btn btn-outline" style="margin-top: 1rem;" onclick="document.getElementById('ocr-file-input').click()">
+                        Sélectionner un fichier
+                    </button>
                 </div>
 
                 <!-- Étape 2 : Informations Identitaires -->
@@ -220,17 +250,35 @@
                 <div class="form-grid doc-group-fields" id="docs-ETAT_CIVIL" style="display: none;">
                     <div class="document-upload-card">
                         <h5>Copie intégrale de l'acte étranger <span style="color: var(--danger);">*</span></h5>
-                        <p>L'acte original étranger à faire transcrire dans les registres.</p>
+                        <p>L'acte original étranger à transcrire.</p>
                         <input type="file" name="acte_etranger" class="form-control" disabled>
                     </div>
-                    <div class="document-upload-card">
-                        <h5>Pièces d'identité des parents <span style="color: var(--danger);">*</span></h5>
-                        <p>Copie des CNI ou passeports des parents ivoiriens.</p>
+                    
+                    <div class="document-upload-card doc-field-NAISSANCE" style="display: none;">
+                        <h5>Pièce d'identité des parents <span style="color: var(--danger);">*</span></h5>
                         <input type="file" name="piece_identite_parents" class="form-control" disabled>
                     </div>
+                    
+                    <div class="document-upload-card doc-field-MARIAGE" style="display: none;">
+                        <h5>Pièce d'identité époux ivoirien <span style="color: var(--danger);">*</span></h5>
+                        <input type="file" name="piece_identite_epoux_ivoirien" class="form-control" disabled>
+                    </div>
+                    <div class="document-upload-card doc-field-MARIAGE" style="display: none;">
+                        <h5>Pièce d'identité conjoint <span style="color: var(--danger);">*</span></h5>
+                        <input type="file" name="piece_identite_conjoint" class="form-control" disabled>
+                    </div>
+                    
+                    <div class="document-upload-card doc-field-DECES" style="display: none;">
+                        <h5>Pièce d'identité défunt <span style="color: var(--danger);">*</span></h5>
+                        <input type="file" name="piece_identite_defunt" class="form-control" disabled>
+                    </div>
+                    <div class="document-upload-card doc-field-DECES" style="display: none;">
+                        <h5>Pièce d'identité déclarant <span style="color: var(--danger);">*</span></h5>
+                        <input type="file" name="piece_identite_declarant" class="form-control" disabled>
+                    </div>
+
                     <div class="document-upload-card">
                         <h5>Demande écrite signée <span style="color: var(--danger);">*</span></h5>
-                        <p>Lettre manuscrite signée adressée au consul.</p>
                         <input type="file" name="demande_ecrite" class="form-control" disabled>
                     </div>
                 </div>
@@ -345,6 +393,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modeIdentificationSelect.addEventListener('change', updateCarteConsulaireFields);
 
+    const sousTypeSelect = document.getElementById('sous_type');
+    const sousTypeContainer = document.getElementById('sous-type-container');
+
+    function updateEtatCivilFields() {
+        const sousType = sousTypeSelect.value;
+        const fields = document.querySelectorAll('.doc-field-NAISSANCE, .doc-field-MARIAGE, .doc-field-DECES');
+        
+        fields.forEach(f => {
+            f.style.display = 'none';
+            f.querySelector('input').setAttribute('disabled', 'true');
+        });
+
+        if (sousType) {
+            const activeFields = document.querySelectorAll(`.doc-field-${sousType}`);
+            activeFields.forEach(f => {
+                f.style.display = 'block';
+                f.querySelector('input').removeAttribute('disabled');
+            });
+        }
+    }
+
+    sousTypeSelect.addEventListener('change', updateEtatCivilFields);
+
     options.forEach(option => {
         option.addEventListener('click', () => {
             // Désactiver toutes les options graphiques
@@ -357,13 +428,26 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const selectedType = radio.value;
 
+            if (selectedType === 'ETAT_CIVIL') {
+                sousTypeContainer.style.display = 'block';
+            } else {
+                sousTypeContainer.style.display = 'none';
+            }
+
             // Afficher le bon groupe de documents justificatifs et désactiver les autres pour le validator Laravel
             docGroups.forEach(group => {
                 if (group.id === `docs-${selectedType}`) {
                     group.style.display = 'grid';
-                    group.querySelectorAll('input, select').forEach(input => {
-                        input.removeAttribute('disabled');
-                    });
+                    if (selectedType !== 'ETAT_CIVIL') {
+                        group.querySelectorAll('input, select').forEach(input => {
+                            input.removeAttribute('disabled');
+                        });
+                    } else {
+                        // Pour état civil, on laisse la logique updateEtatCivilFields gérer les inputs
+                        group.querySelector('input[name="acte_etranger"]').removeAttribute('disabled');
+                        group.querySelector('input[name="demande_ecrite"]').removeAttribute('disabled');
+                        updateEtatCivilFields();
+                    }
                 } else {
                     group.style.display = 'none';
                     group.querySelectorAll('input, select').forEach(input => {
@@ -394,6 +478,109 @@ document.addEventListener('DOMContentLoaded', () => {
         const parentLabel = activeRadio.closest('.type-option');
         if (parentLabel) parentLabel.click();
     }
-});
-</script>
-@endsection
+    }
+
+    // --- LOGIQUE OCR ---
+    const dropZone = document.getElementById('ocr-drop-zone');
+    const fileInput = document.getElementById('ocr-file-input');
+    const loader = document.getElementById('ocr-loader');
+
+    // Drag & Drop handlers
+    dropZone.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    dropZone.classList.add('dragging');
+    });
+
+    ['dragleave', 'drop'].forEach(evt => {
+    dropZone.addEventListener(evt, () => dropZone.classList.remove('dragging'));
+    });
+
+    dropZone.addEventListener('drop', (e) => {
+    e.preventDefault();
+    const files = e.dataTransfer.files;
+    if (files.length) handleOcrFile(files[0]);
+    });
+
+    fileInput.addEventListener('change', (e) => {
+    if (e.target.files.length) handleOcrFile(e.target.files[0]);
+    });
+
+    async function handleOcrFile(file) {
+    const formData = new FormData();
+    formData.append('document', file);
+    formData.append('_token', '{{ csrf_token() }}');
+
+    loader.style.display = 'flex';
+
+    try {
+        const response = await fetch('{{ route('demandes.ocr-analyze') }}', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            fillFormWithOcrData(result.data, file);
+        } else {
+            alert(result.message || 'Une erreur est survenue lors de l\'analyse.');
+        }
+    } catch (error) {
+        console.error('OCR Error:', error);
+        alert('Erreur technique lors de l\'analyse du document.');
+    } finally {
+        loader.style.display = 'none';
+    }
+    }
+
+    function fillFormWithOcrData(data, file) {
+    const fields = ['nom', 'prenoms', 'date_naissance', 'lieu_naissance', 'genre', 'nni'];
+
+    fields.forEach(field => {
+        const input = document.getElementById(field);
+        if (input && data[field]) {
+            input.value = data[field];
+            // Animation de succès
+            input.classList.add('pulse-success');
+            setTimeout(() => input.classList.remove('pulse-success'), 2000);
+        }
+    });
+
+    // Liaison automatique du fichier aux pièces justificatives si possible
+    // Si c'est un passeport ou une CNI, on essaie de le mettre dans le champ correspondant
+    const selectedType = document.querySelector('input[name="type_demande"]:checked').value;
+
+    if (selectedType === 'CARTE_CONSULAIRE') {
+        const cniPassportInput = document.querySelector('input[name="cni_ou_passeport"]');
+        if (cniPassportInput && !cniPassportInput.disabled) {
+            syncFileInput(cniPassportInput, file);
+        }
+    } else if (selectedType === 'PASSEPORT') {
+        // Pour le passeport, on ne sait pas forcément quel champ remplir par défaut avec l'OCR (souvent c'est l'extrait de naissance qui est demandé)
+        // Mais on peut laisser l'utilisateur choisir ou remplir le premier champ vide
+    }
+
+    if (data.message) {
+        // Optionnel : afficher un petit toast de succès
+        console.log('OCR Info:', data.message);
+    }
+    }
+
+    function syncFileInput(input, file) {
+    const dataTransfer = new DataTransfer();
+    dataTransfer.items.add(file);
+    input.files = dataTransfer.files;
+
+    // Visuel pour montrer que le fichier est lié
+    const card = input.closest('.document-upload-card');
+    if (card) {
+        card.style.borderColor = 'var(--green)';
+        card.style.background = 'rgba(34, 197, 94, 0.05)';
+    }
+    }
+    });
+    </script>
+

@@ -27,6 +27,7 @@ class Demande extends Model
         'user_id',
         'citoyen_id',
         'type_demande',
+        'sous_type',
         'statut',
         'motif_rejet',
     ];

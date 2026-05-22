@@ -58,6 +58,7 @@ class DemandeService
                 'user_id' => $user->id,
                 'citoyen_id' => $citoyen->id,
                 'type_demande' => $data['type_demande'],
+                'sous_type' => $data['sous_type'] ?? null,
                 'statut' => 'SOUMIS',
             ]);
 

@@ -302,7 +302,12 @@
                     </div>
                     <div class="data-item">
                         <span class="data-label">Type de démarche</span>
-                        <span class="data-value">{{ \App\Enums\DemandeTypeEnum::from($demande->type_demande)->label() }}</span>
+                        <span class="data-value">
+                            {{ \App\Enums\DemandeTypeEnum::from($demande->type_demande)->label() }}
+                            @if($demande->sous_type)
+                                <br><small style="color: var(--text-muted); font-weight: 600;">(Transcription : {{ $demande->sous_type }})</small>
+                            @endif
+                        </span>
                     </div>
                     <div class="data-item">
                         <span class="data-label">Date & Lieu de naissance</span>

@@ -213,6 +213,12 @@
                     <div class="info-label">Téléphone</div>
                     <div class="info-value">{{ $demande->citoyen->telephone }}</div>
                 </div>
+                @if($demande->sous_type)
+                <div class="info-group">
+                    <div class="info-label">Transcription d'État Civil</div>
+                    <div class="info-value" style="color: var(--primary-color); font-weight: 700;">{{ $demande->sous_type }}</div>
+                </div>
+                @endif
             </div>
         </div>
 

@@ -56,9 +56,13 @@ class CreateDemandeRequest extends FormRequest
             $rules['justificatif_domicile'] = 'required|file|mimes:pdf,jpg,jpeg,png|max:5120';
             $rules['photo'] = 'required|file|mimes:jpg,jpeg,png|max:5120';
         } elseif ($type === 'ETAT_CIVIL') {
-            $rules['nni'] = 'nullable|string|max:50';
-            $rules['acte_etranger'] = 'required|file|mimes:pdf,jpg,jpeg,png|max:5120'; 
-            $rules['piece_identite_parents'] = 'required|file|mimes:pdf,jpg,jpeg,png|max:5120';
+            $rules['sous_type'] = 'required|in:NAISSANCE,MARIAGE,DECES';
+            $rules['acte_etranger'] = 'required_if:sous_type,NAISSANCE,MARIAGE,DECES|file|mimes:pdf,jpg,jpeg,png|max:5120';
+            $rules['piece_identite_parents'] = 'required_if:sous_type,NAISSANCE|file|mimes:pdf,jpg,jpeg,png|max:5120';
+            $rules['piece_identite_epoux_ivoirien'] = 'required_if:sous_type,MARIAGE|file|mimes:pdf,jpg,jpeg,png|max:5120';
+            $rules['piece_identite_conjoint'] = 'required_if:sous_type,MARIAGE|file|mimes:pdf,jpg,jpeg,png|max:5120';
+            $rules['piece_identite_defunt'] = 'required_if:sous_type,DECES|file|mimes:pdf,jpg,jpeg,png|max:5120';
+            $rules['piece_identite_declarant'] = 'required_if:sous_type,DECES|file|mimes:pdf,jpg,jpeg,png|max:5120';
             $rules['demande_ecrite'] = 'required|file|mimes:pdf,jpg,jpeg,png|max:5120';
         } elseif ($type === 'CARTE_CONSULAIRE') {
             $rules['nni'] = 'nullable|string|max:50';
@@ -100,9 +104,15 @@ class CreateDemandeRequest extends FormRequest
             'certificat_nationalite.required' => 'Le certificat de nationalité est requis.',
             'justificatif_domicile.required' => 'Le justificatif de domicile est requis.',
             'photo.required' => 'La photo d\'identité est requise.',
-            'acte_etranger.required' => 'La copie intégrale de l\'acte étranger est requise.',
-            'piece_identite_parents.required' => 'La pièce d\'identité des parents est requise.',
-            'demande_ecrite.required' => 'La demande écrite signée est requise.',    
+            'acte_etranger.required_if' => 'La copie intégrale de l\'acte étranger est requise.',
+            'piece_identite_parents.required_if' => 'La pièce d\'identité des parents est requise.',
+            'piece_identite_epoux_ivoirien.required_if' => 'La pièce d\'identité de l\'époux ivoirien est requise.',
+            'piece_identite_conjoint.required_if' => 'La pièce d\'identité du conjoint est requise.',
+            'piece_identite_defunt.required_if' => 'La pièce d\'identité du défunt est requise.',
+            'piece_identite_declarant.required_if' => 'La pièce d\'identité du déclarant est requise.',
+            'demande_ecrite.required' => 'La demande écrite signée est requise.',
+            'sous_type.required' => 'Le type de transcription est obligatoire pour une demande d\'État Civil.',
+            'sous_type.in' => 'Le type de transcription sélectionné est invalide.',    
             'mode_identification.required' => 'Le choix du mode d\'identification ivoirienne est obligatoire.',
             'recu_paiement.required' => 'Le reçu de paiement des droits de chancellerie (10 €) est requis.',
 
