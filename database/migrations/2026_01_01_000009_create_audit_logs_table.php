@@ -25,7 +25,8 @@ return new class extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * la migration est inversée, ce qui supprime la table "audit_logs" de la base de données.
+     * Cela est utile pour revenir en arrière si nécessaire, par exemple lors de tests ou de déploiements.
      */
     public function down(): void
     {

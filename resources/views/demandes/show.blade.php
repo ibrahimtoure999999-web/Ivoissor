@@ -3,9 +3,9 @@
 @section('title', 'Détails du Dossier')
 
 @section('styles')
-    <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/demandes.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/rendezvous.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}?v={{ filemtime(public_path('css/dashboard.css')) }}">
+    <link rel="stylesheet" href="{{ asset('css/demandes.css') }}?v={{ filemtime(public_path('css/demandes.css')) }}">
+    <link rel="stylesheet" href="{{ asset('css/rendezvous.css') }}?v={{ filemtime(public_path('css/rendezvous.css')) }}">
     <style>
         /* custom modal for cancellation */
         .custom-modal-overlay {

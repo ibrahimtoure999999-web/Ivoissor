@@ -3,8 +3,8 @@
 @section('title', 'Nouvelle Demande')
 
 @section('styles')
-    <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/demandes.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}?v={{ filemtime(public_path('css/dashboard.css')) }}">
+    <link rel="stylesheet" href="{{ asset('css/demandes.css') }}?v={{ filemtime(public_path('css/demandes.css')) }}">
 @endsection
 
 @section('content')
@@ -146,44 +146,54 @@
 
                 <!-- Zone d'Importation OCR -->
                 <div class="ocr-upload-zone" id="ocr-drop-zone">
-                    <div class="ocr-loading" id="ocr-loader">
+                    <div class="ocr-loading" id="ocr-loader" style="display: none;">
                         <div class="ocr-spinner"></div>
-                        <p style="font-weight: 700; color: var(--orange);">Analyse de votre document en cours...</p>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">Veuillez patienter quelques instants.</p>
+                        <p style="font-weight: 700; color: var(--orange); margin-bottom: 0.2rem; font-size: 0.9rem;">Analyse de votre document en cours...</p>
+                        <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0;">Veuillez patienter quelques instants.</p>
+                        <div class="ocr-laser-line" id="ocr-laser"></div>
                     </div>
                     
-                    <span class="material-symbols-outlined ocr-icon">document_scanner</span>
+                    <span class="ocr-badge">
+                        <span class="material-symbols-outlined" style="font-size: 14px;">bolt</span> Analyse OCR Intelligente
+                    </span>
+                    
+                    <div class="ocr-icon-container">
+                        <span class="material-symbols-outlined ocr-icon">document_scanner</span>
+                        <div class="ocr-scanner-ring"></div>
+                        <div class="ocr-pulse-ring"></div>
+                    </div>
+                    
                     <h3 class="ocr-title">💡 Gain de temps : Importez votre pièce d'identité</h3>
                     <p class="ocr-subtitle">
                         Déposez votre CNI ou Passeport ici pour <strong>pré-remplir automatiquement</strong> le formulaire grâce à l'analyse optique (OCR).
                     </p>
                     <input type="file" id="ocr-file-input" style="display: none;" accept="image/*,.pdf">
-                    <button type="button" class="btn btn-outline" style="margin-top: 1rem;" onclick="document.getElementById('ocr-file-input').click()">
+                    <button type="button" class="btn btn-outline" style="margin-top: 0.5rem; padding: 0.45rem 1.15rem !important; font-size: 0.8rem !important;" onclick="document.getElementById('ocr-file-input').click()">
                         Sélectionner un fichier
                     </button>
                 </div>
 
                 <!-- Zone de réussite et liaison rapide du fichier OCR -->
-                <div id="ocr-success-card" style="display: none; margin-top: 1rem; padding: 1.25rem; background: rgba(34, 197, 94, 0.04); border: 1.5px dashed var(--green); border-radius: var(--radius-sm); transition: all 0.3s ease;">
-                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.85rem;">
-                        <span class="material-symbols-outlined" style="color: var(--green); font-size: 24px;">check_circle</span>
+                <div id="ocr-success-card" class="ocr-success-card" style="display: none;">
+                    <div class="ocr-success-header">
+                        <span class="material-symbols-outlined ocr-success-icon">check_circle</span>
                         <div>
-                            <h4 style="margin: 0; color: var(--green-hover); font-size: 1.05rem; font-weight: 700;">Document analysé avec succès !</h4>
-                            <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">
+                            <h4 class="ocr-success-title">Document analysé avec succès !</h4>
+                            <p class="ocr-success-subtitle">
                                 Les informations d'identité ont été extraites. Vous pouvez associer ce fichier directement à une pièce justificative :
                             </p>
                         </div>
                     </div>
                     
-                    <div style="display: flex; align-items: center; justify-content: space-between; background: white; padding: 0.6rem 1rem; border-radius: var(--radius-xs); border: 1px solid var(--border-color); margin-bottom: 1rem; box-shadow: var(--shadow-sm);">
-                        <div style="display: flex; align-items: center; gap: 0.5rem; overflow: hidden;">
-                            <span class="material-symbols-outlined" style="color: var(--orange); flex-shrink: 0;">description</span>
-                            <span id="ocr-file-name" style="font-weight: 600; font-size: 0.88rem; color: var(--text-dark); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Fichier</span>
+                    <div class="ocr-file-info-bar">
+                        <div class="ocr-file-info-left">
+                            <span class="material-symbols-outlined ocr-file-info-icon">description</span>
+                            <span id="ocr-file-name" class="ocr-file-info-name">Fichier</span>
                         </div>
-                        <span id="ocr-file-size" style="font-size: 0.8rem; color: var(--text-muted); flex-shrink: 0; margin-left: 0.5rem;">0 KB</span>
+                        <span id="ocr-file-size" class="ocr-file-info-size">0 KB</span>
                     </div>
 
-                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;" id="ocr-assign-buttons-container">
+                    <div class="ocr-assign-buttons" id="ocr-assign-buttons-container">
                         <!-- Les boutons d'affectation dynamique s'insèrent ici -->
                     </div>
                 </div>
@@ -457,35 +467,16 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const button = document.createElement('button');
             button.type = 'button';
-            button.className = 'btn';
-            button.style.display = 'inline-flex';
-            button.style.alignItems = 'center';
-            button.style.gap = '6px';
-            button.style.padding = '0.5rem 0.85rem';
-            button.style.borderRadius = 'var(--radius-xs)';
-            button.style.fontSize = '0.85rem';
-            button.style.fontWeight = '600';
-            button.style.cursor = 'pointer';
-            button.style.transition = 'all 0.2s ease';
-            button.style.border = '1px solid';
             
             if (isLinked) {
-                button.style.background = 'rgba(34, 197, 94, 0.1)';
-                button.style.borderColor = '#22c55e';
-                button.style.color = '#15803d';
+                button.className = 'ocr-assign-btn linked';
                 button.innerHTML = `<span class="material-symbols-outlined" style="font-size: 16px;">task_alt</span> Lié à : ${docTitle}`;
                 
                 button.addEventListener('mouseenter', () => {
-                    button.style.background = 'rgba(239, 68, 68, 0.1)';
-                    button.style.borderColor = '#ef4444';
-                    button.style.color = '#b91c1c';
                     button.innerHTML = `<span class="material-symbols-outlined" style="font-size: 16px;">link_off</span> Retirer de : ${docTitle}`;
                 });
                 
                 button.addEventListener('mouseleave', () => {
-                    button.style.background = 'rgba(34, 197, 94, 0.1)';
-                    button.style.borderColor = '#22c55e';
-                    button.style.color = '#15803d';
                     button.innerHTML = `<span class="material-symbols-outlined" style="font-size: 16px;">task_alt</span> Lié à : ${docTitle}`;
                 });
                 
@@ -494,22 +485,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     input.dispatchEvent(new Event('change'));
                 });
             } else {
-                button.style.background = 'white';
-                button.style.borderColor = 'var(--border-color)';
-                button.style.color = 'var(--text-secondary)';
+                button.className = 'ocr-assign-btn unlinked';
                 button.innerHTML = `<span class="material-symbols-outlined" style="font-size: 16px;">link</span> Lier à : ${docTitle}`;
-                
-                button.addEventListener('mouseenter', () => {
-                    button.style.borderColor = 'var(--orange)';
-                    button.style.color = 'var(--orange-hover)';
-                    button.style.background = 'rgba(249, 115, 22, 0.02)';
-                });
-                
-                button.addEventListener('mouseleave', () => {
-                    button.style.borderColor = 'var(--border-color)';
-                    button.style.color = 'var(--text-secondary)';
-                    button.style.background = 'white';
-                });
                 
                 button.addEventListener('click', () => {
                     syncFileInput(input, currentOcrFile);
@@ -699,6 +676,7 @@ document.addEventListener('DOMContentLoaded', () => {
         formData.append('_token', '{{ csrf_token() }}');
 
         loader.style.display = 'flex';
+        document.getElementById('ocr-laser').style.display = 'block';
 
         try {
             const response = await fetch('{{ route('demandes.ocr-analyze') }}', {
@@ -721,6 +699,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Erreur technique lors de l\'analyse du document.');
         } finally {
             loader.style.display = 'none';
+            document.getElementById('ocr-laser').style.display = 'none';
         }
     }
 
