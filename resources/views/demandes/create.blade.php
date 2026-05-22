@@ -163,6 +163,31 @@
                     </button>
                 </div>
 
+                <!-- Zone de réussite et liaison rapide du fichier OCR -->
+                <div id="ocr-success-card" style="display: none; margin-top: 1rem; padding: 1.25rem; background: rgba(34, 197, 94, 0.04); border: 1.5px dashed var(--green); border-radius: var(--radius-sm); transition: all 0.3s ease;">
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.85rem;">
+                        <span class="material-symbols-outlined" style="color: var(--green); font-size: 24px;">check_circle</span>
+                        <div>
+                            <h4 style="margin: 0; color: var(--green-hover); font-size: 1.05rem; font-weight: 700;">Document analysé avec succès !</h4>
+                            <p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">
+                                Les informations d'identité ont été extraites. Vous pouvez associer ce fichier directement à une pièce justificative :
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; justify-content: space-between; background: white; padding: 0.6rem 1rem; border-radius: var(--radius-xs); border: 1px solid var(--border-color); margin-bottom: 1rem; box-shadow: var(--shadow-sm);">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; overflow: hidden;">
+                            <span class="material-symbols-outlined" style="color: var(--orange); flex-shrink: 0;">description</span>
+                            <span id="ocr-file-name" style="font-weight: 600; font-size: 0.88rem; color: var(--text-dark); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Fichier</span>
+                        </div>
+                        <span id="ocr-file-size" style="font-size: 0.8rem; color: var(--text-muted); flex-shrink: 0; margin-left: 0.5rem;">0 KB</span>
+                    </div>
+
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;" id="ocr-assign-buttons-container">
+                        <!-- Les boutons d'affectation dynamique s'insèrent ici -->
+                    </div>
+                </div>
+
                 <!-- Étape 2 : Informations Identitaires -->
                 <div class="form-section-title">2. Informations Personnelles (Demandeur)</div>
                 <div class="form-grid">
@@ -345,13 +370,165 @@
 <!-- Scripts pour l'interactivité dynamique -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+    // Variables globales pour l'état de la page
+    let currentOcrFile = null;
+
     const options = document.querySelectorAll('.type-option');
     const docGroups = document.querySelectorAll('.doc-group-fields');
     const nniContainer = document.getElementById('nni-container');
     const nniInput = document.getElementById('nni');
     const nniRequiredLabel = document.querySelector('.nni-required');
     const modeIdentificationSelect = document.getElementById('mode_identification');
+    const sousTypeSelect = document.getElementById('sous_type');
+    const sousTypeContainer = document.getElementById('sous-type-container');
 
+    // Gestion du style visuel des cartes de documents en fonction de leur contenu
+    function refreshUploadCardStyles() {
+        const fileInputs = document.querySelectorAll('input[type="file"]');
+        fileInputs.forEach(input => {
+            // Ignorer l'input OCR lui-même
+            if (input.id === 'ocr-file-input') return;
+
+            const card = input.closest('.document-upload-card');
+            if (!card) return;
+            
+            if (input.files && input.files.length > 0) {
+                card.style.borderColor = '#22c55e'; // Green
+                card.style.background = 'rgba(34, 197, 94, 0.03)';
+                
+                let badge = card.querySelector('.file-attached-badge');
+                if (!badge) {
+                    badge = document.createElement('div');
+                    badge.className = 'file-attached-badge';
+                    badge.style.display = 'flex';
+                    badge.style.alignItems = 'center';
+                    badge.style.gap = '4px';
+                    badge.style.fontSize = '0.75rem';
+                    badge.style.color = '#15803d';
+                    badge.style.fontWeight = '600';
+                    badge.style.marginTop = '0.25rem';
+                    card.appendChild(badge); // L'ajouter au conteneur de carte
+                }
+                badge.innerHTML = `<span class="material-symbols-outlined" style="font-size: 14px;">check_circle</span> Fichier lié : ${input.files[0].name}`;
+            } else {
+                card.style.borderColor = '';
+                card.style.background = '';
+                const badge = card.querySelector('.file-attached-badge');
+                if (badge) badge.remove();
+            }
+        });
+    }
+
+    // Gestion des boutons d'affectation dynamique de l'OCR
+    function renderOcrAssignmentButtons() {
+        const container = document.getElementById('ocr-assign-buttons-container');
+        if (!container) return;
+        
+        if (!currentOcrFile) {
+            document.getElementById('ocr-success-card').style.display = 'none';
+            return;
+        }
+        
+        document.getElementById('ocr-success-card').style.display = 'block';
+        document.getElementById('ocr-file-name').textContent = currentOcrFile.name;
+        document.getElementById('ocr-file-size').textContent = (currentOcrFile.size / 1024).toFixed(1) + ' KB';
+        
+        container.innerHTML = '';
+        
+        const activeTypeRadio = document.querySelector('input[name="type_demande"]:checked');
+        if (!activeTypeRadio) return;
+        
+        const activeTypeId = `docs-${activeTypeRadio.value}`;
+        const activeGroup = document.getElementById(activeTypeId);
+        if (!activeGroup) return;
+        
+        const fileInputs = activeGroup.querySelectorAll('input[type="file"]');
+        
+        fileInputs.forEach(input => {
+            if (input.disabled) return;
+            
+            const card = input.closest('.document-upload-card');
+            if (!card) return;
+            
+            const docTitleEl = card.querySelector('h5');
+            const docTitle = docTitleEl ? docTitleEl.textContent.replace(/\*$/, '').trim() : input.name;
+            
+            const isLinked = input.files && input.files.length > 0;
+            
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'btn';
+            button.style.display = 'inline-flex';
+            button.style.alignItems = 'center';
+            button.style.gap = '6px';
+            button.style.padding = '0.5rem 0.85rem';
+            button.style.borderRadius = 'var(--radius-xs)';
+            button.style.fontSize = '0.85rem';
+            button.style.fontWeight = '600';
+            button.style.cursor = 'pointer';
+            button.style.transition = 'all 0.2s ease';
+            button.style.border = '1px solid';
+            
+            if (isLinked) {
+                button.style.background = 'rgba(34, 197, 94, 0.1)';
+                button.style.borderColor = '#22c55e';
+                button.style.color = '#15803d';
+                button.innerHTML = `<span class="material-symbols-outlined" style="font-size: 16px;">task_alt</span> Lié à : ${docTitle}`;
+                
+                button.addEventListener('mouseenter', () => {
+                    button.style.background = 'rgba(239, 68, 68, 0.1)';
+                    button.style.borderColor = '#ef4444';
+                    button.style.color = '#b91c1c';
+                    button.innerHTML = `<span class="material-symbols-outlined" style="font-size: 16px;">link_off</span> Retirer de : ${docTitle}`;
+                });
+                
+                button.addEventListener('mouseleave', () => {
+                    button.style.background = 'rgba(34, 197, 94, 0.1)';
+                    button.style.borderColor = '#22c55e';
+                    button.style.color = '#15803d';
+                    button.innerHTML = `<span class="material-symbols-outlined" style="font-size: 16px;">task_alt</span> Lié à : ${docTitle}`;
+                });
+                
+                button.addEventListener('click', () => {
+                    input.value = '';
+                    input.dispatchEvent(new Event('change'));
+                });
+            } else {
+                button.style.background = 'white';
+                button.style.borderColor = 'var(--border-color)';
+                button.style.color = 'var(--text-secondary)';
+                button.innerHTML = `<span class="material-symbols-outlined" style="font-size: 16px;">link</span> Lier à : ${docTitle}`;
+                
+                button.addEventListener('mouseenter', () => {
+                    button.style.borderColor = 'var(--orange)';
+                    button.style.color = 'var(--orange-hover)';
+                    button.style.background = 'rgba(249, 115, 22, 0.02)';
+                });
+                
+                button.addEventListener('mouseleave', () => {
+                    button.style.borderColor = 'var(--border-color)';
+                    button.style.color = 'var(--text-secondary)';
+                    button.style.background = 'white';
+                });
+                
+                button.addEventListener('click', () => {
+                    syncFileInput(input, currentOcrFile);
+                });
+            }
+            
+            container.appendChild(button);
+        });
+    }
+
+    function syncFileInput(input, file) {
+        if (!file) return;
+        const dataTransfer = new DataTransfer();
+        dataTransfer.items.add(file);
+        input.files = dataTransfer.files;
+        input.dispatchEvent(new Event('change'));
+    }
+
+    // Changement de mode d'identification pour la carte consulaire
     function updateCarteConsulaireFields() {
         const mode = modeIdentificationSelect.value;
         const cniPassportCard = document.getElementById('card-cni-passport');
@@ -389,13 +566,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 nationaliteInput.removeAttribute('disabled');
             }
         }
+
+        refreshUploadCardStyles();
+        renderOcrAssignmentButtons();
     }
 
     modeIdentificationSelect.addEventListener('change', updateCarteConsulaireFields);
 
-    const sousTypeSelect = document.getElementById('sous_type');
-    const sousTypeContainer = document.getElementById('sous-type-container');
-
+    // Changement de sous-type d'État Civil
     function updateEtatCivilFields() {
         const sousType = sousTypeSelect.value;
         const fields = document.querySelectorAll('.doc-field-NAISSANCE, .doc-field-MARIAGE, .doc-field-DECES');
@@ -412,15 +590,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 f.querySelector('input').removeAttribute('disabled');
             });
         }
+
+        refreshUploadCardStyles();
+        renderOcrAssignmentButtons();
     }
 
     sousTypeSelect.addEventListener('change', updateEtatCivilFields);
 
+    // Clic sur les types de demande
     options.forEach(option => {
         option.addEventListener('click', () => {
-            // Désactiver toutes les options graphiques
             options.forEach(o => o.classList.remove('active'));
-            // Activer l'option sélectionnée
             option.classList.add('active');
 
             const radio = option.querySelector('input[type="radio"]');
@@ -434,7 +614,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 sousTypeContainer.style.display = 'none';
             }
 
-            // Afficher le bon groupe de documents justificatifs et désactiver les autres pour le validator Laravel
             docGroups.forEach(group => {
                 if (group.id === `docs-${selectedType}`) {
                     group.style.display = 'grid';
@@ -443,7 +622,6 @@ document.addEventListener('DOMContentLoaded', () => {
                             input.removeAttribute('disabled');
                         });
                     } else {
-                        // Pour état civil, on laisse la logique updateEtatCivilFields gérer les inputs
                         group.querySelector('input[name="acte_etranger"]').removeAttribute('disabled');
                         group.querySelector('input[name="demande_ecrite"]').removeAttribute('disabled');
                         updateEtatCivilFields();
@@ -456,12 +634,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            // Ajuster les champs Carte Consulaire
             if (selectedType === 'CARTE_CONSULAIRE') {
                 updateCarteConsulaireFields();
             }
 
-            // Ajuster l'obligation du NNI
             if (selectedType === 'PASSEPORT') {
                 nniInput.setAttribute('required', 'true');
                 nniRequiredLabel.style.display = 'inline';
@@ -469,7 +645,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 nniInput.removeAttribute('required');
                 nniRequiredLabel.style.display = 'none';
             }
+
+            refreshUploadCardStyles();
+            renderOcrAssignmentButtons();
         });
+    });
+
+    // Écouteur change pour tous les inputs fichiers (pour mettre à jour les styles et les boutons de liaison)
+    document.querySelectorAll('input[type="file"]').forEach(input => {
+        if (input.id !== 'ocr-file-input') {
+            input.addEventListener('change', () => {
+                refreshUploadCardStyles();
+                renderOcrAssignmentButtons();
+            });
+        }
     });
 
     // Déclencher le changement de type initial au chargement pour la reprise des données (Old input)
@@ -478,109 +667,107 @@ document.addEventListener('DOMContentLoaded', () => {
         const parentLabel = activeRadio.closest('.type-option');
         if (parentLabel) parentLabel.click();
     }
-    }
 
-    // --- LOGIQUE OCR ---
+    // --- LOGIQUE OCR (Intégrée dans le DOMContentLoaded) ---
     const dropZone = document.getElementById('ocr-drop-zone');
     const fileInput = document.getElementById('ocr-file-input');
     const loader = document.getElementById('ocr-loader');
 
     // Drag & Drop handlers
     dropZone.addEventListener('dragover', (e) => {
-    e.preventDefault();
-    dropZone.classList.add('dragging');
+        e.preventDefault();
+        dropZone.classList.add('dragging');
     });
 
     ['dragleave', 'drop'].forEach(evt => {
-    dropZone.addEventListener(evt, () => dropZone.classList.remove('dragging'));
+        dropZone.addEventListener(evt, () => dropZone.classList.remove('dragging'));
     });
 
     dropZone.addEventListener('drop', (e) => {
-    e.preventDefault();
-    const files = e.dataTransfer.files;
-    if (files.length) handleOcrFile(files[0]);
+        e.preventDefault();
+        const files = e.dataTransfer.files;
+        if (files.length) handleOcrFile(files[0]);
     });
 
     fileInput.addEventListener('change', (e) => {
-    if (e.target.files.length) handleOcrFile(e.target.files[0]);
+        if (e.target.files.length) handleOcrFile(e.target.files[0]);
     });
 
     async function handleOcrFile(file) {
-    const formData = new FormData();
-    formData.append('document', file);
-    formData.append('_token', '{{ csrf_token() }}');
+        const formData = new FormData();
+        formData.append('document', file);
+        formData.append('_token', '{{ csrf_token() }}');
 
-    loader.style.display = 'flex';
+        loader.style.display = 'flex';
 
-    try {
-        const response = await fetch('{{ route('demandes.ocr-analyze') }}', {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
+        try {
+            const response = await fetch('{{ route('demandes.ocr-analyze') }}', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                fillFormWithOcrData(result.data, file);
+            } else {
+                alert(result.message || 'Une erreur est survenue lors de l\'analyse.');
             }
-        });
-
-        const result = await response.json();
-
-        if (result.success) {
-            fillFormWithOcrData(result.data, file);
-        } else {
-            alert(result.message || 'Une erreur est survenue lors de l\'analyse.');
+        } catch (error) {
+            console.error('OCR Error:', error);
+            alert('Erreur technique lors de l\'analyse du document.');
+        } finally {
+            loader.style.display = 'none';
         }
-    } catch (error) {
-        console.error('OCR Error:', error);
-        alert('Erreur technique lors de l\'analyse du document.');
-    } finally {
-        loader.style.display = 'none';
-    }
     }
 
     function fillFormWithOcrData(data, file) {
-    const fields = ['nom', 'prenoms', 'date_naissance', 'lieu_naissance', 'genre', 'nni'];
+        currentOcrFile = file; // Stockage en mémoire !
 
-    fields.forEach(field => {
-        const input = document.getElementById(field);
-        if (input && data[field]) {
-            input.value = data[field];
-            // Animation de succès
-            input.classList.add('pulse-success');
-            setTimeout(() => input.classList.remove('pulse-success'), 2000);
+        const fields = ['nom', 'prenoms', 'date_naissance', 'lieu_naissance', 'genre', 'nni'];
+
+        fields.forEach(field => {
+            const input = document.getElementById(field);
+            if (input && data[field]) {
+                input.value = data[field];
+                input.classList.add('pulse-success');
+                setTimeout(() => input.classList.remove('pulse-success'), 2000);
+            }
+        });
+
+        // Auto-affectation intelligente par défaut
+        const selectedType = document.querySelector('input[name="type_demande"]:checked')?.value;
+        
+        if (selectedType === 'CARTE_CONSULAIRE') {
+            const mode = modeIdentificationSelect.value;
+            if (mode === 'cni_passport') {
+                const input = document.querySelector('input[name="cni_ou_passeport"]');
+                if (input && !input.disabled) {
+                    syncFileInput(input, file);
+                }
+            } else {
+                const input = document.querySelector('#docs-CARTE_CONSULAIRE input[name="extrait_naissance"]');
+                if (input && !input.disabled) {
+                    syncFileInput(input, file);
+                }
+            }
+        } else if (selectedType === 'PASSEPORT') {
+            const input = document.querySelector('#docs-PASSEPORT input[name="extrait_naissance"]');
+            if (input && !input.disabled) {
+                syncFileInput(input, file);
+            }
+        } else if (selectedType === 'ETAT_CIVIL') {
+            const input = document.querySelector('input[name="acte_etranger"]');
+            if (input && !input.disabled) {
+                syncFileInput(input, file);
+            }
         }
-    });
 
-    // Liaison automatique du fichier aux pièces justificatives si possible
-    // Si c'est un passeport ou une CNI, on essaie de le mettre dans le champ correspondant
-    const selectedType = document.querySelector('input[name="type_demande"]:checked').value;
-
-    if (selectedType === 'CARTE_CONSULAIRE') {
-        const cniPassportInput = document.querySelector('input[name="cni_ou_passeport"]');
-        if (cniPassportInput && !cniPassportInput.disabled) {
-            syncFileInput(cniPassportInput, file);
-        }
-    } else if (selectedType === 'PASSEPORT') {
-        // Pour le passeport, on ne sait pas forcément quel champ remplir par défaut avec l'OCR (souvent c'est l'extrait de naissance qui est demandé)
-        // Mais on peut laisser l'utilisateur choisir ou remplir le premier champ vide
+        renderOcrAssignmentButtons();
     }
-
-    if (data.message) {
-        // Optionnel : afficher un petit toast de succès
-        console.log('OCR Info:', data.message);
-    }
-    }
-
-    function syncFileInput(input, file) {
-    const dataTransfer = new DataTransfer();
-    dataTransfer.items.add(file);
-    input.files = dataTransfer.files;
-
-    // Visuel pour montrer que le fichier est lié
-    const card = input.closest('.document-upload-card');
-    if (card) {
-        card.style.borderColor = 'var(--green)';
-        card.style.background = 'rgba(34, 197, 94, 0.05)';
-    }
-    }
-    });
-    </script>
+});
+</script>
 

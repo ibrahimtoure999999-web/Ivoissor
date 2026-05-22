@@ -92,6 +92,7 @@ test('citizen can submit a passport demand with valid files and details', functi
     $demande = Demande::first();
     expect($demande)->not->toBeNull();
     $response->assertRedirect(route('demandes.show', $demande->id));
+    $response->assertSessionHas('success', 'Votre demande de pré-enrôlement (Passeport & Carte d\'Identité) a été soumise avec succès.');
 
     // Vérification que les données du citoyen sont enregistrées correctement,
     // avec le nom en majuscules conformément à la logique de normalisation des données.
@@ -310,6 +311,7 @@ test('citizen can submit a transcription of naissance demand with required files
     expect($demande)->not->toBeNull();
     expect($demande->sous_type)->toBe('NAISSANCE');
     $response->assertRedirect(route('demandes.show', $demande->id));
+    $response->assertSessionHas('success', 'Votre demande de transcription d\'état civil (NAISSANCE) a été soumise avec succès.');
 });
 
 test('citizen can submit a transcription of mariage demand with required files', function () {
@@ -343,6 +345,7 @@ test('citizen can submit a transcription of mariage demand with required files',
     expect($demande)->not->toBeNull();
     expect($demande->sous_type)->toBe('MARIAGE');
     $response->assertRedirect(route('demandes.show', $demande->id));
+    $response->assertSessionHas('success', 'Votre demande de transcription d\'état civil (MARIAGE) a été soumise avec succès.');
 });
 
 test('agent can view any user\'s demand details', function () {

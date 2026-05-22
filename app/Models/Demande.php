@@ -61,4 +61,21 @@ class Demande extends Model
     {
         return $this->hasMany(Paiement::class);
     }
+
+    /**
+     * Détermine si la demande est une transcription d'état civil (F-03).
+     */
+    public function isTranscription(): bool
+    {
+        return $this->type_demande === 'ETAT_CIVIL';
+    }
+
+    /**
+     * Détermine si la demande est un enrôlement classique (Passeport ou Carte Consulaire) (F-02).
+     */
+    public function isEnrolementClassique(): bool
+    {
+        return in_array($this->type_demande, ['PASSEPORT', 'CARTE_CONSULAIRE']);
+    }
 }
+

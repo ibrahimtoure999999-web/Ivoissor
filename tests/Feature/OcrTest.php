@@ -102,4 +102,50 @@ class OcrTest extends TestCase
                      ]
                  ]);
     }
+
+    /**
+     * L'OCR gère correctement les accents (traoré vs traore).
+     */
+    public function test_ocr_normalizes_accents_in_filename()
+    {
+        $this->withoutMiddleware();
+        $this->actingAs($this->user);
+
+        $response = $this->postJson(route('demandes.ocr-analyze'), [
+            'document' => UploadedFile::fake()->image('passeport_traoré.jpg')
+        ]);
+
+        $response->assertStatus(200)
+                 ->assertJson([
+                     'success' => true,
+                     'data' => [
+                         'found' => true,
+                         'nom' => 'TRAORÉ',
+                         'prenoms' => 'Mariam'
+                     ]
+                 ]);
+    }
+
+    /**
+     * L'OCR nettoie les tags XSS du nom de fichier dans l'audit log.
+     */
+    public function test_ocr_filters_xss_tags_from_filename_in_audit_log()
+    {
+        $this->withoutMiddleware();
+        $this->actingAs($this->user);
+
+        $filename = "<script>alert('XSS')</script>cni_kouadio.jpg";
+        $response = $this->postJson(route('demandes.ocr-analyze'), [
+            'document' => UploadedFile::fake()->image($filename)
+        ]);
+
+        $response->assertStatus(200);
+
+        // Récupérer le dernier log d'audit
+        $log = AuditLog::where('action', 'OCR_SCAN')->orderBy('id', 'desc')->first();
+        expect($log)->not->toBeNull();
+        expect($log->description)->not->toContain('<script>');
+        expect($log->description)->not->toContain('</script>');
+        expect($log->description)->toContain("cni_kouadio.jpg");
+    }
 }

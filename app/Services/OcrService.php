@@ -15,16 +15,20 @@ class OcrService
      */
     public function analyze(UploadedFile $file): array
     {
-        $filename = strtolower($file->getClientOriginalName());
+        // Utilisation de Str::ascii et strtolower pour gérer proprement les caractères accentués
+        $filename = strtolower(Str::ascii($file->getClientOriginalName()));
         
         // Simulation intelligente
         $data = $this->getSimulatedData($filename);
+
+        // Sécurisation contre les injections XSS stockées dans le log d'audit
+        $safeName = strip_tags($file->getClientOriginalName());
 
         // Enregistrement dans l'audit log
         AuditLog::create([
             'user_id' => Auth::id(),
             'action' => 'OCR_SCAN',
-            'description' => "Analyse OCR effectuée sur le fichier : {$file->getClientOriginalName()}. Résultat : " . ($data['found'] ? 'Succès' : 'Partiel'),
+            'description' => "Analyse OCR effectuée sur le fichier : {$safeName}. Résultat : " . ($data['found'] ? 'Succès' : 'Partiel'),
             'ip_address' => request()->ip(),
             'user_agent' => request()->userAgent(),
         ]);
