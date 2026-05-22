@@ -147,14 +147,18 @@ class AgentController extends Controller
             'motif_rejet.required' => 'Le motif de rejet est obligatoire.',
             'motif_rejet.min'      => 'Le motif doit contenir au moins 10 caractères.',
         ]);
-
+        // Vérification que le dossier est dans un état qui permet le rejet.
         abort_if(!in_array($demande->statut, ['SOUMIS', 'INSTRUCTION']), 400, 'Ce dossier ne peut pas être rejeté dans son état actuel.');
-
+        
+        // On rejette le dossier en enregistrant le motif de rejet 
+        // pour que le citoyen puisse comprendre la raison du refus et éventuellement corriger sa demande.
+        
         $demande->update([
             'statut'      => 'REJETE',
             'motif_rejet' => $request->input('motif_rejet'),
         ]);
-
+        // Enregistrement de l'action de rejet dans le journal d'audit 
+        // pour assurer la traçabilité et la transparence du processus.
         AuditLog::create([
             'user_id'     => auth()->id(),
             'action'      => 'demande_rejet',
@@ -163,6 +167,8 @@ class AgentController extends Controller
             'user_agent'  => substr($request->userAgent() ?? 'N/A', 0, 255),
         ]);
 
+        // On retourne à la page précédente avec un message de succès indiquant 
+        // que le dossier a été rejeté et que le citoyen sera notifié du motif.
         return back()->with('success', 'Le dossier a été rejeté et le citoyen sera notifié du motif.');
     }
 }

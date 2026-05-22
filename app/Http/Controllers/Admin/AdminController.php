@@ -116,14 +116,24 @@ class AdminController extends Controller
      */
     public function logs(Request $request): View
     {
+
+    // Récupération des paramètres de filtrage et de recherche depuis la requête
+
         $action = $request->input('action', '');
         $search = $request->input('search', '');
 
+    // Construction de la requête pour récupérer les logs d'audit avec les relations utilisateur
+
         $query = AuditLog::with('user')->orderBy('created_at', 'desc');
 
+    // Application des filtres si l'administrateur en a sélectionné
+
         if ($action) {
+            
             $query->where('action', $action);
         }
+    // Le filtre de recherche permet de trouver des logs contenant le terme recherché dans la description,
+    //  l'adresse IP ou le nom de l'utilisateur lié au log.
 
         if ($search) {
             $query->where(function ($q) use ($search) {
@@ -132,7 +142,7 @@ class AdminController extends Controller
                   ->orWhereHas('user', fn($u) => $u->where('name', 'like', "%{$search}%"));
             });
         }
-
+    // Pagination des résultats pour ne pas surcharger la page et permettre une navigation fluide entre les logs.
         $logs = $query->paginate(25)->withQueryString();
 
         // Liste des actions existantes pour le filtre de la vue
@@ -140,7 +150,7 @@ class AdminController extends Controller
             ->distinct()
             ->orderBy('action')
             ->pluck('action');
-
+    // Retour de la vue avec les logs filtrés et les options de filtrage pour l'interface d'administration.
         return view('admin.logs.index', compact('logs', 'actions', 'action', 'search'));
     }
 }

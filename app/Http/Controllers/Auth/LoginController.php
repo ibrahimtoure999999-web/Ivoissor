@@ -81,12 +81,21 @@ class LoginController extends Controller
         // contre les tentatives de connexion non autorisées.
         RateLimiter::hit($throttleKey, 60);
 
+        /// Enregistrement de l'échec de connexion dans le journal d'audit
+        //  pour permettre aux administrateurs de surveiller les tentatives suspectes
+        //  et d'identifier les adresses IP potentiellement malveillantes.
+
         $this->authService->logAudit(
             user: null,
             action: 'login_failed',
             description: 'Échec de connexion pour l\'adresse email : ' . $email,
             ipAddress: $request->ip()
         );
+
+
+        // Retourne à la page de connexion avec un message d'erreur générique  
+        // pour éviter de révéler si l'email existe ou pas dans le système,
+        // ce qui est une bonne pratique de sécurité pour prévenir les attaques de reconnaissance d'utilisateurs.
 
         return back()->withErrors([
             'email' => 'Les identifiants fournis ne correspondent pas à nos enregistrements.',
@@ -98,8 +107,13 @@ class LoginController extends Controller
      */
     public function destroy(Request $request): RedirectResponse
     {
-        $this->authService->logout();
 
+    // Enregistrement de la déconnexion dans le journal d'audit 
+    // pour assurer la traçabilité des sessions utilisateur.
+        $this->authService->logout();
+    // Invalidation de la session pour assurer que toutes les données de session sont effacées 
+    // et que le token CSRF est régénéré pour éviter les attaques de fixation de session.
+       
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
