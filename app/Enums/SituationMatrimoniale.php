@@ -21,10 +21,10 @@ enum SituationMatrimoniale: string
     {
         return 
             [
-                self::CELIBATAIRE->value =>'Célibataire';
-                self::MARIE->value =>'Marié(e)';
-                self::DIVORCE->value =>'Divorcé(e)';
-                self::VEUF->value =>'veuf(ve)';
+                self::CELIBATAIRE->value =>'Célibataire',
+                self::MARIE->value =>'Marié(e)',
+                self::DIVORCE->value =>'Divorcé(e)',
+                self::VEUF->value =>'veuf(ve)',
             ];
     }
 }

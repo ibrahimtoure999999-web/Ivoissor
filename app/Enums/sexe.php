@@ -3,7 +3,7 @@
 declare(strict_types=1);
 namespace App\Enums;
 
-enum sexe: string
+enum Sexe: string
 {
     
     case MASCULIN = 'M';
@@ -21,8 +21,8 @@ enum sexe: string
     {
         return
             [
-                self::MASCULIN->value =>'Masculin';
-                self::FEMININ->value =>'Féminin';
-            ]
+                self::MASCULIN->value =>'Masculin',
+                self::FEMININ->value =>'Féminin',
+            ];
     }
 }

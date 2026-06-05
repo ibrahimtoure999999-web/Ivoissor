@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Commune extends Model
 {
@@ -14,7 +16,7 @@ class Commune extends Model
         'code_commune',       // Code officiel unique ANStat
         'nom_commune',        // Libellé de la commune / ville
         'annee',
-    ]
+    ];
 
     public function SousPrefecture():BelongsTO
     {
@@ -23,6 +25,6 @@ class Commune extends Model
 
     public function Ressortissant():HasMany
     {
-        return $this->HasMany(Ressortissant::class, 'commune_id', $this->getKeyNames());
+        return $this->HasMany(Ressortissant::class, 'commune_id', $this->getKeyName());
     }
 }

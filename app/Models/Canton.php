@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Canton extends Model
 {
@@ -16,7 +18,7 @@ class Canton extends Model
 
     public function GroupeEthnique():BelongsTo
     {
-        return $this->BelongsTo(GroupeEthique::class, 'groupe_ethnique_id', 'id');
+        return $this->BelongsTo(GroupeEthnique::class, 'groupe_ethnique_id', 'id');
     }
 
     public function Tribu():HasMany

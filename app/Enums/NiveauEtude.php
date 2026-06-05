@@ -10,14 +10,14 @@ enum NiveauEtude: string
     case SECONDAIRE = 'Secondaire';
     case SUPERIEUR = 'Superieur';
 
-    public stactic function choices(): array
+    public static function choices(): array
         {
             return
             [
-                self::AUCUN->value =>'Aucun';
-                self::PRIMAIRE->value =>'Primaire';
-                self::SECONDAIRE->value =>'Secondaire';
-                self::SUPERIEUR->value =>'Supérieur';
-            ]
+                self::AUCUN->value =>'Aucun',
+                self::PRIMAIRE->value =>'Primaire',
+                self::SECONDAIRE->value =>'Secondaire',
+                self::SUPERIEUR->value =>'Supérieur',
+            ];
         }
 }
