@@ -1,7 +1,5 @@
 <?php
-
 declare(strict_types=1);
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -13,9 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('groupes_ethniques', function (Blueprint $table) {
+        Schema::create('tribus', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nom')->unique();
+            $table->foreignId('canton_id')->constrained('cantons')->restrictOnDelete();
+            $table->string('nom');
             $table->timestamps();
         });
     }
@@ -25,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('groupes_ethniques');
+        Schema::dropIfExists('tribus');
     }
 };

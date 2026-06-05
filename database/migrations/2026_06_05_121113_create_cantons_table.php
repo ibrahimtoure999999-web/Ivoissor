@@ -13,9 +13,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('groupes_ethniques', function (Blueprint $table) {
+        Schema::create('cantons', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nom')->unique();
+            $table->foreignId('groupe_ethnique_id')->constrained('groupes_ethniques')->restrictOnDelete();
+            $table->string('nom');
             $table->timestamps();
         });
     }
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('groupes_ethniques');
+        Schema::dropIfExists('cantons');
     }
 };
