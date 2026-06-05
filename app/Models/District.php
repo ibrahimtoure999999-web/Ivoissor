@@ -13,7 +13,7 @@ class District extends Model
         'code_district',
         'nom_district',
         'annee',
-    ]
+    ];
 
     /**
      * Définition de la relation : Un District possède plusieurs Régions.
