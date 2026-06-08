@@ -36,14 +36,14 @@ class Ressortissant extends Model
     ];
 
 
-    // Définition des casts pour les attributs énumérés et la date de naissance 
+   // Indique le type de chaque colonne (par exemple : transforme une date en texte en vrai objet Date) 
     protected function casts(): array
     {
         return [
             'sexe' => Sexe::class,
             'situation_matrimoniale' => SituationMatrimoniale::class,
             'niveau_etude' => NiveauEtude::class,
-            'date_naissance' => 'date', // Convertit automatiquement la chaîne en objet Carbon Date
+            'date_naissance' => 'date', 
         ];
     }
 

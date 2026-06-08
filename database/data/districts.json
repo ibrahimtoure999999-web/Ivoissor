@@ -1,0 +1,15 @@
+[
+    { "code_district": "DIST_ABJ", "nom_district": "District Autonome d'Abidjan", "annee": 2011 },
+    { "code_district": "DIST_YAK", "nom_district": "District Autonome de Yamoussoukro", "annee": 2011 },
+    { "code_district": "DIST_BAS", "nom_district": "District Bas-Sassandra", "annee": 2011 },
+    { "code_district": "DIST_COM", "nom_district": "District Comoé", "annee": 2011 },
+    { "code_district": "DIST_DEN", "nom_district": "District Denguélé", "annee": 2011 },
+    { "code_district": "DIST_GOH", "nom_district": "District Gôh-Djiboua", "annee": 2011 },
+    { "code_district": "DIST_LAG", "nom_district": "District Lagunes", "annee": 2011 },
+    { "code_district": "DIST_MON", "nom_district": "District Montagnes", "annee": 2011 },
+    { "code_district": "DIST_SAB", "nom_district": "District Sassandra-Marahoué", "annee": 2011 },
+    { "code_district": "DIST_SAV", "nom_district": "District Savanes", "annee": 2011 },
+    { "code_district": "DIST_VAL", "nom_district": "District Vallée du Bandama", "annee": 2011 },
+    { "code_district": "DIST_WOR", "nom_district": "District Woroba", "annee": 2011 },
+    { "code_district": "DIST_ZAN", "nom_district": "District Zanzan", "annee": 2011 }
+]
