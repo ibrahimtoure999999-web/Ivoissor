@@ -34,6 +34,13 @@ return new class extends Migration
             $table->string('telephone')->nullable();
             $table->string('email')->nullable();
 
+            // Résidence (1-1 inline) - AJOUTÉS
+            $table->string('pays_residence')->nullable();
+            $table->string('ville_residence')->nullable();
+            $table->string('quartier_residence')->nullable();
+            $table->text('adresse_complete')->nullable();
+            $table->foreignId('village_residence_id')->nullable()->constrained('villages')->nullOnDelete();
+
             // Liaison vers la commune de résidence/rattachement
             $table->foreignId('commune_id')->constrained('communes')->restrictOnDelete();
 

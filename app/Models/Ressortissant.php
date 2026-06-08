@@ -25,6 +25,12 @@ class Ressortissant extends Model
         'profession',
         'telephone',
         'email',
+        'famille',
+        'pays_residence',
+        'ville_residence',
+        'quartier_residence',
+        'adresse_complete',
+        'village_residence_id',
         'commune_id',
         'village_id',
     ];
@@ -41,6 +47,10 @@ class Ressortissant extends Model
         ];
     }
 
+    public function villageResidence(): BelongsTo
+    {
+        return $this->belongsTo(Village::class, 'village_residence_id', 'id');
+    }
 
     public function commune(): BelongsTo
     {
