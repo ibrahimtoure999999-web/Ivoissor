@@ -14,7 +14,31 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('ressortissants', function (Blueprint $table) {
-            $table->id();
+           // Identifiant technique unique (Clé primaire auto-incrémentée)
+            $table->bigIncrements('id');
+            $table->string('matricule')->unique();
+
+            // Informations d'Identité
+            $table->string('nom');
+            $table->string('prenoms');
+            $table->string('sexe');
+
+            // État civil et Éducation
+            $table->date('date_naissance');
+            $table->string('lieu_naissance');
+            $table->string('situation_matrimoniale'); // Géré par l'Enum SituationMatrimoniale
+            $table->string('niveau_etude');  // Géré par l'Enum NiveauEtude
+
+            // Coordonnées et Profession (Optionnels / Nullable)
+            $table->string('profession')->nullable();
+            $table->string('telephone')->nullable();
+            $table->string('email')->nullable();
+
+            // Liaison vers la commune de résidence/rattachement
+            $table->foreignId('commune_id')->constrained('communes')->restrictOnDelete();
+
+            //Liaison vers le village d'origine
+            $table->foreignId('village_id')->constrained('villages')->restrictOnDelete();
             $table->timestamps();
         });
     }
