@@ -15,8 +15,8 @@ class GroupeEthnique extends Model
         'nom',
     ];
 
-    public function Canton(): HasMany
+    public function canton(): HasMany
     {
-        return $this->HasMany(Canton::class, 'groupe_ethnique_id', $this->getKeyName());
+        return $this->hasMany(Canton::class, 'groupe_ethnique_id', $this->getKeyName());
     }
 }

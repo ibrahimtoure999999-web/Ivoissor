@@ -16,14 +16,14 @@ class Canton extends Model
         'nom',
     ];
 
-    public function GroupeEthnique():BelongsTo
+    public function groupeEthnique():BelongsTo
     {
-        return $this->BelongsTo(GroupeEthnique::class, 'groupe_ethnique_id', 'id');
+        return $this->belongsTo(GroupeEthnique::class, 'groupe_ethnique_id', 'id');
     }
 
-    public function Tribu():HasMany
+    public function tribu():HasMany
     {
-        return $this->HasMany(Tribu::class, 'canton_id', $this->getKeyName());
+        return $this->hasMany(Tribu::class, 'canton_id', $this->getKeyName());
     }
 
 }

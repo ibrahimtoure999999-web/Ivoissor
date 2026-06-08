@@ -1,8 +1,12 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Village extends Model
 {
@@ -12,13 +16,13 @@ class Village extends Model
         'nom',
     ];
 
-    public function Tribu(): BelongsTo
+    public function tribu(): BelongsTo
     {
-        return $this->BelongsTo(Tribu::class, 'tribu_id', 'id');
+        return $this->belongsTo(Tribu::class, 'tribu_id', 'id');
     }
 
     public function ressortissants(): HasMany
     {
-        return $this->HasMany(Ressortissant::class, 'village_id', $this->getKeyName());
+        return $this->hasMany(Ressortissant::class, 'village_id', $this->getKeyName());
     }
 }

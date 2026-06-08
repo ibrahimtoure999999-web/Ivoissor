@@ -21,7 +21,7 @@ class Region extends Model
     {
         // 'belongsTo' indique que la clé 'district_id' se trouve dans notre table actuelle 'regions'
         // Nous lions cette clé au modèle District
-        return $this->BelongsTo(district::class, 'district_id', 'id');
+        return $this->belongsTo(District::class, 'district_id', 'id');
     }
 
     /**

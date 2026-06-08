@@ -24,6 +24,6 @@ class District extends Model
 
     public function regions():HasMany
     {
-        return $this->HasMany(Region::class, 'district_id', $this->getKeyName());
+        return $this->hasMany(Region::class, 'district_id', $this->getKeyName());
     }
 }

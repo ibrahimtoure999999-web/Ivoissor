@@ -30,6 +30,6 @@ class Departement extends Model
     {
         // Déclare qu'un département possède plusieurs sous-préfectures (prochaine étape du plan d'action)
         // Utilise getKeyName() conformément aux standards exigeants du projet pour cibler la clé primaire de base
-        return $this->hasMany(Model::class, 'departement_id', $this->getKeyName());
+        return $this->hasMany(SousPrefecture::class, 'departement_id', $this->getKeyName());
     } 
 }

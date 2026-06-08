@@ -18,13 +18,13 @@ class Commune extends Model
         'annee',
     ];
 
-    public function SousPrefecture():BelongsTO
+    public function sousPrefecture():BelongsTo
     {
-        return $this->BelongsTO(SousPrefecture::class, 'sous_prefecture_id', 'id');
+        return $this->belongsTo(SousPrefecture::class, 'sous_prefecture_id', 'id');
     }
 
-    public function Ressortissant():HasMany
+    public function ressortissants():HasMany
     {
-        return $this->HasMany(Ressortissant::class, 'commune_id', $this->getKeyName());
+        return $this->hasMany(Ressortissant::class, 'commune_id', $this->getKeyName());
     }
 }
