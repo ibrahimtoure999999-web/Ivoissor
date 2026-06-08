@@ -3,6 +3,10 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Enums\NiveauEtude;
+use App\Enums\Sexe;
+use App\Enums\SituationMatrimoniale;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Ressortissant extends Model
 {
@@ -23,6 +27,8 @@ class Ressortissant extends Model
         'village_id',
     ];
 
+
+    // Définition des casts pour les attributs énumérés et la date de naissance 
     protected function casts(): array
     {
         return [
