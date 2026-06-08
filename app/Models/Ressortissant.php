@@ -1,11 +1,13 @@
 <?php
-
+declare(strict_types=1);
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use App\Enums\NiveauEtude;
 use App\Enums\Sexe;
 use App\Enums\SituationMatrimoniale;
+
+// Importation des classes nécessaires pour les relations
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Ressortissant extends Model
@@ -40,12 +42,12 @@ class Ressortissant extends Model
     }
 
 
-    public function commune()
+    public function commune(): BelongsTo
     {
         return $this->belongsTo(Commune::class, 'commune_id', 'id');
     }
 
-    public function village()
+    public function village() : BelongsTo
     {
         return $this->belongsTo(Village::class, 'village_id', 'id');
     }
