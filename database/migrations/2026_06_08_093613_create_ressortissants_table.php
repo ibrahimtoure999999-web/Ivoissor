@@ -22,12 +22,13 @@ return new class extends Migration
             $table->string('nom');
             $table->string('prenoms');
             $table->string('sexe');
+            $table->string('famille')->nullable();
 
-            // État civil et Éducation
-            $table->date('date_naissance');
-            $table->string('lieu_naissance');
-            $table->string('situation_matrimoniale'); // Géré par l'Enum SituationMatrimoniale
-            $table->string('niveau_etude');  // Géré par l'Enum NiveauEtude
+            // État civil et Éducation (rendus nullables)
+            $table->date('date_naissance')->nullable();
+            $table->string('lieu_naissance')->nullable();
+            $table->string('situation_matrimoniale')->nullable(); // Géré par l'Enum SituationMatrimoniale
+            $table->string('niveau_etude')->nullable();  // Géré par l'Enum NiveauEtude
 
             // Coordonnées et Profession (Optionnels / Nullable)
             $table->string('profession')->nullable();
@@ -42,10 +43,10 @@ return new class extends Migration
             $table->foreignId('village_residence_id')->nullable()->constrained('villages')->nullOnDelete();
 
             // Liaison vers la commune de résidence/rattachement
-            $table->foreignId('commune_id')->constrained('communes')->restrictOnDelete();
+            $table->foreignId('commune_id')->nullable()->constrained('communes')->nullOnDelete();
 
             //Liaison vers le village d'origine
-            $table->foreignId('village_id')->constrained('villages')->restrictOnDelete();
+            $table->foreignId('village_id')->nullable()->constrained('villages')->nullOnDelete();
             $table->timestamps();
         });
     }
