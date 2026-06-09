@@ -17,7 +17,7 @@ enum Sexe: string
      * @return array<string, string>
      */
 
-    pubic static function choices(): array
+    public static function choices(): array
     {
         return
             [

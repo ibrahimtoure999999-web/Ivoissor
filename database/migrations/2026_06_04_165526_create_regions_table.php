@@ -24,7 +24,8 @@ return new class extends Migration
             // 'restrictOnDelete' interdit de supprimer un district tant qu'il a des régions liées
             $table->foreignId('district_id')->constrained('districts')->restrictOnDelete();
             $table->string('code_reg')->unique();
-            $table->string('nom_reg');            
+            $table->string('nom_reg'); 
+            $table->unsignedSmallInteger('annee')->nullable();           
             $table->timestamps();
         });
     }

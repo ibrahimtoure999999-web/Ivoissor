@@ -37,7 +37,7 @@ class DatabaseSeeder extends Seeder
                 // Si ce code existe déjà en base, on modifie la ligne. Sinon, on en crée une nouvelle.
                 ['code_district' => $district['code_district']],
 
-                // Voici les données à enregistrer
+                // les données à enregistrer
                 [
                     'nom_district' => $district['nom_district'],
                     'annee'        => $district['annee'] ?? null,

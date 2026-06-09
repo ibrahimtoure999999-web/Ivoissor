@@ -21,7 +21,7 @@ class Canton extends Model
         return $this->belongsTo(GroupeEthnique::class, 'groupe_ethnique_id', 'id');
     }
 
-    public function tribu():HasMany
+    public function tribus():HasMany
     {
         return $this->hasMany(Tribu::class, 'canton_id', $this->getKeyName());
     }
