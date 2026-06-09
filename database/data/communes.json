@@ -1,0 +1,3908 @@
+[
+    {
+        "code_commune": "COM_002_02",
+        "nom_commune": "Anyama",
+        "cod_sp": "SP_002_02",
+        "annee": 2021,
+        "latitude": 5.50053,
+        "longitude": -4.12029,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_002_03",
+        "nom_commune": "Bingerville",
+        "cod_sp": "SP_002_03",
+        "annee": 2021,
+        "latitude": 5.35566,
+        "longitude": -4.01217,
+        "population": 204656
+    },
+    {
+        "code_commune": "COM_002_04",
+        "nom_commune": "Brofodoume",
+        "cod_sp": "SP_002_04",
+        "annee": 2021,
+        "latitude": 5.51358,
+        "longitude": -3.93072,
+        "population": 3387
+    },
+    {
+        "code_commune": "COM_002_05",
+        "nom_commune": "Songon",
+        "cod_sp": "SP_002_05",
+        "annee": 2021,
+        "latitude": 5.3196,
+        "longitude": -4.25415,
+        "population": 14977
+    },
+    {
+        "code_commune": "COM_002_11",
+        "nom_commune": "Abobo",
+        "cod_sp": "SP_002_11",
+        "annee": 2021,
+        "latitude": 5.41846,
+        "longitude": -4.01997,
+        "population": 1340083
+    },
+    {
+        "code_commune": "COM_002_12",
+        "nom_commune": "Adjame",
+        "cod_sp": "SP_002_12",
+        "annee": 2021,
+        "latitude": 5.3648,
+        "longitude": -4.02366,
+        "population": 340892
+    },
+    {
+        "code_commune": "COM_002_13",
+        "nom_commune": "Attecoube",
+        "cod_sp": "SP_002_13",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_002_14",
+        "nom_commune": "Cocody",
+        "cod_sp": "SP_002_14",
+        "annee": 2021,
+        "latitude": 5.34993,
+        "longitude": -3.98169,
+        "population": 692583
+    },
+    {
+        "code_commune": "COM_002_15",
+        "nom_commune": "Koumassi",
+        "cod_sp": "SP_002_15",
+        "annee": 2021,
+        "latitude": 5.29965,
+        "longitude": -3.95292,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_002_16",
+        "nom_commune": "Marcory",
+        "cod_sp": "SP_002_16",
+        "annee": 2021,
+        "latitude": 5.31198,
+        "longitude": -3.99363,
+        "population": 214061
+    },
+    {
+        "code_commune": "COM_002_17",
+        "nom_commune": "Plateau",
+        "cod_sp": "SP_002_17",
+        "annee": 2021,
+        "latitude": 5.32549,
+        "longitude": -4.02014,
+        "population": 7186
+    },
+    {
+        "code_commune": "COM_002_18",
+        "nom_commune": "Port-Bouet",
+        "cod_sp": "SP_002_18",
+        "annee": 2021,
+        "latitude": 5.25677,
+        "longitude": -3.96299,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_002_19",
+        "nom_commune": "Treichville",
+        "cod_sp": "SP_002_19",
+        "annee": 2021,
+        "latitude": 5.30147,
+        "longitude": -4.00518,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_002_20",
+        "nom_commune": "Yopougon",
+        "cod_sp": "SP_002_20",
+        "annee": 2021,
+        "latitude": 5.33472,
+        "longitude": -4.07,
+        "population": 1375000
+    },
+    {
+        "code_commune": "COM_017_01",
+        "nom_commune": "Bediala",
+        "cod_sp": "SP_017_01",
+        "annee": 2021,
+        "latitude": 7.16008,
+        "longitude": -6.30642,
+        "population": 22419
+    },
+    {
+        "code_commune": "COM_017_02",
+        "nom_commune": "Daloa",
+        "cod_sp": "SP_017_02",
+        "annee": 2021,
+        "latitude": 6.86219,
+        "longitude": -6.42071,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_017_04",
+        "nom_commune": "Gboguhe",
+        "cod_sp": "SP_017_04",
+        "annee": 2021,
+        "latitude": 6.75728,
+        "longitude": -6.58371,
+        "population": 4263
+    },
+    {
+        "code_commune": "COM_017_05",
+        "nom_commune": "Gonate",
+        "cod_sp": "SP_017_05",
+        "annee": 2021,
+        "latitude": 6.90418,
+        "longitude": -6.24347,
+        "population": 24838
+    },
+    {
+        "code_commune": "COM_017_06",
+        "nom_commune": "Zaibo",
+        "cod_sp": "SP_017_06",
+        "annee": 2021,
+        "latitude": 6.9893,
+        "longitude": -6.66673,
+        "population": 17406
+    },
+    {
+        "code_commune": "COM_027_01",
+        "nom_commune": "Boguedia",
+        "cod_sp": "SP_027_01",
+        "annee": 2021,
+        "latitude": 6.63434,
+        "longitude": -6.51915,
+        "population": 6711
+    },
+    {
+        "code_commune": "COM_027_02",
+        "nom_commune": "Iboguhe",
+        "cod_sp": "SP_027_02",
+        "annee": 2021,
+        "latitude": 6.5481,
+        "longitude": -6.84419,
+        "population": 7280
+    },
+    {
+        "code_commune": "COM_027_03",
+        "nom_commune": "Issia",
+        "cod_sp": "SP_027_03",
+        "annee": 2021,
+        "latitude": 6.47783,
+        "longitude": -6.63211,
+        "population": 126252
+    },
+    {
+        "code_commune": "COM_027_04",
+        "nom_commune": "Nahio",
+        "cod_sp": "SP_027_04",
+        "annee": 2021,
+        "latitude": 6.38423,
+        "longitude": -6.22736,
+        "population": 4240
+    },
+    {
+        "code_commune": "COM_027_05",
+        "nom_commune": "Namane",
+        "cod_sp": "SP_027_05",
+        "annee": 2021,
+        "latitude": 6.42177,
+        "longitude": -6.68203,
+        "population": 8064
+    },
+    {
+        "code_commune": "COM_027_06",
+        "nom_commune": "Saioua",
+        "cod_sp": "SP_027_06",
+        "annee": 2021,
+        "latitude": 6.48535,
+        "longitude": -6.278,
+        "population": 34860
+    },
+    {
+        "code_commune": "COM_027_07",
+        "nom_commune": "Tapeguia",
+        "cod_sp": "SP_027_07",
+        "annee": 2021,
+        "latitude": 6.38718,
+        "longitude": -6.51022,
+        "population": 3187
+    },
+    {
+        "code_commune": "COM_048_01",
+        "nom_commune": "Bazra-Nattis",
+        "cod_sp": "SP_048_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_048_02",
+        "nom_commune": "Dananon",
+        "cod_sp": "SP_048_02",
+        "annee": 2021,
+        "latitude": 7.61072,
+        "longitude": -6.36333,
+        "population": 5069
+    },
+    {
+        "code_commune": "COM_048_04",
+        "nom_commune": "Ketro Bassam",
+        "cod_sp": "SP_048_04",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_048_05",
+        "nom_commune": "Seitifla",
+        "cod_sp": "SP_048_05",
+        "annee": 2021,
+        "latitude": 7.43926,
+        "longitude": -6.71813,
+        "population": 10422
+    },
+    {
+        "code_commune": "COM_048_06",
+        "nom_commune": "Vavoua",
+        "cod_sp": "SP_048_06",
+        "annee": 2021,
+        "latitude": 7.28802,
+        "longitude": -6.52915,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_095_01",
+        "nom_commune": "Domangbeu",
+        "cod_sp": "SP_095_01",
+        "annee": 2021,
+        "latitude": 6.98467,
+        "longitude": -7.01882,
+        "population": 4394
+    },
+    {
+        "code_commune": "COM_095_02",
+        "nom_commune": "Gregbeu",
+        "cod_sp": "SP_095_02",
+        "annee": 2021,
+        "latitude": 6.81915,
+        "longitude": -6.77763,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_095_03",
+        "nom_commune": "Guessabo",
+        "cod_sp": "SP_095_03",
+        "annee": 2021,
+        "latitude": 6.74859,
+        "longitude": -7.01689,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_095_04",
+        "nom_commune": "Zoukougbeu",
+        "cod_sp": "SP_095_04",
+        "annee": 2021,
+        "latitude": 6.76229,
+        "longitude": -6.8638,
+        "population": 15375
+    },
+    {
+        "code_commune": "COM_029_01",
+        "nom_commune": "Dassoungboho",
+        "cod_sp": "SP_029_01",
+        "annee": 2021,
+        "latitude": 9.38861,
+        "longitude": -5.78584,
+        "population": 1764
+    },
+    {
+        "code_commune": "COM_029_02",
+        "nom_commune": "Kanoroba",
+        "cod_sp": "SP_029_02",
+        "annee": 2021,
+        "latitude": 9.11088,
+        "longitude": -6.12238,
+        "population": 8735
+    },
+    {
+        "code_commune": "COM_029_04",
+        "nom_commune": "Kiemou",
+        "cod_sp": "SP_029_04",
+        "annee": 2021,
+        "latitude": 9.0605,
+        "longitude": -5.54983,
+        "population": 5065
+    },
+    {
+        "code_commune": "COM_029_06",
+        "nom_commune": "Korhogo",
+        "cod_sp": "SP_029_06",
+        "annee": 2021,
+        "latitude": 9.46442,
+        "longitude": -5.73745,
+        "population": 440926
+    },
+    {
+        "code_commune": "COM_029_07",
+        "nom_commune": "Kombolokoura",
+        "cod_sp": "SP_029_07",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_029_08",
+        "nom_commune": "Komborodougou",
+        "cod_sp": "SP_029_08",
+        "annee": 2021,
+        "latitude": 9.32634,
+        "longitude": -5.42922,
+        "population": 5611
+    },
+    {
+        "code_commune": "COM_029_09",
+        "nom_commune": "Lataha",
+        "cod_sp": "SP_029_09",
+        "annee": 2021,
+        "latitude": 9.56724,
+        "longitude": -5.59098,
+        "population": 7379
+    },
+    {
+        "code_commune": "COM_029_10",
+        "nom_commune": "Nafoun",
+        "cod_sp": "SP_029_10",
+        "annee": 2021,
+        "latitude": 9.33472,
+        "longitude": -6.21167,
+        "population": 2956
+    },
+    {
+        "code_commune": "COM_029_11",
+        "nom_commune": "Napie",
+        "cod_sp": "SP_029_11",
+        "annee": 2021,
+        "latitude": 9.28868,
+        "longitude": -5.58324,
+        "population": 7627
+    },
+    {
+        "code_commune": "COM_029_12",
+        "nom_commune": "N'Ganon",
+        "cod_sp": "SP_029_12",
+        "annee": 2021,
+        "latitude": 9.68176,
+        "longitude": -5.99172,
+        "population": 4599
+    },
+    {
+        "code_commune": "COM_029_13",
+        "nom_commune": "Niofoin",
+        "cod_sp": "SP_029_13",
+        "annee": 2021,
+        "latitude": 9.615,
+        "longitude": -6.07778,
+        "population": 1123
+    },
+    {
+        "code_commune": "COM_029_14",
+        "nom_commune": "Sirasso",
+        "cod_sp": "SP_029_14",
+        "annee": 2021,
+        "latitude": 9.23271,
+        "longitude": -6.07197,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_029_15",
+        "nom_commune": "Sohouo",
+        "cod_sp": "SP_029_15",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_075_02",
+        "nom_commune": "Dikodougou",
+        "cod_sp": "SP_075_02",
+        "annee": 2021,
+        "latitude": 8.94574,
+        "longitude": -5.85138,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_075_03",
+        "nom_commune": "Guiembe",
+        "cod_sp": "SP_075_03",
+        "annee": 2021,
+        "latitude": 9.23298,
+        "longitude": -5.71277,
+        "population": 6751
+    },
+    {
+        "code_commune": "COM_090_02",
+        "nom_commune": "Kagbolodougou",
+        "cod_sp": "SP_090_02",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_090_04",
+        "nom_commune": "Sinematiali",
+        "cod_sp": "SP_090_04",
+        "annee": 2021,
+        "latitude": 9.55833,
+        "longitude": -5.39167,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_103_02",
+        "nom_commune": "Katiali",
+        "cod_sp": "SP_103_02",
+        "annee": 2021,
+        "latitude": 9.90141,
+        "longitude": -6.12638,
+        "population": 942
+    },
+    {
+        "code_commune": "COM_103_03",
+        "nom_commune": "Katogo",
+        "cod_sp": "SP_103_03",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_103_04",
+        "nom_commune": "M'Bengue",
+        "cod_sp": "SP_103_04",
+        "annee": 2021,
+        "latitude": 10.00244,
+        "longitude": -5.90037,
+        "population": 28832
+    },
+    {
+        "code_commune": "COM_008_01",
+        "nom_commune": "Ando-Kekrenou",
+        "cod_sp": "SP_008_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_008_02",
+        "nom_commune": "Beoumi",
+        "cod_sp": "SP_008_02",
+        "annee": 2021,
+        "latitude": 7.76413,
+        "longitude": -5.52982,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_008_03",
+        "nom_commune": "Bodokro",
+        "cod_sp": "SP_008_03",
+        "annee": 2021,
+        "latitude": 7.86144,
+        "longitude": -5.47745,
+        "population": 5365
+    },
+    {
+        "code_commune": "COM_008_07",
+        "nom_commune": "Kondrobo",
+        "cod_sp": "SP_008_07",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_013_01",
+        "nom_commune": "Bouake",
+        "cod_sp": "SP_013_01",
+        "annee": 2021,
+        "latitude": 5.34999,
+        "longitude": -3.97881,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_013_03",
+        "nom_commune": "Brobo",
+        "cod_sp": "SP_013_03",
+        "annee": 2021,
+        "latitude": 7.63258,
+        "longitude": -4.84949,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_013_05",
+        "nom_commune": "Mamini",
+        "cod_sp": "SP_013_05",
+        "annee": 2021,
+        "latitude": 6.52308,
+        "longitude": -3.80314,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_036_03",
+        "nom_commune": "Sakassou",
+        "cod_sp": "SP_036_03",
+        "annee": 2021,
+        "latitude": 7.42909,
+        "longitude": -5.34957,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_036_04",
+        "nom_commune": "Toumodi-Sakassou",
+        "cod_sp": "SP_036_04",
+        "annee": 2021,
+        "latitude": 7.39866,
+        "longitude": -5.56448,
+        "population": 3146
+    },
+    {
+        "code_commune": "COM_074_01",
+        "nom_commune": "Botro",
+        "cod_sp": "SP_074_01",
+        "annee": 2021,
+        "latitude": 7.83533,
+        "longitude": -5.34288,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_074_03",
+        "nom_commune": "Krofoinsou",
+        "cod_sp": "SP_074_03",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_074_04",
+        "nom_commune": "Languibonou",
+        "cod_sp": "SP_074_04",
+        "annee": 2021,
+        "latitude": 7.70039,
+        "longitude": -5.26249,
+        "population": 1411
+    },
+    {
+        "code_commune": "COM_001_01",
+        "nom_commune": "Abengourou",
+        "cod_sp": "SP_001_01",
+        "annee": 2021,
+        "latitude": 6.66667,
+        "longitude": -3.47083,
+        "population": 430539
+    },
+    {
+        "code_commune": "COM_001_02",
+        "nom_commune": "Amelekia",
+        "cod_sp": "SP_001_02",
+        "annee": 2021,
+        "latitude": 6.83036,
+        "longitude": -3.57522,
+        "population": 11192
+    },
+    {
+        "code_commune": "COM_001_03",
+        "nom_commune": "Aniassue",
+        "cod_sp": "SP_001_03",
+        "annee": 2021,
+        "latitude": 6.65368,
+        "longitude": -3.68103,
+        "population": 12088
+    },
+    {
+        "code_commune": "COM_001_04",
+        "nom_commune": "Ebilassokro",
+        "cod_sp": "SP_001_04",
+        "annee": 2021,
+        "latitude": 6.37917,
+        "longitude": -3.34722,
+        "population": 18530
+    },
+    {
+        "code_commune": "COM_001_05",
+        "nom_commune": "Niable",
+        "cod_sp": "SP_001_05",
+        "annee": 2021,
+        "latitude": 6.15422,
+        "longitude": -5.71373,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_001_06",
+        "nom_commune": "Yakasse-Feyasse",
+        "cod_sp": "SP_001_06",
+        "annee": 2021,
+        "latitude": 6.9557,
+        "longitude": -3.4126,
+        "population": 9934
+    },
+    {
+        "code_commune": "COM_001_07",
+        "nom_commune": "Zaranou",
+        "cod_sp": "SP_001_07",
+        "annee": 2021,
+        "latitude": 6.4265,
+        "longitude": -3.36171,
+        "population": 12116
+    },
+    {
+        "code_commune": "COM_006_01",
+        "nom_commune": "Agnibilekrou",
+        "cod_sp": "SP_006_01",
+        "annee": 2021,
+        "latitude": 7.13113,
+        "longitude": -3.20415,
+        "population": 63015
+    },
+    {
+        "code_commune": "COM_006_02",
+        "nom_commune": "Akoboissue",
+        "cod_sp": "SP_006_02",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_006_03",
+        "nom_commune": "Dame",
+        "cod_sp": "SP_006_03",
+        "annee": 2021,
+        "latitude": 7.07085,
+        "longitude": -3.14883,
+        "population": 12543
+    },
+    {
+        "code_commune": "COM_006_04",
+        "nom_commune": "Duffrebo",
+        "cod_sp": "SP_006_04",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_006_05",
+        "nom_commune": "Tanguelan",
+        "cod_sp": "SP_006_05",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_073_01",
+        "nom_commune": "Bettie",
+        "cod_sp": "SP_073_01",
+        "annee": 2021,
+        "latitude": 6.07568,
+        "longitude": -3.40846,
+        "population": 10960
+    },
+    {
+        "code_commune": "COM_073_02",
+        "nom_commune": "Diamarakro",
+        "cod_sp": "SP_073_02",
+        "annee": 2021,
+        "latitude": 6.23681,
+        "longitude": -3.32006,
+        "population": 7102
+    },
+    {
+        "code_commune": "COM_009_01",
+        "nom_commune": "Biankouma",
+        "cod_sp": "SP_009_01",
+        "annee": 2021,
+        "latitude": 7.71287,
+        "longitude": -7.70848,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_009_02",
+        "nom_commune": "Blapleu",
+        "cod_sp": "SP_009_02",
+        "annee": 2021,
+        "latitude": 7.247,
+        "longitude": -8.01865,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_009_03",
+        "nom_commune": "Gbangbegouine",
+        "cod_sp": "SP_009_03",
+        "annee": 2021,
+        "latitude": 7.13378,
+        "longitude": -7.76876,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_009_04",
+        "nom_commune": "Gbonne",
+        "cod_sp": "SP_009_04",
+        "annee": 2021,
+        "latitude": 7.53116,
+        "longitude": -7.41275,
+        "population": 4285
+    },
+    {
+        "code_commune": "COM_009_05",
+        "nom_commune": "Gouine",
+        "cod_sp": "SP_009_05",
+        "annee": 2021,
+        "latitude": 7.71628,
+        "longitude": -7.41383,
+        "population": 3054
+    },
+    {
+        "code_commune": "COM_009_06",
+        "nom_commune": "Kpata",
+        "cod_sp": "SP_009_06",
+        "annee": 2021,
+        "latitude": 7.71913,
+        "longitude": -7.54581,
+        "population": 2048
+    },
+    {
+        "code_commune": "COM_018_01",
+        "nom_commune": "Daleu",
+        "cod_sp": "SP_018_01",
+        "annee": 2021,
+        "latitude": 7.51085,
+        "longitude": -8.10603,
+        "population": 3146
+    },
+    {
+        "code_commune": "COM_018_02",
+        "nom_commune": "Danane",
+        "cod_sp": "SP_018_02",
+        "annee": 2021,
+        "latitude": 7.25957,
+        "longitude": -8.15498,
+        "population": 78614
+    },
+    {
+        "code_commune": "COM_018_03",
+        "nom_commune": "Gbon-Houye",
+        "cod_sp": "SP_018_03",
+        "annee": 2021,
+        "latitude": 7.42396,
+        "longitude": -8.33997,
+        "population": 1206
+    },
+    {
+        "code_commune": "COM_018_04",
+        "nom_commune": "Kouan-Houle",
+        "cod_sp": "SP_018_04",
+        "annee": 2021,
+        "latitude": 7.39279,
+        "longitude": -8.26093,
+        "population": 6406
+    },
+    {
+        "code_commune": "COM_018_05",
+        "nom_commune": "Mahapleu",
+        "cod_sp": "SP_018_05",
+        "annee": 2021,
+        "latitude": 7.22474,
+        "longitude": -7.93118,
+        "population": 19342
+    },
+    {
+        "code_commune": "COM_018_06",
+        "nom_commune": "Seileu",
+        "cod_sp": "SP_018_06",
+        "annee": 2021,
+        "latitude": 7.09628,
+        "longitude": -8.17351,
+        "population": 3353
+    },
+    {
+        "code_commune": "COM_018_07",
+        "nom_commune": "Zonneu",
+        "cod_sp": "SP_018_07",
+        "annee": 2021,
+        "latitude": 7.17144,
+        "longitude": -8.06675,
+        "population": 2543
+    },
+    {
+        "code_commune": "COM_031_01",
+        "nom_commune": "Bogouine",
+        "cod_sp": "SP_031_01",
+        "annee": 2021,
+        "latitude": 7.2576,
+        "longitude": -7.59619,
+        "population": 3200
+    },
+    {
+        "code_commune": "COM_031_03",
+        "nom_commune": "Gbangbegouine-Yati",
+        "cod_sp": "SP_031_03",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_031_04",
+        "nom_commune": "Logouale",
+        "cod_sp": "SP_031_04",
+        "annee": 2021,
+        "latitude": 7.23696,
+        "longitude": -7.77916,
+        "population": 1195
+    },
+    {
+        "code_commune": "COM_031_06",
+        "nom_commune": "Podiagouine",
+        "cod_sp": "SP_031_06",
+        "annee": 2021,
+        "latitude": 7.14984,
+        "longitude": -7.74593,
+        "population": 2844
+    },
+    {
+        "code_commune": "COM_031_07",
+        "nom_commune": "Sandougou-Soba",
+        "cod_sp": "SP_031_07",
+        "annee": 2021,
+        "latitude": 7.60098,
+        "longitude": -7.47919,
+        "population": 2483
+    },
+    {
+        "code_commune": "COM_031_08",
+        "nom_commune": "Sangouine",
+        "cod_sp": "SP_031_08",
+        "annee": 2021,
+        "latitude": 7.27472,
+        "longitude": -7.77944,
+        "population": 10313
+    },
+    {
+        "code_commune": "COM_031_09",
+        "nom_commune": "Yapleu",
+        "cod_sp": "SP_031_09",
+        "annee": 2021,
+        "latitude": 7.09056,
+        "longitude": -7.71028,
+        "population": 8519
+    },
+    {
+        "code_commune": "COM_031_11",
+        "nom_commune": "Ziogouine",
+        "cod_sp": "SP_031_11",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_066_01",
+        "nom_commune": "Banneu",
+        "cod_sp": "SP_066_01",
+        "annee": 2021,
+        "latitude": 7.07343,
+        "longitude": -8.25311,
+        "population": 5830
+    },
+    {
+        "code_commune": "COM_066_02",
+        "nom_commune": "Bin-Houye",
+        "cod_sp": "SP_066_02",
+        "annee": 2021,
+        "latitude": 6.78241,
+        "longitude": -8.31311,
+        "population": 9879
+    },
+    {
+        "code_commune": "COM_066_03",
+        "nom_commune": "Goulaleu",
+        "cod_sp": "SP_066_03",
+        "annee": 2021,
+        "latitude": 6.70309,
+        "longitude": -8.36241,
+        "population": 2552
+    },
+    {
+        "code_commune": "COM_066_04",
+        "nom_commune": "Teapleu",
+        "cod_sp": "SP_066_04",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_066_05",
+        "nom_commune": "Yelleu",
+        "cod_sp": "SP_066_05",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_066_06",
+        "nom_commune": "Zouan-Hounien",
+        "cod_sp": "SP_066_06",
+        "annee": 2021,
+        "latitude": 6.86979,
+        "longitude": -8.2614,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_106_01",
+        "nom_commune": "Sipilou",
+        "cod_sp": "SP_106_01",
+        "annee": 2021,
+        "latitude": 7.8645,
+        "longitude": -8.10143,
+        "population": 7395
+    },
+    {
+        "code_commune": "COM_106_02",
+        "nom_commune": "Yorodougou",
+        "cod_sp": "SP_106_02",
+        "annee": 2021,
+        "latitude": 7.78356,
+        "longitude": -7.88024,
+        "population": 5996
+    },
+    {
+        "code_commune": "COM_049_01",
+        "nom_commune": "Kossou",
+        "cod_sp": "SP_049_01",
+        "annee": 2021,
+        "latitude": 6.95907,
+        "longitude": -4.96852,
+        "population": 1075
+    },
+    {
+        "code_commune": "COM_049_02",
+        "nom_commune": "Yamoussoukro",
+        "cod_sp": "SP_049_02",
+        "annee": 2021,
+        "latitude": 6.85205,
+        "longitude": -5.29854,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_072_01",
+        "nom_commune": "Attiegouakro",
+        "cod_sp": "SP_072_01",
+        "annee": 2021,
+        "latitude": 6.77402,
+        "longitude": -5.11411,
+        "population": 4537
+    },
+    {
+        "code_commune": "COM_010_01",
+        "nom_commune": "Appimandoum",
+        "cod_sp": "SP_010_01",
+        "annee": 2021,
+        "latitude": 7.89569,
+        "longitude": -2.87273,
+        "population": 2569
+    },
+    {
+        "code_commune": "COM_010_02",
+        "nom_commune": "Pinda-Boroko",
+        "cod_sp": "SP_010_02",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_010_04",
+        "nom_commune": "Bondoukou",
+        "cod_sp": "SP_010_04",
+        "annee": 2021,
+        "latitude": 8.07173,
+        "longitude": -2.81559,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_010_05",
+        "nom_commune": "Goumere",
+        "cod_sp": "SP_010_05",
+        "annee": 2021,
+        "latitude": 7.8963,
+        "longitude": -2.98013,
+        "population": 6778
+    },
+    {
+        "code_commune": "COM_010_06",
+        "nom_commune": "Laoudi Ba",
+        "cod_sp": "SP_010_06",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_010_07",
+        "nom_commune": "Sapli-Sepingo",
+        "cod_sp": "SP_010_07",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_010_08",
+        "nom_commune": "Sorobango",
+        "cod_sp": "SP_010_08",
+        "annee": 2021,
+        "latitude": 8.17239,
+        "longitude": -2.70814,
+        "population": 4430
+    },
+    {
+        "code_commune": "COM_010_09",
+        "nom_commune": "Tabagne",
+        "cod_sp": "SP_010_09",
+        "annee": 2021,
+        "latitude": 7.98984,
+        "longitude": -3.06815,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_010_10",
+        "nom_commune": "Tagadi",
+        "cod_sp": "SP_010_10",
+        "annee": 2021,
+        "latitude": 8.63154,
+        "longitude": -2.62515,
+        "population": 6975
+    },
+    {
+        "code_commune": "COM_010_11",
+        "nom_commune": "Taoudi",
+        "cod_sp": "SP_010_11",
+        "annee": 2021,
+        "latitude": 8.13701,
+        "longitude": -3.43473,
+        "population": 5571
+    },
+    {
+        "code_commune": "COM_010_12",
+        "nom_commune": "Yezimala",
+        "cod_sp": "SP_010_12",
+        "annee": 2021,
+        "latitude": 8.20664,
+        "longitude": -2.94812,
+        "population": 3484
+    },
+    {
+        "code_commune": "COM_043_01",
+        "nom_commune": "Amanvi",
+        "cod_sp": "SP_043_01",
+        "annee": 2021,
+        "latitude": 7.96972,
+        "longitude": -3.13889,
+        "population": 1906
+    },
+    {
+        "code_commune": "COM_043_02",
+        "nom_commune": "Diamba",
+        "cod_sp": "SP_043_02",
+        "annee": 2021,
+        "latitude": 7.80975,
+        "longitude": -3.31254,
+        "population": 1326
+    },
+    {
+        "code_commune": "COM_043_04",
+        "nom_commune": "Tiedio",
+        "cod_sp": "SP_043_04",
+        "annee": 2021,
+        "latitude": 7.88338,
+        "longitude": -3.28255,
+        "population": 3082
+    },
+    {
+        "code_commune": "COM_070_01",
+        "nom_commune": "Boahia",
+        "cod_sp": "SP_070_01",
+        "annee": 2021,
+        "latitude": 7.5717,
+        "longitude": -3.51489,
+        "population": 5143
+    },
+    {
+        "code_commune": "COM_070_02",
+        "nom_commune": "Kokomian",
+        "cod_sp": "SP_070_02",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_070_03",
+        "nom_commune": "Kouassi-Datekro",
+        "cod_sp": "SP_070_03",
+        "annee": 2021,
+        "latitude": 7.8175,
+        "longitude": -3.52556,
+        "population": 7965
+    },
+    {
+        "code_commune": "COM_070_04",
+        "nom_commune": "Koun-Fao",
+        "cod_sp": "SP_070_04",
+        "annee": 2021,
+        "latitude": 7.48333,
+        "longitude": -3.25,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_070_05",
+        "nom_commune": "Tankesse",
+        "cod_sp": "SP_070_05",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_070_06",
+        "nom_commune": "Tienkoikro",
+        "cod_sp": "SP_070_06",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_089_01",
+        "nom_commune": "Bandakagni-Tomora",
+        "cod_sp": "SP_089_01",
+        "annee": 2021,
+        "latitude": 8.00659,
+        "longitude": -3.30313,
+        "population": 3848
+    },
+    {
+        "code_commune": "COM_089_02",
+        "nom_commune": "Dimandougou",
+        "cod_sp": "SP_089_02",
+        "annee": 2021,
+        "latitude": 8.01204,
+        "longitude": -3.77288,
+        "population": 3728
+    },
+    {
+        "code_commune": "COM_089_03",
+        "nom_commune": "Sandegue",
+        "cod_sp": "SP_089_03",
+        "annee": 2021,
+        "latitude": 7.98167,
+        "longitude": -3.55458,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_089_04",
+        "nom_commune": "Yorobodi",
+        "cod_sp": "SP_089_04",
+        "annee": 2021,
+        "latitude": 8.11913,
+        "longitude": -3.68191,
+        "population": 5841
+    },
+    {
+        "code_commune": "COM_093_01",
+        "nom_commune": "Assuefry",
+        "cod_sp": "SP_093_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_093_03",
+        "nom_commune": "Transua",
+        "cod_sp": "SP_093_03",
+        "annee": 2021,
+        "latitude": 7.55004,
+        "longitude": -3.01431,
+        "population": 5333
+    },
+    {
+        "code_commune": "COM_037_02",
+        "nom_commune": "Dogbo",
+        "cod_sp": "SP_037_02",
+        "annee": 2021,
+        "latitude": 4.94556,
+        "longitude": -7.08338,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_037_03",
+        "nom_commune": "Gabiadji",
+        "cod_sp": "SP_037_03",
+        "annee": 2021,
+        "latitude": 5.0234,
+        "longitude": -6.56157,
+        "population": 22619
+    },
+    {
+        "code_commune": "COM_037_04",
+        "nom_commune": "Grand-Bereby",
+        "cod_sp": "SP_037_04",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_037_05",
+        "nom_commune": "San-Pedro",
+        "cod_sp": "SP_037_05",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_042_01",
+        "nom_commune": "Dapo-Iboke",
+        "cod_sp": "SP_042_01",
+        "annee": 2021,
+        "latitude": 4.72959,
+        "longitude": -7.38578,
+        "population": 1943
+    },
+    {
+        "code_commune": "COM_042_03",
+        "nom_commune": "Djouroutou",
+        "cod_sp": "SP_042_03",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_042_05",
+        "nom_commune": "Olodio",
+        "cod_sp": "SP_042_05",
+        "annee": 2021,
+        "latitude": 4.71589,
+        "longitude": -7.46696,
+        "population": 5554
+    },
+    {
+        "code_commune": "COM_042_06",
+        "nom_commune": "Tabou",
+        "cod_sp": "SP_042_06",
+        "annee": 2021,
+        "latitude": 4.51784,
+        "longitude": -7.36891,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_034_02",
+        "nom_commune": "Bougousso",
+        "cod_sp": "SP_034_02",
+        "annee": 2021,
+        "latitude": 9.25696,
+        "longitude": -7.82416,
+        "population": 1786
+    },
+    {
+        "code_commune": "COM_034_03",
+        "nom_commune": "Dioulatiedougou",
+        "cod_sp": "SP_034_03",
+        "annee": 2021,
+        "latitude": 8.97225,
+        "longitude": -7.2323,
+        "population": 1827
+    },
+    {
+        "code_commune": "COM_034_04",
+        "nom_commune": "Odienne",
+        "cod_sp": "SP_034_04",
+        "annee": 2021,
+        "latitude": 9.50511,
+        "longitude": -7.56433,
+        "population": 54669
+    },
+    {
+        "code_commune": "COM_034_05",
+        "nom_commune": "Tieme",
+        "cod_sp": "SP_034_05",
+        "annee": 2021,
+        "latitude": 5.21895,
+        "longitude": -4.64555,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_067_01",
+        "nom_commune": "Fengolo",
+        "cod_sp": "SP_067_01",
+        "annee": 2021,
+        "latitude": 6.78634,
+        "longitude": -7.39338,
+        "population": 37165
+    },
+    {
+        "code_commune": "COM_067_02",
+        "nom_commune": "Madinani",
+        "cod_sp": "SP_067_02",
+        "annee": 2021,
+        "latitude": 9.55196,
+        "longitude": -6.95878,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_067_03",
+        "nom_commune": "N'Goloblasso",
+        "cod_sp": "SP_067_03",
+        "annee": 2021,
+        "latitude": 9.68488,
+        "longitude": -7.22373,
+        "population": 3020
+    },
+    {
+        "code_commune": "COM_088_01",
+        "nom_commune": "Kimbirila-Sud",
+        "cod_sp": "SP_088_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_088_02",
+        "nom_commune": "Samatiguila",
+        "cod_sp": "SP_088_02",
+        "annee": 2021,
+        "latitude": 9.81952,
+        "longitude": -7.56085,
+        "population": 6278
+    },
+    {
+        "code_commune": "COM_100_01",
+        "nom_commune": "Gbeleban",
+        "cod_sp": "SP_100_01",
+        "annee": 2021,
+        "latitude": 9.58461,
+        "longitude": -8.13183,
+        "population": 3003
+    },
+    {
+        "code_commune": "COM_100_02",
+        "nom_commune": "Seydougou",
+        "cod_sp": "SP_100_02",
+        "annee": 2021,
+        "latitude": 9.51182,
+        "longitude": -7.97555,
+        "population": 1961
+    },
+    {
+        "code_commune": "COM_100_03",
+        "nom_commune": "Samango",
+        "cod_sp": "SP_100_03",
+        "annee": 2021,
+        "latitude": 9.66447,
+        "longitude": -7.73071,
+        "population": 873
+    },
+    {
+        "code_commune": "COM_105_01",
+        "nom_commune": "Gbongaha",
+        "cod_sp": "SP_105_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_105_02",
+        "nom_commune": "Seguelon",
+        "cod_sp": "SP_105_02",
+        "annee": 2021,
+        "latitude": 9.35694,
+        "longitude": -7.12083,
+        "population": 4625
+    },
+    {
+        "code_commune": "COM_020_01",
+        "nom_commune": "Abigui",
+        "cod_sp": "SP_020_01",
+        "annee": 2021,
+        "latitude": 6.69462,
+        "longitude": -4.83379,
+        "population": 2785
+    },
+    {
+        "code_commune": "COM_020_03",
+        "nom_commune": "Dimbokro",
+        "cod_sp": "SP_020_03",
+        "annee": 2021,
+        "latitude": 6.66261,
+        "longitude": -4.70413,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_020_04",
+        "nom_commune": "Nofou",
+        "cod_sp": "SP_020_04",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_053_01",
+        "nom_commune": "Bengassou",
+        "cod_sp": "SP_053_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_053_03",
+        "nom_commune": "Kouadioblekro",
+        "cod_sp": "SP_053_03",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_053_04",
+        "nom_commune": "N'Zecrezessou",
+        "cod_sp": "SP_053_04",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_102_01",
+        "nom_commune": "Kouassi-Kouassikro",
+        "cod_sp": "SP_102_01",
+        "annee": 2021,
+        "latitude": 7.28186,
+        "longitude": -4.65691,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_102_02",
+        "nom_commune": "Mekro",
+        "cod_sp": "SP_102_02",
+        "annee": 2021,
+        "latitude": 7.56273,
+        "longitude": -5.12379,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_012_01",
+        "nom_commune": "Begbessou",
+        "cod_sp": "SP_012_01",
+        "annee": 2021,
+        "latitude": 7.06697,
+        "longitude": -5.59738,
+        "population": 6463
+    },
+    {
+        "code_commune": "COM_012_03",
+        "nom_commune": "Bouafle",
+        "cod_sp": "SP_012_03",
+        "annee": 2021,
+        "latitude": 6.99041,
+        "longitude": -5.7442,
+        "population": 104209
+    },
+    {
+        "code_commune": "COM_012_04",
+        "nom_commune": "N'Douffoukankro",
+        "cod_sp": "SP_012_04",
+        "annee": 2021,
+        "latitude": 6.8616,
+        "longitude": -5.82098,
+        "population": 8025
+    },
+    {
+        "code_commune": "COM_012_05",
+        "nom_commune": "Pakouabo",
+        "cod_sp": "SP_012_05",
+        "annee": 2021,
+        "latitude": 7.15724,
+        "longitude": -5.7925,
+        "population": 7443
+    },
+    {
+        "code_commune": "COM_012_06",
+        "nom_commune": "Tibeita",
+        "cod_sp": "SP_012_06",
+        "annee": 2021,
+        "latitude": 7.18271,
+        "longitude": -5.82323,
+        "population": 2461
+    },
+    {
+        "code_commune": "COM_040_01",
+        "nom_commune": "Bazre",
+        "cod_sp": "SP_040_01",
+        "annee": 2021,
+        "latitude": 6.72443,
+        "longitude": -5.48283,
+        "population": 14767
+    },
+    {
+        "code_commune": "COM_040_02",
+        "nom_commune": "Kononfla",
+        "cod_sp": "SP_040_02",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_040_03",
+        "nom_commune": "Kouetinfla",
+        "cod_sp": "SP_040_03",
+        "annee": 2021,
+        "latitude": 6.61223,
+        "longitude": -6.06037,
+        "population": 10872
+    },
+    {
+        "code_commune": "COM_040_04",
+        "nom_commune": "Sinfra",
+        "cod_sp": "SP_040_04",
+        "annee": 2021,
+        "latitude": 6.61486,
+        "longitude": -5.8791,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_050_03",
+        "nom_commune": "Kanzra",
+        "cod_sp": "SP_050_03",
+        "annee": 2021,
+        "latitude": 7.32282,
+        "longitude": -6.22237,
+        "population": 7347
+    },
+    {
+        "code_commune": "COM_050_05",
+        "nom_commune": "Voueboufla",
+        "cod_sp": "SP_050_05",
+        "annee": 2021,
+        "latitude": 7.62278,
+        "longitude": -5.94855,
+        "population": 4158
+    },
+    {
+        "code_commune": "COM_050_06",
+        "nom_commune": "Zanzra",
+        "cod_sp": "SP_050_06",
+        "annee": 2021,
+        "latitude": 7.47962,
+        "longitude": -6.21069,
+        "population": 3580
+    },
+    {
+        "code_commune": "COM_050_07",
+        "nom_commune": "Zuenoula",
+        "cod_sp": "SP_050_07",
+        "annee": 2021,
+        "latitude": 7.43027,
+        "longitude": -6.05054,
+        "population": 44097
+    },
+    {
+        "code_commune": "COM_109_01",
+        "nom_commune": "Bonon",
+        "cod_sp": "SP_109_01",
+        "annee": 2021,
+        "latitude": 6.9268,
+        "longitude": -6.0489,
+        "population": 119938
+    },
+    {
+        "code_commune": "COM_109_02",
+        "nom_commune": "Zaguieta",
+        "cod_sp": "SP_109_02",
+        "annee": 2021,
+        "latitude": 6.78815,
+        "longitude": -6.06288,
+        "population": 12690
+    },
+    {
+        "code_commune": "COM_110_01",
+        "nom_commune": "Gohitafla",
+        "cod_sp": "SP_110_01",
+        "annee": 2021,
+        "latitude": 7.50268,
+        "longitude": -5.852,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_110_02",
+        "nom_commune": "Iriefla",
+        "cod_sp": "SP_110_02",
+        "annee": 2021,
+        "latitude": 7.68645,
+        "longitude": -5.85026,
+        "population": 3903
+    },
+    {
+        "code_commune": "COM_110_03",
+        "nom_commune": "Maminigui",
+        "cod_sp": "SP_110_03",
+        "annee": 2021,
+        "latitude": 7.40183,
+        "longitude": -5.84077,
+        "population": 6895
+    },
+    {
+        "code_commune": "COM_003_01",
+        "nom_commune": "Aboisso",
+        "cod_sp": "SP_003_01",
+        "annee": 2021,
+        "latitude": 5.4845,
+        "longitude": -3.26521,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_003_02",
+        "nom_commune": "Adaou",
+        "cod_sp": "SP_003_02",
+        "annee": 2021,
+        "latitude": 5.42783,
+        "longitude": -3.26443,
+        "population": 7898
+    },
+    {
+        "code_commune": "COM_003_03",
+        "nom_commune": "Adjouan",
+        "cod_sp": "SP_003_03",
+        "annee": 2021,
+        "latitude": 5.30995,
+        "longitude": -3.15232,
+        "population": 4273
+    },
+    {
+        "code_commune": "COM_003_04",
+        "nom_commune": "Ayame",
+        "cod_sp": "SP_003_04",
+        "annee": 2021,
+        "latitude": 5.6052,
+        "longitude": -3.15709,
+        "population": 11149
+    },
+    {
+        "code_commune": "COM_003_05",
+        "nom_commune": "Bianouan",
+        "cod_sp": "SP_003_05",
+        "annee": 2021,
+        "latitude": 6.01203,
+        "longitude": -3.19024,
+        "population": 17561
+    },
+    {
+        "code_commune": "COM_003_06",
+        "nom_commune": "Kouakro",
+        "cod_sp": "SP_003_06",
+        "annee": 2021,
+        "latitude": 7.83652,
+        "longitude": -5.07733,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_003_07",
+        "nom_commune": "Mafere",
+        "cod_sp": "SP_003_07",
+        "annee": 2021,
+        "latitude": 5.4151,
+        "longitude": -3.03006,
+        "population": 17008
+    },
+    {
+        "code_commune": "COM_003_08",
+        "nom_commune": "Yaou",
+        "cod_sp": "SP_003_08",
+        "annee": 2021,
+        "latitude": 5.24633,
+        "longitude": -3.62791,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_051_01",
+        "nom_commune": "Adiake",
+        "cod_sp": "SP_051_01",
+        "annee": 2021,
+        "latitude": 5.28634,
+        "longitude": -3.30403,
+        "population": 24701
+    },
+    {
+        "code_commune": "COM_051_03",
+        "nom_commune": "Etueboue",
+        "cod_sp": "SP_051_03",
+        "annee": 2021,
+        "latitude": 5.21101,
+        "longitude": -3.21473,
+        "population": 2377
+    },
+    {
+        "code_commune": "COM_055_03",
+        "nom_commune": "Grand-Bassam",
+        "cod_sp": "SP_055_03",
+        "annee": 2021,
+        "latitude": 5.22569,
+        "longitude": -3.77635,
+        "population": 124567
+    },
+    {
+        "code_commune": "COM_092_02",
+        "nom_commune": "Nouamou",
+        "cod_sp": "SP_092_02",
+        "annee": 2021,
+        "latitude": 5.18059,
+        "longitude": -2.89751,
+        "population": 2767
+    },
+    {
+        "code_commune": "COM_092_03",
+        "nom_commune": "Tiapoum",
+        "cod_sp": "SP_092_03",
+        "annee": 2021,
+        "latitude": 5.13622,
+        "longitude": -3.02308,
+        "population": 5920
+    },
+    {
+        "code_commune": "COM_039_02",
+        "nom_commune": "Diarabana",
+        "cod_sp": "SP_039_02",
+        "annee": 2021,
+        "latitude": 8.18668,
+        "longitude": -6.60866,
+        "population": 10815
+    },
+    {
+        "code_commune": "COM_039_03",
+        "nom_commune": "Dualla",
+        "cod_sp": "SP_039_03",
+        "annee": 2021,
+        "latitude": 8.12398,
+        "longitude": -6.54099,
+        "population": 2482
+    },
+    {
+        "code_commune": "COM_039_04",
+        "nom_commune": "Kamalo",
+        "cod_sp": "SP_039_04",
+        "annee": 2021,
+        "latitude": 7.76853,
+        "longitude": -7.10872,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_039_06",
+        "nom_commune": "Seguela",
+        "cod_sp": "SP_039_06",
+        "annee": 2021,
+        "latitude": 7.96111,
+        "longitude": -6.67306,
+        "population": 103980
+    },
+    {
+        "code_commune": "COM_039_07",
+        "nom_commune": "Sifie",
+        "cod_sp": "SP_039_07",
+        "annee": 2021,
+        "latitude": 7.98139,
+        "longitude": -6.92722,
+        "population": 4073
+    },
+    {
+        "code_commune": "COM_039_08",
+        "nom_commune": "Worofla",
+        "cod_sp": "SP_039_08",
+        "annee": 2021,
+        "latitude": 8.27335,
+        "longitude": -6.90555,
+        "population": 2321
+    },
+    {
+        "code_commune": "COM_080_01",
+        "nom_commune": "Djibrosso",
+        "cod_sp": "SP_080_01",
+        "annee": 2021,
+        "latitude": 8.76968,
+        "longitude": -6.99918,
+        "population": 5392
+    },
+    {
+        "code_commune": "COM_080_02",
+        "nom_commune": "Fadiadougou",
+        "cod_sp": "SP_080_02",
+        "annee": 2021,
+        "latitude": 8.7,
+        "longitude": -6.62139,
+        "population": 5813
+    },
+    {
+        "code_commune": "COM_080_03",
+        "nom_commune": "Kani",
+        "cod_sp": "SP_080_03",
+        "annee": 2021,
+        "latitude": 8.48364,
+        "longitude": -6.6002,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_080_04",
+        "nom_commune": "Morondo",
+        "cod_sp": "SP_080_04",
+        "annee": 2021,
+        "latitude": 8.95152,
+        "longitude": -6.78524,
+        "population": 4976
+    },
+    {
+        "code_commune": "COM_021_01",
+        "nom_commune": "Chiepo",
+        "cod_sp": "SP_021_01",
+        "annee": 2021,
+        "latitude": 5.69519,
+        "longitude": -5.06251,
+        "population": 6963
+    },
+    {
+        "code_commune": "COM_021_02",
+        "nom_commune": "Didoko",
+        "cod_sp": "SP_021_02",
+        "annee": 2021,
+        "latitude": 6.02111,
+        "longitude": -5.31207,
+        "population": 9166
+    },
+    {
+        "code_commune": "COM_021_03",
+        "nom_commune": "Divo",
+        "cod_sp": "SP_021_03",
+        "annee": 2021,
+        "latitude": 5.93333,
+        "longitude": -5.25833,
+        "population": 571688
+    },
+    {
+        "code_commune": "COM_021_04",
+        "nom_commune": "Hire",
+        "cod_sp": "SP_021_04",
+        "annee": 2021,
+        "latitude": 6.18878,
+        "longitude": -5.29463,
+        "population": 41430
+    },
+    {
+        "code_commune": "COM_021_06",
+        "nom_commune": "Ogoudou",
+        "cod_sp": "SP_021_06",
+        "annee": 2021,
+        "latitude": 5.89674,
+        "longitude": -5.15792,
+        "population": 19158
+    },
+    {
+        "code_commune": "COM_021_07",
+        "nom_commune": "Zego",
+        "cod_sp": "SP_021_07",
+        "annee": 2021,
+        "latitude": 6.14078,
+        "longitude": -5.19226,
+        "population": 3452
+    },
+    {
+        "code_commune": "COM_030_01",
+        "nom_commune": "Djidji",
+        "cod_sp": "SP_030_01",
+        "annee": 2021,
+        "latitude": 6.15401,
+        "longitude": -5.69333,
+        "population": 5075
+    },
+    {
+        "code_commune": "COM_030_03",
+        "nom_commune": "Goudouko",
+        "cod_sp": "SP_030_03",
+        "annee": 2021,
+        "latitude": 5.73666,
+        "longitude": -5.61581,
+        "population": 7811
+    },
+    {
+        "code_commune": "COM_030_05",
+        "nom_commune": "Niambezaria",
+        "cod_sp": "SP_030_05",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_030_06",
+        "nom_commune": "Zikisso",
+        "cod_sp": "SP_030_06",
+        "annee": 2021,
+        "latitude": 6.06396,
+        "longitude": -5.70245,
+        "population": 6791
+    },
+    {
+        "code_commune": "COM_079_01",
+        "nom_commune": "Dairo-Didizo",
+        "cod_sp": "SP_079_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_079_03",
+        "nom_commune": "Lauzoua",
+        "cod_sp": "SP_079_03",
+        "annee": 2021,
+        "latitude": 5.20327,
+        "longitude": -5.31013,
+        "population": 4705
+    },
+    {
+        "code_commune": "COM_079_04",
+        "nom_commune": "Yocoboue",
+        "cod_sp": "SP_079_04",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_005_01",
+        "nom_commune": "Aboude",
+        "cod_sp": "SP_005_01",
+        "annee": 2021,
+        "latitude": 5.89609,
+        "longitude": -4.56253,
+        "population": 14828
+    },
+    {
+        "code_commune": "COM_005_03",
+        "nom_commune": "Agboville",
+        "cod_sp": "SP_005_03",
+        "annee": 2021,
+        "latitude": 5.87769,
+        "longitude": -4.22452,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_005_04",
+        "nom_commune": "Attobrou",
+        "cod_sp": "SP_005_04",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_005_05",
+        "nom_commune": "Azaguie",
+        "cod_sp": "SP_005_05",
+        "annee": 2021,
+        "latitude": 5.62984,
+        "longitude": -4.08204,
+        "population": 17987
+    },
+    {
+        "code_commune": "COM_005_06",
+        "nom_commune": "Cechi",
+        "cod_sp": "SP_005_06",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_005_07",
+        "nom_commune": "Grand-Morie",
+        "cod_sp": "SP_005_07",
+        "annee": 2021,
+        "latitude": 5.98312,
+        "longitude": -4.13537,
+        "population": 7766
+    },
+    {
+        "code_commune": "COM_005_08",
+        "nom_commune": "Guessiguie",
+        "cod_sp": "SP_005_08",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_005_09",
+        "nom_commune": "Loviguie",
+        "cod_sp": "SP_005_09",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_005_10",
+        "nom_commune": "Oress-Krobou",
+        "cod_sp": "SP_005_10",
+        "annee": 2021,
+        "latitude": 5.7324,
+        "longitude": -4.3947,
+        "population": 7526
+    },
+    {
+        "code_commune": "COM_005_11",
+        "nom_commune": "Rubino",
+        "cod_sp": "SP_005_11",
+        "annee": 2021,
+        "latitude": 6.07,
+        "longitude": -4.31056,
+        "population": 18180
+    },
+    {
+        "code_commune": "COM_045_02",
+        "nom_commune": "Morokro",
+        "cod_sp": "SP_045_02",
+        "annee": 2021,
+        "latitude": 6.0776,
+        "longitude": -4.70306,
+        "population": 6060
+    },
+    {
+        "code_commune": "COM_045_03",
+        "nom_commune": "N'Douci",
+        "cod_sp": "SP_045_03",
+        "annee": 2021,
+        "latitude": 5.86383,
+        "longitude": -4.7609,
+        "population": 35145
+    },
+    {
+        "code_commune": "COM_045_04",
+        "nom_commune": "Tiassale",
+        "cod_sp": "SP_045_04",
+        "annee": 2021,
+        "latitude": 5.89839,
+        "longitude": -4.82293,
+        "population": 35090
+    },
+    {
+        "code_commune": "COM_065_01",
+        "nom_commune": "Gomon",
+        "cod_sp": "SP_065_01",
+        "annee": 2021,
+        "latitude": 5.72358,
+        "longitude": -4.44129,
+        "population": 12759
+    },
+    {
+        "code_commune": "COM_065_02",
+        "nom_commune": "Sikensi",
+        "cod_sp": "SP_065_02",
+        "annee": 2021,
+        "latitude": 5.61486,
+        "longitude": -4.61042,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_107_01",
+        "nom_commune": "Pacobo",
+        "cod_sp": "SP_107_01",
+        "annee": 2021,
+        "latitude": 6.16742,
+        "longitude": -4.93723,
+        "population": 2216
+    },
+    {
+        "code_commune": "COM_107_02",
+        "nom_commune": "Taabo",
+        "cod_sp": "SP_107_02",
+        "annee": 2021,
+        "latitude": 6.1998,
+        "longitude": -5.10884,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_024_01",
+        "nom_commune": "Bayota",
+        "cod_sp": "SP_024_01",
+        "annee": 2021,
+        "latitude": 6.46477,
+        "longitude": -5.95427,
+        "population": 16298
+    },
+    {
+        "code_commune": "COM_024_02",
+        "nom_commune": "Dahiepa-Kehi",
+        "cod_sp": "SP_024_02",
+        "annee": 2021,
+        "latitude": 6.21256,
+        "longitude": -5.84627,
+        "population": 2437
+    },
+    {
+        "code_commune": "COM_024_03",
+        "nom_commune": "Dignago",
+        "cod_sp": "SP_024_03",
+        "annee": 2021,
+        "latitude": 6.29164,
+        "longitude": -6.27945,
+        "population": 15621
+    },
+    {
+        "code_commune": "COM_024_04",
+        "nom_commune": "Dougroupalegnoa",
+        "cod_sp": "SP_024_04",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_024_05",
+        "nom_commune": "Doukouyo",
+        "cod_sp": "SP_024_05",
+        "annee": 2021,
+        "latitude": 5.84233,
+        "longitude": -5.97134,
+        "population": 4472
+    },
+    {
+        "code_commune": "COM_024_06",
+        "nom_commune": "Gagnoa",
+        "cod_sp": "SP_024_06",
+        "annee": 2021,
+        "latitude": 6.09841,
+        "longitude": -6.04671,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_024_08",
+        "nom_commune": "Gnagbodougnoa",
+        "cod_sp": "SP_024_08",
+        "annee": 2021,
+        "latitude": 5.96632,
+        "longitude": -5.84337,
+        "population": 4808
+    },
+    {
+        "code_commune": "COM_024_09",
+        "nom_commune": "Guiberoua",
+        "cod_sp": "SP_024_09",
+        "annee": 2021,
+        "latitude": 6.23869,
+        "longitude": -6.17147,
+        "population": 23371
+    },
+    {
+        "code_commune": "COM_024_10",
+        "nom_commune": "Ouragahio",
+        "cod_sp": "SP_024_10",
+        "annee": 2021,
+        "latitude": 6.29011,
+        "longitude": -6.01689,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_024_12",
+        "nom_commune": "Yopohue",
+        "cod_sp": "SP_024_12",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_035_01",
+        "nom_commune": "Diegonefla",
+        "cod_sp": "SP_035_01",
+        "annee": 2021,
+        "latitude": 6.28919,
+        "longitude": -5.57413,
+        "population": 43456
+    },
+    {
+        "code_commune": "COM_035_02",
+        "nom_commune": "Guepahouo",
+        "cod_sp": "SP_035_02",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_035_03",
+        "nom_commune": "Oume",
+        "cod_sp": "SP_035_03",
+        "annee": 2021,
+        "latitude": 6.38309,
+        "longitude": -5.41759,
+        "population": 58606
+    },
+    {
+        "code_commune": "COM_035_04",
+        "nom_commune": "Tonla",
+        "cod_sp": "SP_035_04",
+        "annee": 2021,
+        "latitude": 6.35395,
+        "longitude": -5.644,
+        "population": 9463
+    },
+    {
+        "code_commune": "COM_026_01",
+        "nom_commune": "Bedy-Goazon",
+        "cod_sp": "SP_026_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_026_02",
+        "nom_commune": "Guiglo",
+        "cod_sp": "SP_026_02",
+        "annee": 2021,
+        "latitude": 6.40487,
+        "longitude": -7.64119,
+        "population": 171454
+    },
+    {
+        "code_commune": "COM_026_03",
+        "nom_commune": "Kaade",
+        "cod_sp": "SP_026_03",
+        "annee": 2021,
+        "latitude": 6.56928,
+        "longitude": -7.71427,
+        "population": 8883
+    },
+    {
+        "code_commune": "COM_026_04",
+        "nom_commune": "Nizahon",
+        "cod_sp": "SP_026_04",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_058_03",
+        "nom_commune": "Nezobly",
+        "cod_sp": "SP_058_03",
+        "annee": 2021,
+        "latitude": 6.59965,
+        "longitude": -8.47264,
+        "population": 2477
+    },
+    {
+        "code_commune": "COM_058_04",
+        "nom_commune": "Pehe",
+        "cod_sp": "SP_058_04",
+        "annee": 2021,
+        "latitude": 6.56334,
+        "longitude": -8.30405,
+        "population": 3290
+    },
+    {
+        "code_commune": "COM_058_05",
+        "nom_commune": "Tiobly",
+        "cod_sp": "SP_058_05",
+        "annee": 2021,
+        "latitude": 6.5332,
+        "longitude": -8.50041,
+        "population": 1258
+    },
+    {
+        "code_commune": "COM_058_06",
+        "nom_commune": "Toulepleu",
+        "cod_sp": "SP_058_06",
+        "annee": 2021,
+        "latitude": 6.57974,
+        "longitude": -8.41091,
+        "population": 8794
+    },
+    {
+        "code_commune": "COM_059_01",
+        "nom_commune": "Blolequin",
+        "cod_sp": "SP_059_01",
+        "annee": 2021,
+        "latitude": 6.56913,
+        "longitude": -8.00253,
+        "population": 41821
+    },
+    {
+        "code_commune": "COM_059_02",
+        "nom_commune": "Diboke",
+        "cod_sp": "SP_059_02",
+        "annee": 2021,
+        "latitude": 6.44434,
+        "longitude": -8.11234,
+        "population": 5969
+    },
+    {
+        "code_commune": "COM_059_03",
+        "nom_commune": "Doke",
+        "cod_sp": "SP_059_03",
+        "annee": 2021,
+        "latitude": 6.59281,
+        "longitude": -8.11205,
+        "population": 7102
+    },
+    {
+        "code_commune": "COM_059_04",
+        "nom_commune": "Tinhou",
+        "cod_sp": "SP_059_04",
+        "annee": 2021,
+        "latitude": 6.43832,
+        "longitude": -8.1561,
+        "population": 6961
+    },
+    {
+        "code_commune": "COM_059_05",
+        "nom_commune": "Zeaglo",
+        "cod_sp": "SP_059_05",
+        "annee": 2021,
+        "latitude": 6.56297,
+        "longitude": -7.8172,
+        "population": 15873
+    },
+    {
+        "code_commune": "COM_108_01",
+        "nom_commune": "Tai",
+        "cod_sp": "SP_108_01",
+        "annee": 2021,
+        "latitude": 5.87366,
+        "longitude": -7.45519,
+        "population": 7670
+    },
+    {
+        "code_commune": "COM_108_02",
+        "nom_commune": "Zagne",
+        "cod_sp": "SP_108_02",
+        "annee": 2021,
+        "latitude": 6.21016,
+        "longitude": -7.48284,
+        "population": 63341
+    },
+    {
+        "code_commune": "COM_046_01",
+        "nom_commune": "Dioman",
+        "cod_sp": "SP_046_01",
+        "annee": 2021,
+        "latitude": 8.13276,
+        "longitude": -7.54529,
+        "population": 1018
+    },
+    {
+        "code_commune": "COM_046_02",
+        "nom_commune": "Foungbesso",
+        "cod_sp": "SP_046_02",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_046_03",
+        "nom_commune": "Guinteguela",
+        "cod_sp": "SP_046_03",
+        "annee": 2021,
+        "latitude": 8.29044,
+        "longitude": -7.30927,
+        "population": 5543
+    },
+    {
+        "code_commune": "COM_082_01",
+        "nom_commune": "Booko",
+        "cod_sp": "SP_082_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_082_02",
+        "nom_commune": "Borotou",
+        "cod_sp": "SP_082_02",
+        "annee": 2021,
+        "latitude": 8.73002,
+        "longitude": -7.55356,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_082_04",
+        "nom_commune": "Mahandougou",
+        "cod_sp": "SP_082_04",
+        "annee": 2021,
+        "latitude": 10.14302,
+        "longitude": -5.18369,
+        "population": 1125
+    },
+    {
+        "code_commune": "COM_082_05",
+        "nom_commune": "Niokosso",
+        "cod_sp": "SP_082_05",
+        "annee": 2021,
+        "latitude": 8.68795,
+        "longitude": -7.67069,
+        "population": 2647
+    },
+    {
+        "code_commune": "COM_087_02",
+        "nom_commune": "Gouekan",
+        "cod_sp": "SP_087_02",
+        "annee": 2021,
+        "latitude": 8.03399,
+        "longitude": -7.84075,
+        "population": 937
+    },
+    {
+        "code_commune": "COM_087_03",
+        "nom_commune": "Koonan",
+        "cod_sp": "SP_087_03",
+        "annee": 2021,
+        "latitude": 8.3625,
+        "longitude": -7.97,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_087_04",
+        "nom_commune": "Ouaninou",
+        "cod_sp": "SP_087_04",
+        "annee": 2021,
+        "latitude": 8.2379,
+        "longitude": -7.86638,
+        "population": 8943
+    },
+    {
+        "code_commune": "COM_087_05",
+        "nom_commune": "Saboudougou",
+        "cod_sp": "SP_087_05",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_015_03",
+        "nom_commune": "Ganaoni",
+        "cod_sp": "SP_015_03",
+        "annee": 2021,
+        "latitude": 9.28498,
+        "longitude": -6.32285,
+        "population": 3658
+    },
+    {
+        "code_commune": "COM_015_04",
+        "nom_commune": "Kassere",
+        "cod_sp": "SP_015_04",
+        "annee": 2021,
+        "latitude": 9.82723,
+        "longitude": -6.2167,
+        "population": 10255
+    },
+    {
+        "code_commune": "COM_015_05",
+        "nom_commune": "Siempurgo",
+        "cod_sp": "SP_015_05",
+        "annee": 2021,
+        "latitude": 9.51953,
+        "longitude": -6.19408,
+        "population": 4290
+    },
+    {
+        "code_commune": "COM_044_01",
+        "nom_commune": "Debete",
+        "cod_sp": "SP_044_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_044_02",
+        "nom_commune": "Kanakono",
+        "cod_sp": "SP_044_02",
+        "annee": 2021,
+        "latitude": 10.35497,
+        "longitude": -6.23634,
+        "population": 13127
+    },
+    {
+        "code_commune": "COM_083_01",
+        "nom_commune": "Blessegue",
+        "cod_sp": "SP_083_01",
+        "annee": 2021,
+        "latitude": 10.19833,
+        "longitude": -6.40778,
+        "population": 7160
+    },
+    {
+        "code_commune": "COM_083_03",
+        "nom_commune": "Kolia",
+        "cod_sp": "SP_083_03",
+        "annee": 2021,
+        "latitude": 9.68458,
+        "longitude": -6.57812,
+        "population": 32113
+    },
+    {
+        "code_commune": "COM_083_04",
+        "nom_commune": "Kouto",
+        "cod_sp": "SP_083_04",
+        "annee": 2021,
+        "latitude": 9.98462,
+        "longitude": -6.39619,
+        "population": 55893
+    },
+    {
+        "code_commune": "COM_083_05",
+        "nom_commune": "Sianhala",
+        "cod_sp": "SP_083_05",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_047_01",
+        "nom_commune": "Angoda",
+        "cod_sp": "SP_047_01",
+        "annee": 2021,
+        "latitude": 6.67795,
+        "longitude": -5.02275,
+        "population": 3903
+    },
+    {
+        "code_commune": "COM_047_02",
+        "nom_commune": "Kokumbo",
+        "cod_sp": "SP_047_02",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_047_03",
+        "nom_commune": "Kpouebo",
+        "cod_sp": "SP_047_03",
+        "annee": 2021,
+        "latitude": 6.33441,
+        "longitude": -4.85618,
+        "population": 6709
+    },
+    {
+        "code_commune": "COM_047_04",
+        "nom_commune": "Toumodi",
+        "cod_sp": "SP_047_04",
+        "annee": 2021,
+        "latitude": 6.51889,
+        "longitude": -5.00053,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_057_01",
+        "nom_commune": "Lomokankro",
+        "cod_sp": "SP_057_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_057_02",
+        "nom_commune": "Molonou",
+        "cod_sp": "SP_057_02",
+        "annee": 2021,
+        "latitude": 7.15831,
+        "longitude": -5.36694,
+        "population": 3511
+    },
+    {
+        "code_commune": "COM_057_03",
+        "nom_commune": "Tiebissou",
+        "cod_sp": "SP_057_03",
+        "annee": 2021,
+        "latitude": 7.21338,
+        "longitude": -5.14883,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_057_04",
+        "nom_commune": "Yakpabo-Sakassou",
+        "cod_sp": "SP_057_04",
+        "annee": 2021,
+        "latitude": 6.92752,
+        "longitude": -4.8869,
+        "population": 1460
+    },
+    {
+        "code_commune": "COM_061_02",
+        "nom_commune": "Didievi",
+        "cod_sp": "SP_061_02",
+        "annee": 2021,
+        "latitude": 7.12866,
+        "longitude": -4.89804,
+        "population": 10262
+    },
+    {
+        "code_commune": "COM_061_03",
+        "nom_commune": "Molonou Ble",
+        "cod_sp": "SP_061_03",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_061_05",
+        "nom_commune": "Tie-N'Diekro",
+        "cod_sp": "SP_061_05",
+        "annee": 2021,
+        "latitude": 7.42775,
+        "longitude": -4.76586,
+        "population": 3166
+    },
+    {
+        "code_commune": "COM_098_01",
+        "nom_commune": "Bonikro",
+        "cod_sp": "SP_098_01",
+        "annee": 2021,
+        "latitude": 6.24264,
+        "longitude": -4.47948,
+        "population": 1980
+    },
+    {
+        "code_commune": "COM_098_02",
+        "nom_commune": "Djekanou",
+        "cod_sp": "SP_098_02",
+        "annee": 2021,
+        "latitude": 6.48389,
+        "longitude": -5.11553,
+        "population": 5160
+    },
+    {
+        "code_commune": "COM_032_01",
+        "nom_commune": "Bouandougou",
+        "cod_sp": "SP_032_01",
+        "annee": 2021,
+        "latitude": 8.21598,
+        "longitude": -5.66962,
+        "population": 13665
+    },
+    {
+        "code_commune": "COM_032_02",
+        "nom_commune": "Mankono",
+        "cod_sp": "SP_032_02",
+        "annee": 2021,
+        "latitude": 8.08196,
+        "longitude": -6.1461,
+        "population": 74165
+    },
+    {
+        "code_commune": "COM_032_04",
+        "nom_commune": "Sarhala",
+        "cod_sp": "SP_032_04",
+        "annee": 2021,
+        "latitude": 8.41789,
+        "longitude": -6.17147,
+        "population": 5702
+    },
+    {
+        "code_commune": "COM_032_05",
+        "nom_commune": "Tieningboue",
+        "cod_sp": "SP_032_05",
+        "annee": 2021,
+        "latitude": 8.17838,
+        "longitude": -5.72147,
+        "population": 9692
+    },
+    {
+        "code_commune": "COM_069_01",
+        "nom_commune": "Kongasso",
+        "cod_sp": "SP_069_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_069_02",
+        "nom_commune": "Kounahiri",
+        "cod_sp": "SP_069_02",
+        "annee": 2021,
+        "latitude": 7.79297,
+        "longitude": -5.83232,
+        "population": 101111
+    },
+    {
+        "code_commune": "COM_097_02",
+        "nom_commune": "Dianra Village",
+        "cod_sp": "SP_097_02",
+        "annee": 2021,
+        "latitude": 8.76437,
+        "longitude": -6.24411,
+        "population": 14028
+    },
+    {
+        "code_commune": "COM_014_01",
+        "nom_commune": "Bouko",
+        "cod_sp": "SP_014_01",
+        "annee": 2021,
+        "latitude": 7.76808,
+        "longitude": -3.39218,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_014_03",
+        "nom_commune": "Ondefidouo",
+        "cod_sp": "SP_014_03",
+        "annee": 2021,
+        "latitude": 9.04384,
+        "longitude": -3.08297,
+        "population": 5552
+    },
+    {
+        "code_commune": "COM_063_01",
+        "nom_commune": "Bogofa",
+        "cod_sp": "SP_063_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_063_04",
+        "nom_commune": "Nassian",
+        "cod_sp": "SP_063_04",
+        "annee": 2021,
+        "latitude": 8.39913,
+        "longitude": -3.49851,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_063_05",
+        "nom_commune": "Sominasse",
+        "cod_sp": "SP_063_05",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_076_01",
+        "nom_commune": "Danoa",
+        "cod_sp": "SP_076_01",
+        "annee": 2021,
+        "latitude": 9.68844,
+        "longitude": -3.07943,
+        "population": 744
+    },
+    {
+        "code_commune": "COM_076_02",
+        "nom_commune": "Doropo",
+        "cod_sp": "SP_076_02",
+        "annee": 2021,
+        "latitude": 9.80955,
+        "longitude": -3.34577,
+        "population": 48225
+    },
+    {
+        "code_commune": "COM_076_03",
+        "nom_commune": "Kalamon",
+        "cod_sp": "SP_076_03",
+        "annee": 2021,
+        "latitude": 9.82285,
+        "longitude": -3.16533,
+        "population": 2520
+    },
+    {
+        "code_commune": "COM_091_02",
+        "nom_commune": "Tehini",
+        "cod_sp": "SP_091_02",
+        "annee": 2021,
+        "latitude": 9.60542,
+        "longitude": -3.65804,
+        "population": 3461
+    },
+    {
+        "code_commune": "COM_091_03",
+        "nom_commune": "Tougbo",
+        "cod_sp": "SP_091_03",
+        "annee": 2021,
+        "latitude": 9.76377,
+        "longitude": -4.14091,
+        "population": 3634
+    },
+    {
+        "code_commune": "COM_068_01",
+        "nom_commune": "Kimbirila-Nord",
+        "cod_sp": "SP_068_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_068_02",
+        "nom_commune": "Minignan",
+        "cod_sp": "SP_068_02",
+        "annee": 2021,
+        "latitude": 10.13333,
+        "longitude": -7.6875,
+        "population": 61637
+    },
+    {
+        "code_commune": "COM_068_04",
+        "nom_commune": "Tienko",
+        "cod_sp": "SP_068_04",
+        "annee": 2021,
+        "latitude": 10.1616,
+        "longitude": -7.45099,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_081_01",
+        "nom_commune": "Goulia",
+        "cod_sp": "SP_081_01",
+        "annee": 2021,
+        "latitude": 10.00669,
+        "longitude": -7.2031,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_081_02",
+        "nom_commune": "Kaniasso",
+        "cod_sp": "SP_081_02",
+        "annee": 2021,
+        "latitude": 9.81471,
+        "longitude": -7.5125,
+        "population": 3299
+    },
+    {
+        "code_commune": "COM_038_01",
+        "nom_commune": "Dakpadou",
+        "cod_sp": "SP_038_01",
+        "annee": 2021,
+        "latitude": 5.25664,
+        "longitude": -6.06774,
+        "population": 14825
+    },
+    {
+        "code_commune": "COM_038_02",
+        "nom_commune": "Grihiri",
+        "cod_sp": "SP_038_02",
+        "annee": 2021,
+        "latitude": 5.41588,
+        "longitude": -6.3768,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_038_03",
+        "nom_commune": "Lobakuya",
+        "cod_sp": "SP_038_03",
+        "annee": 2021,
+        "latitude": 5.09053,
+        "longitude": -6.34438,
+        "population": 18713
+    },
+    {
+        "code_commune": "COM_038_06",
+        "nom_commune": "Sassandra",
+        "cod_sp": "SP_038_06",
+        "annee": 2021,
+        "latitude": 5.33333,
+        "longitude": -6.16667,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_077_01",
+        "nom_commune": "Dahiri",
+        "cod_sp": "SP_077_01",
+        "annee": 2021,
+        "latitude": 5.26206,
+        "longitude": -5.52897,
+        "population": 10885
+    },
+    {
+        "code_commune": "COM_077_03",
+        "nom_commune": "Gbagbam",
+        "cod_sp": "SP_077_03",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_025_01",
+        "nom_commune": "Ahouanou",
+        "cod_sp": "SP_025_01",
+        "annee": 2021,
+        "latitude": 5.50565,
+        "longitude": -4.8588,
+        "population": 33939
+    },
+    {
+        "code_commune": "COM_025_02",
+        "nom_commune": "Bacanda",
+        "cod_sp": "SP_025_02",
+        "annee": 2021,
+        "latitude": 5.63331,
+        "longitude": -4.87758,
+        "population": 11892
+    },
+    {
+        "code_commune": "COM_025_03",
+        "nom_commune": "Ebonou",
+        "cod_sp": "SP_025_03",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_025_04",
+        "nom_commune": "Grand-Lahou",
+        "cod_sp": "SP_025_04",
+        "annee": 2021,
+        "latitude": 5.32261,
+        "longitude": -4.9557,
+        "population": 77000
+    },
+    {
+        "code_commune": "COM_025_05",
+        "nom_commune": "Toukouzou",
+        "cod_sp": "SP_025_05",
+        "annee": 2021,
+        "latitude": 5.15341,
+        "longitude": -4.79233,
+        "population": 1939
+    },
+    {
+        "code_commune": "COM_054_01",
+        "nom_commune": "Dabou",
+        "cod_sp": "SP_054_01",
+        "annee": 2021,
+        "latitude": 5.35466,
+        "longitude": -4.39998,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_054_02",
+        "nom_commune": "Lopou",
+        "cod_sp": "SP_054_02",
+        "annee": 2021,
+        "latitude": 5.42176,
+        "longitude": -4.46967,
+        "population": 9587
+    },
+    {
+        "code_commune": "COM_054_03",
+        "nom_commune": "Toupah",
+        "cod_sp": "SP_054_03",
+        "annee": 2021,
+        "latitude": 5.31891,
+        "longitude": -4.56552,
+        "population": 5330
+    },
+    {
+        "code_commune": "COM_056_01",
+        "nom_commune": "Attoutou A",
+        "cod_sp": "SP_056_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_007_01",
+        "nom_commune": "Bangolo",
+        "cod_sp": "SP_007_01",
+        "annee": 2021,
+        "latitude": 6.97719,
+        "longitude": -7.53139,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_007_02",
+        "nom_commune": "Beoue-Zibiao",
+        "cod_sp": "SP_007_02",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_007_03",
+        "nom_commune": "Blenimeouin",
+        "cod_sp": "SP_007_03",
+        "annee": 2021,
+        "latitude": 7.13333,
+        "longitude": -7.18333,
+        "population": 19689
+    },
+    {
+        "code_commune": "COM_007_04",
+        "nom_commune": "Dieouzon",
+        "cod_sp": "SP_007_04",
+        "annee": 2021,
+        "latitude": 7.15575,
+        "longitude": -7.32219,
+        "population": 6480
+    },
+    {
+        "code_commune": "COM_007_05",
+        "nom_commune": "Gohouo-Zagna",
+        "cod_sp": "SP_007_05",
+        "annee": 2021,
+        "latitude": 7.05287,
+        "longitude": -7.39155,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_007_06",
+        "nom_commune": "Guinglo-Tahouake",
+        "cod_sp": "SP_007_06",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_007_07",
+        "nom_commune": "Kahin-Zarabaon",
+        "cod_sp": "SP_007_07",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_007_08",
+        "nom_commune": "Zeo",
+        "cod_sp": "SP_007_08",
+        "annee": 2021,
+        "latitude": 7.12039,
+        "longitude": -7.46935,
+        "population": 3160
+    },
+    {
+        "code_commune": "COM_022_01",
+        "nom_commune": "Bagohouo",
+        "cod_sp": "SP_022_01",
+        "annee": 2021,
+        "latitude": 6.89011,
+        "longitude": -7.19282,
+        "population": 13441
+    },
+    {
+        "code_commune": "COM_022_02",
+        "nom_commune": "Duekoue",
+        "cod_sp": "SP_022_02",
+        "annee": 2021,
+        "latitude": 6.74202,
+        "longitude": -7.34918,
+        "population": 117023
+    },
+    {
+        "code_commune": "COM_022_03",
+        "nom_commune": "Gbapleu",
+        "cod_sp": "SP_022_03",
+        "annee": 2021,
+        "latitude": 6.47983,
+        "longitude": -7.16528,
+        "population": 28802
+    },
+    {
+        "code_commune": "COM_022_04",
+        "nom_commune": "Guehiebly",
+        "cod_sp": "SP_022_04",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_062_01",
+        "nom_commune": "Kouibly",
+        "cod_sp": "SP_062_01",
+        "annee": 2021,
+        "latitude": 7.22778,
+        "longitude": -7.29815,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_062_02",
+        "nom_commune": "Nidrou",
+        "cod_sp": "SP_062_02",
+        "annee": 2021,
+        "latitude": 6.90202,
+        "longitude": -7.18141,
+        "population": 7280
+    },
+    {
+        "code_commune": "COM_062_03",
+        "nom_commune": "Ouyably-Gnondrou",
+        "cod_sp": "SP_062_03",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_062_04",
+        "nom_commune": "Totrodrou",
+        "cod_sp": "SP_062_04",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_099_01",
+        "nom_commune": "Facobly",
+        "cod_sp": "SP_099_01",
+        "annee": 2021,
+        "latitude": 7.37203,
+        "longitude": -7.41851,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_099_03",
+        "nom_commune": "Koua",
+        "cod_sp": "SP_099_03",
+        "annee": 2021,
+        "latitude": 7.50571,
+        "longitude": -7.27025,
+        "population": 2450
+    },
+    {
+        "code_commune": "COM_099_04",
+        "nom_commune": "Semien",
+        "cod_sp": "SP_099_04",
+        "annee": 2021,
+        "latitude": 7.61419,
+        "longitude": -7.12955,
+        "population": 13762
+    },
+    {
+        "code_commune": "COM_016_01",
+        "nom_commune": "Bassawa",
+        "cod_sp": "SP_016_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_016_02",
+        "nom_commune": "Bonieredougou",
+        "cod_sp": "SP_016_02",
+        "annee": 2021,
+        "latitude": 8.37683,
+        "longitude": -4.72083,
+        "population": 3891
+    },
+    {
+        "code_commune": "COM_016_03",
+        "nom_commune": "Dabakala",
+        "cod_sp": "SP_016_03",
+        "annee": 2021,
+        "latitude": 8.33139,
+        "longitude": -4.36548,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_016_04",
+        "nom_commune": "Foumbolo",
+        "cod_sp": "SP_016_04",
+        "annee": 2021,
+        "latitude": 8.64189,
+        "longitude": -4.64539,
+        "population": 4132
+    },
+    {
+        "code_commune": "COM_016_05",
+        "nom_commune": "Niemene",
+        "cod_sp": "SP_016_05",
+        "annee": 2021,
+        "latitude": 8.45702,
+        "longitude": -4.68838,
+        "population": 3855
+    },
+    {
+        "code_commune": "COM_016_06",
+        "nom_commune": "Satama-Sokoro",
+        "cod_sp": "SP_016_06",
+        "annee": 2021,
+        "latitude": 7.89806,
+        "longitude": -4.53012,
+        "population": 4268
+    },
+    {
+        "code_commune": "COM_016_07",
+        "nom_commune": "Satama-Sokoura",
+        "cod_sp": "SP_016_07",
+        "annee": 2021,
+        "latitude": 7.89975,
+        "longitude": -4.3636,
+        "population": 4679
+    },
+    {
+        "code_commune": "COM_016_08",
+        "nom_commune": "Sokala-Sobara",
+        "cod_sp": "SP_016_08",
+        "annee": 2021,
+        "latitude": 8.44227,
+        "longitude": -4.5141,
+        "population": 3208
+    },
+    {
+        "code_commune": "COM_016_10",
+        "nom_commune": "Yaossedougou",
+        "cod_sp": "SP_016_10",
+        "annee": 2021,
+        "latitude": 8.25,
+        "longitude": -4.25,
+        "population": 903
+    },
+    {
+        "code_commune": "COM_028_01",
+        "nom_commune": "Fronan",
+        "cod_sp": "SP_028_01",
+        "annee": 2021,
+        "latitude": 8.21494,
+        "longitude": -5.12549,
+        "population": 21579
+    },
+    {
+        "code_commune": "COM_028_02",
+        "nom_commune": "Katiola",
+        "cod_sp": "SP_028_02",
+        "annee": 2021,
+        "latitude": 8.05868,
+        "longitude": -5.12167,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_028_03",
+        "nom_commune": "Timbe",
+        "cod_sp": "SP_028_03",
+        "annee": 2021,
+        "latitude": 8.17009,
+        "longitude": -4.94663,
+        "population": 2912
+    },
+    {
+        "code_commune": "COM_085_01",
+        "nom_commune": "Arikokaha",
+        "cod_sp": "SP_085_01",
+        "annee": 2021,
+        "latitude": 8.78763,
+        "longitude": -5.19306,
+        "population": 1598
+    },
+    {
+        "code_commune": "COM_085_02",
+        "nom_commune": "Badikaha",
+        "cod_sp": "SP_085_02",
+        "annee": 2021,
+        "latitude": 9.19166,
+        "longitude": -5.16499,
+        "population": 6393
+    },
+    {
+        "code_commune": "COM_085_05",
+        "nom_commune": "Tafire",
+        "cod_sp": "SP_085_05",
+        "annee": 2021,
+        "latitude": 9.06883,
+        "longitude": -5.16404,
+        "population": 22284
+    },
+    {
+        "code_commune": "COM_085_06",
+        "nom_commune": "Tortiya",
+        "cod_sp": "SP_085_06",
+        "annee": 2021,
+        "latitude": 8.76821,
+        "longitude": -5.6865,
+        "population": 20738
+    },
+    {
+        "code_commune": "COM_019_03",
+        "nom_commune": "Daoukro",
+        "cod_sp": "SP_019_03",
+        "annee": 2021,
+        "latitude": 7.22083,
+        "longitude": -3.95417,
+        "population": 148095
+    },
+    {
+        "code_commune": "COM_019_04",
+        "nom_commune": "Ettrokro",
+        "cod_sp": "SP_019_04",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_019_05",
+        "nom_commune": "N'Gattakro",
+        "cod_sp": "SP_019_05",
+        "annee": 2021,
+        "latitude": 6.94739,
+        "longitude": -5.72303,
+        "population": 1177
+    },
+    {
+        "code_commune": "COM_019_07",
+        "nom_commune": "Samanza",
+        "cod_sp": "SP_019_07",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_033_01",
+        "nom_commune": "Bonguera",
+        "cod_sp": "SP_033_01",
+        "annee": 2021,
+        "latitude": 7.66663,
+        "longitude": -4.24335,
+        "population": 4076
+    },
+    {
+        "code_commune": "COM_033_02",
+        "nom_commune": "Kondossou",
+        "cod_sp": "SP_033_02",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_033_03",
+        "nom_commune": "M'Bahiakro",
+        "cod_sp": "SP_033_03",
+        "annee": 2021,
+        "latitude": 7.50083,
+        "longitude": -4.32803,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_064_01",
+        "nom_commune": "Anianou",
+        "cod_sp": "SP_064_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_064_02",
+        "nom_commune": "Famienkro",
+        "cod_sp": "SP_064_02",
+        "annee": 2021,
+        "latitude": 7.86322,
+        "longitude": -3.98564,
+        "population": 3357
+    },
+    {
+        "code_commune": "COM_064_03",
+        "nom_commune": "Koffi-Amonkro",
+        "cod_sp": "SP_064_03",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_064_05",
+        "nom_commune": "Prikro",
+        "cod_sp": "SP_064_05",
+        "annee": 2021,
+        "latitude": 7.67059,
+        "longitude": -4.03016,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_111_03",
+        "nom_commune": "Ouelle",
+        "cod_sp": "SP_111_03",
+        "annee": 2021,
+        "latitude": 7.29611,
+        "longitude": -4.01364,
+        "population": 8481
+    },
+    {
+        "code_commune": "COM_004_01",
+        "nom_commune": "Adzope",
+        "cod_sp": "SP_004_01",
+        "annee": 2021,
+        "latitude": 6.10694,
+        "longitude": -3.86194,
+        "population": 76122
+    },
+    {
+        "code_commune": "COM_004_03",
+        "nom_commune": "Annepe",
+        "cod_sp": "SP_004_03",
+        "annee": 2021,
+        "latitude": 5.90612,
+        "longitude": -3.76986,
+        "population": 5648
+    },
+    {
+        "code_commune": "COM_004_04",
+        "nom_commune": "Assikoi",
+        "cod_sp": "SP_004_04",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_004_05",
+        "nom_commune": "Becedi-Brignan",
+        "cod_sp": "SP_004_05",
+        "annee": 2021,
+        "latitude": 5.90909,
+        "longitude": -4.01281,
+        "population": 20284
+    },
+    {
+        "code_commune": "COM_004_06",
+        "nom_commune": "Yakasse-Me",
+        "cod_sp": "SP_004_06",
+        "annee": 2021,
+        "latitude": 5.81052,
+        "longitude": -3.9511,
+        "population": 12733
+    },
+    {
+        "code_commune": "COM_052_01",
+        "nom_commune": "Aboisso-Comoe",
+        "cod_sp": "SP_052_01",
+        "annee": 2021,
+        "latitude": 5.7351,
+        "longitude": -3.40338,
+        "population": 20659
+    },
+    {
+        "code_commune": "COM_052_02",
+        "nom_commune": "Alepe",
+        "cod_sp": "SP_052_02",
+        "annee": 2021,
+        "latitude": 5.5004,
+        "longitude": -3.66308,
+        "population": 11725
+    },
+    {
+        "code_commune": "COM_052_04",
+        "nom_commune": "Danguira",
+        "cod_sp": "SP_052_04",
+        "annee": 2021,
+        "latitude": 5.67033,
+        "longitude": -3.76763,
+        "population": 11481
+    },
+    {
+        "code_commune": "COM_052_05",
+        "nom_commune": "Oghlwapo",
+        "cod_sp": "SP_052_05",
+        "annee": 2021,
+        "latitude": 5.40253,
+        "longitude": -3.74355,
+        "population": 3446
+    },
+    {
+        "code_commune": "COM_060_01",
+        "nom_commune": "Affery",
+        "cod_sp": "SP_060_01",
+        "annee": 2021,
+        "latitude": 6.32035,
+        "longitude": -3.95235,
+        "population": 47109
+    },
+    {
+        "code_commune": "COM_060_02",
+        "nom_commune": "Akoupe",
+        "cod_sp": "SP_060_02",
+        "annee": 2021,
+        "latitude": 6.38566,
+        "longitude": -3.88478,
+        "population": 156698
+    },
+    {
+        "code_commune": "COM_060_03",
+        "nom_commune": "Becouefin",
+        "cod_sp": "SP_060_03",
+        "annee": 2021,
+        "latitude": 6.48086,
+        "longitude": -3.84625,
+        "population": 10169
+    },
+    {
+        "code_commune": "COM_094_01",
+        "nom_commune": "Abongoua",
+        "cod_sp": "SP_094_01",
+        "annee": 2021,
+        "latitude": 6.24709,
+        "longitude": -3.54335,
+        "population": 10854
+    },
+    {
+        "code_commune": "COM_094_02",
+        "nom_commune": "Bieby",
+        "cod_sp": "SP_094_02",
+        "annee": 2021,
+        "latitude": 6.07873,
+        "longitude": -3.63548,
+        "population": 21578
+    },
+    {
+        "code_commune": "COM_094_03",
+        "nom_commune": "Yakasse-Attobrou",
+        "cod_sp": "SP_094_03",
+        "annee": 2021,
+        "latitude": 6.18174,
+        "longitude": -3.65111,
+        "population": 14907
+    },
+    {
+        "code_commune": "COM_041_01",
+        "nom_commune": "Grand-Zattry",
+        "cod_sp": "SP_041_01",
+        "annee": 2021,
+        "latitude": 6.1162,
+        "longitude": -6.53603,
+        "population": 31326
+    },
+    {
+        "code_commune": "COM_041_03",
+        "nom_commune": "Okrouyo",
+        "cod_sp": "SP_041_03",
+        "annee": 2021,
+        "latitude": 5.76443,
+        "longitude": -6.40785,
+        "population": 15852
+    },
+    {
+        "code_commune": "COM_041_04",
+        "nom_commune": "Soubre",
+        "cod_sp": "SP_041_04",
+        "annee": 2021,
+        "latitude": 5.93281,
+        "longitude": -3.18068,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_078_01",
+        "nom_commune": "Dabouyo",
+        "cod_sp": "SP_078_01",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_078_02",
+        "nom_commune": "Gueyo",
+        "cod_sp": "SP_078_02",
+        "annee": 2021,
+        "latitude": 5.8102,
+        "longitude": -6.62379,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_096_02",
+        "nom_commune": "Dapeoua",
+        "cod_sp": "SP_096_02",
+        "annee": 2021,
+        "latitude": 6.16867,
+        "longitude": -6.8752,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_104_02",
+        "nom_commune": "Meagui",
+        "cod_sp": "SP_104_02",
+        "annee": 2021,
+        "latitude": 5.4,
+        "longitude": -6.56667,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_104_03",
+        "nom_commune": "Oupoyo",
+        "cod_sp": "SP_104_03",
+        "annee": 2021,
+        "latitude": 5.56054,
+        "longitude": -6.58997,
+        "population": 23834
+    },
+    {
+        "code_commune": "COM_023_01",
+        "nom_commune": "Ferkessedougou",
+        "cod_sp": "SP_023_01",
+        "annee": 2021,
+        "latitude": 9.5928,
+        "longitude": -5.19449,
+        "population": 72476
+    },
+    {
+        "code_commune": "COM_023_02",
+        "nom_commune": "Koumbala",
+        "cod_sp": "SP_023_02",
+        "annee": 2021,
+        "latitude": 9.4158,
+        "longitude": -4.54278,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_023_03",
+        "nom_commune": "Togoniere",
+        "cod_sp": "SP_023_03",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_086_01",
+        "nom_commune": "Diawala",
+        "cod_sp": "SP_086_01",
+        "annee": 2021,
+        "latitude": 9.99396,
+        "longitude": -5.50811,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_086_02",
+        "nom_commune": "Kaouara",
+        "cod_sp": "SP_086_02",
+        "annee": 2021,
+        "latitude": 10.09085,
+        "longitude": -5.19482,
+        "population": 26142
+    },
+    {
+        "code_commune": "COM_086_03",
+        "nom_commune": "Nielle",
+        "cod_sp": "SP_086_03",
+        "annee": 2021,
+        "latitude": 10.19814,
+        "longitude": -5.62337,
+        "population": 24780
+    },
+    {
+        "code_commune": "COM_086_05",
+        "nom_commune": "Toumoukoro",
+        "cod_sp": "SP_086_05",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_commune": "COM_101_01",
+        "nom_commune": "Bilimono",
+        "cod_sp": "SP_101_01",
+        "annee": 2021,
+        "latitude": 8.92198,
+        "longitude": -4.14786,
+        "population": 3756
+    },
+    {
+        "code_commune": "COM_101_04",
+        "nom_commune": "Sikolo",
+        "cod_sp": "SP_101_04",
+        "annee": 2021,
+        "latitude": 9.44248,
+        "longitude": -4.71513,
+        "population": 4386
+    },
+    {
+        "code_commune": "COM_011_01",
+        "nom_commune": "Ande",
+        "cod_sp": "SP_011_01",
+        "annee": 2021,
+        "latitude": 5.94623,
+        "longitude": -4.42483,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_011_02",
+        "nom_commune": "Assie-Koumassi",
+        "cod_sp": "SP_011_02",
+        "annee": 2021,
+        "latitude": 6.76966,
+        "longitude": -4.28954,
+        "population": 10856
+    },
+    {
+        "code_commune": "COM_011_03",
+        "nom_commune": "Bongouanou",
+        "cod_sp": "SP_011_03",
+        "annee": 2021,
+        "latitude": 6.62324,
+        "longitude": -4.15923,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_071_02",
+        "nom_commune": "Kotobi",
+        "cod_sp": "SP_071_02",
+        "annee": 2021,
+        "latitude": 6.69569,
+        "longitude": -4.12892,
+        "population": 8768
+    },
+    {
+        "code_commune": "COM_071_03",
+        "nom_commune": "Kregbe",
+        "cod_sp": "SP_071_03",
+        "annee": 2021,
+        "latitude": 6.97249,
+        "longitude": -3.98416,
+        "population": 8138
+    },
+    {
+        "code_commune": "COM_084_01",
+        "nom_commune": "Anoumaba",
+        "cod_sp": "SP_084_01",
+        "annee": 2021,
+        "latitude": 6.33735,
+        "longitude": -4.51626,
+        "population": 7623
+    },
+    {
+        "code_commune": "COM_084_02",
+        "nom_commune": "Assahara",
+        "cod_sp": "SP_084_02",
+        "annee": 2021,
+        "latitude": 6.66643,
+        "longitude": -4.49775,
+        "population": 1610
+    },
+    {
+        "code_commune": "COM_084_03",
+        "nom_commune": "M'Batto",
+        "cod_sp": "SP_084_03",
+        "annee": 2021,
+        "latitude": 6.42388,
+        "longitude": -4.29732,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_084_04",
+        "nom_commune": "Tiemelekro",
+        "cod_sp": "SP_084_04",
+        "annee": 2021,
+        "latitude": 6.49214,
+        "longitude": -4.61985,
+        "population": 10856
+    },
+    {
+        "code_commune": "COM_002_01",
+        "nom_commune": "Yopougon",
+        "cod_sp": "SP_002_01",
+        "annee": 2021,
+        "latitude": 5.33472,
+        "longitude": -4.07,
+        "population": 1375000
+    },
+    {
+        "code_commune": "COM_002_01",
+        "nom_commune": "Port-Bouet",
+        "cod_sp": "SP_002_01",
+        "annee": 2021,
+        "latitude": 5.25677,
+        "longitude": -3.96299,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_002_01",
+        "nom_commune": "Marcory",
+        "cod_sp": "SP_002_01",
+        "annee": 2021,
+        "latitude": 5.31198,
+        "longitude": -3.99363,
+        "population": 214061
+    },
+    {
+        "code_commune": "COM_002_01",
+        "nom_commune": "Attecoube",
+        "cod_sp": "SP_002_01",
+        "annee": 2021,
+        "latitude": 5.37477,
+        "longitude": -4.08669,
+        "population": 0
+    },
+    {
+        "code_commune": "COM_002_01",
+        "nom_commune": "Cocody",
+        "cod_sp": "SP_002_01",
+        "annee": 2021,
+        "latitude": 5.34993,
+        "longitude": -3.98169,
+        "population": 692583
+    },
+    {
+        "code_commune": "COM_002_01",
+        "nom_commune": "Adjame",
+        "cod_sp": "SP_002_01",
+        "annee": 2021,
+        "latitude": 5.3648,
+        "longitude": -4.02366,
+        "population": 340892
+    },
+    {
+        "code_commune": "COM_002_01",
+        "nom_commune": "Abobo",
+        "cod_sp": "SP_002_01",
+        "annee": 2021,
+        "latitude": 5.41846,
+        "longitude": -4.01997,
+        "population": 1340083
+    }
+]

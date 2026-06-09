@@ -24,6 +24,9 @@ return new class extends Migration
             $table->string('code_dep')->unique();
             $table->string('nom_dep');
             $table->unsignedSmallInteger('annee')->nullable();        
+            $table->double('latitude')->nullable();
+            $table->double('longitude')->nullable();
+            $table->integer('population')->nullable();
             $table->timestamps();
         });
     }

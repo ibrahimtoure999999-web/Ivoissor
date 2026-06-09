@@ -28,6 +28,9 @@ return new class extends Migration
             // Année liée au décret ou à la révision administrative, facultative (nullable)
             $table->unsignedSmallInteger('annee')->nullable();
 
+            $table->double('latitude')->nullable();
+            $table->double('longitude')->nullable();
+            $table->integer('population')->nullable();
                 
             $table->timestamps();
         });

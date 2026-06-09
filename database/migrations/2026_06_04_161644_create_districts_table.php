@@ -20,6 +20,9 @@ return new class extends Migration
             $table->string('code_district')->unique();
             $table->string('nom_district');
             $table->unsignedSmallInteger('annee')->nullable(); // Crée une colonne pour l'année de découpage ou décret, optionnelle (nullable) et stockée sous forme de petit entier positif
+            $table->double('latitude')->nullable();
+            $table->double('longitude')->nullable();
+            $table->integer('population')->nullable();
             $table->timestamps();
         });
     }

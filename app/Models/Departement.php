@@ -16,6 +16,9 @@ class Departement extends Model
         'code_dep',
         'nom_dep',
         'annee',
+        'latitude',
+        'longitude',
+        'population',
     ];
 
     //Relation vers le HAUT : Un Département appartient à une unique Région.
@@ -26,7 +29,7 @@ class Departement extends Model
         return $this->belongsTo(Region::class, 'region_id', 'id');
     }
 
-    public function sousPrefectures(): HasMany
+    public function sousPrefectures():HasMany
     {
         // Déclare qu'un département possède plusieurs sous-préfectures (prochaine étape du plan d'action)
         // Utilise getKeyName() conformément aux standards exigeants du projet pour cibler la clé primaire de base

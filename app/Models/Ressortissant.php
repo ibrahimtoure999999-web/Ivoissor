@@ -47,17 +47,17 @@ class Ressortissant extends Model
         ];
     }
 
-    public function villageResidence(): BelongsTo
+    public function villageResidence():BelongsTo
     {
         return $this->belongsTo(Village::class, 'village_residence_id', 'id');
     }
 
-    public function commune(): BelongsTo
+    public function commune():BelongsTo
     {
         return $this->belongsTo(Commune::class, 'commune_id', 'id');
     }
 
-    public function village() : BelongsTo
+    public function village() :BelongsTo
     {
         return $this->belongsTo(Village::class, 'village_id', 'id');
     }

@@ -10,12 +10,14 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class GroupeEthnique extends Model
 {
+    protected $table = 'groupes_ethniques';
+
     protected $fillable = 
     [
         'nom',
     ];
 
-    public function cantons(): HasMany
+    public function cantons():HasMany
     {
         return $this->hasMany(Canton::class, 'groupe_ethnique_id', $this->getKeyName());
     }

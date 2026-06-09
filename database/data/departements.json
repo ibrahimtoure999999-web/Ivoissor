@@ -1,0 +1,1001 @@
+[
+    {
+        "cod_dep": "001",
+        "nom_dep": "Abengourou",
+        "cod_reg": "05",
+        "annee": 2021,
+        "latitude": 6.66667,
+        "longitude": -3.47083,
+        "population": 430539
+    },
+    {
+        "cod_dep": "002",
+        "nom_dep": "Abidjan",
+        "cod_reg": "01",
+        "annee": 2021,
+        "latitude": 5.34199,
+        "longitude": -3.9884,
+        "population": 0
+    },
+    {
+        "cod_dep": "003",
+        "nom_dep": "Aboisso",
+        "cod_reg": "13",
+        "annee": 2021,
+        "latitude": 5.4845,
+        "longitude": -3.26521,
+        "population": 0
+    },
+    {
+        "cod_dep": "051",
+        "nom_dep": "Adiake",
+        "cod_reg": "13",
+        "annee": 2021,
+        "latitude": 5.28634,
+        "longitude": -3.30403,
+        "population": 24701
+    },
+    {
+        "cod_dep": "004",
+        "nom_dep": "Adzope",
+        "cod_reg": "30",
+        "annee": 2021,
+        "latitude": 6.10694,
+        "longitude": -3.86194,
+        "population": 76122
+    },
+    {
+        "cod_dep": "005",
+        "nom_dep": "Agboville",
+        "cod_reg": "16",
+        "annee": 2021,
+        "latitude": 5.87769,
+        "longitude": -4.22452,
+        "population": 0
+    },
+    {
+        "cod_dep": "006",
+        "nom_dep": "Agnibilekrou",
+        "cod_reg": "05",
+        "annee": 2021,
+        "latitude": 7.13113,
+        "longitude": -3.20415,
+        "population": 63015
+    },
+    {
+        "cod_dep": "060",
+        "nom_dep": "Akoupe",
+        "cod_reg": "30",
+        "annee": 2021,
+        "latitude": 6.38423,
+        "longitude": -3.88759,
+        "population": 35970
+    },
+    {
+        "cod_dep": "052",
+        "nom_dep": "Alepe",
+        "cod_reg": "30",
+        "annee": 2021,
+        "latitude": 5.5004,
+        "longitude": -3.66308,
+        "population": 11725
+    },
+    {
+        "cod_dep": "071",
+        "nom_dep": "Arrah",
+        "cod_reg": "33",
+        "annee": 2021,
+        "latitude": 6.67259,
+        "longitude": -3.91412,
+        "population": 0
+    },
+    {
+        "cod_dep": "072",
+        "nom_dep": "Attiegouakro",
+        "cod_reg": "07",
+        "annee": 2021,
+        "latitude": 6.77402,
+        "longitude": -5.11411,
+        "population": 4537
+    },
+    {
+        "cod_dep": "007",
+        "nom_dep": "Bangolo",
+        "cod_reg": "27",
+        "annee": 2021,
+        "latitude": 6.97719,
+        "longitude": -7.53139,
+        "population": 0
+    },
+    {
+        "cod_dep": "008",
+        "nom_dep": "Beoumi",
+        "cod_reg": "04",
+        "annee": 2021,
+        "latitude": 7.67395,
+        "longitude": -5.58085,
+        "population": 33089
+    },
+    {
+        "cod_dep": "073",
+        "nom_dep": "Bettie",
+        "cod_reg": "05",
+        "annee": 2021,
+        "latitude": 6.07568,
+        "longitude": -3.40846,
+        "population": 10960
+    },
+    {
+        "cod_dep": "009",
+        "nom_dep": "Biankouma",
+        "cod_reg": "06",
+        "annee": 2021,
+        "latitude": 7.71287,
+        "longitude": -7.70848,
+        "population": 0
+    },
+    {
+        "cod_dep": "059",
+        "nom_dep": "Blolequin",
+        "cod_reg": "18",
+        "annee": 2021,
+        "latitude": 6.56913,
+        "longitude": -8.00253,
+        "population": 41821
+    },
+    {
+        "cod_dep": "053",
+        "nom_dep": "Bocanda",
+        "cod_reg": "11",
+        "annee": 2021,
+        "latitude": 7.03577,
+        "longitude": -4.54058,
+        "population": 0
+    },
+    {
+        "cod_dep": "010",
+        "nom_dep": "Bondoukou",
+        "cod_reg": "08",
+        "annee": 2021,
+        "latitude": 8.07173,
+        "longitude": -2.81559,
+        "population": 0
+    },
+    {
+        "cod_dep": "011",
+        "nom_dep": "Bongouanou",
+        "cod_reg": "33",
+        "annee": 2021,
+        "latitude": 6.62324,
+        "longitude": -4.15923,
+        "population": 0
+    },
+    {
+        "cod_dep": "109",
+        "nom_dep": "Bonon",
+        "cod_reg": "12",
+        "annee": 2021,
+        "latitude": 6.9268,
+        "longitude": -6.0489,
+        "population": 119938
+    },
+    {
+        "cod_dep": "074",
+        "nom_dep": "Botro",
+        "cod_reg": "04",
+        "annee": 2021,
+        "latitude": 7.83533,
+        "longitude": -5.34288,
+        "population": 0
+    },
+    {
+        "cod_dep": "012",
+        "nom_dep": "Bouafle",
+        "cod_reg": "12",
+        "annee": 2021,
+        "latitude": 6.99041,
+        "longitude": -5.7442,
+        "population": 104209
+    },
+    {
+        "cod_dep": "013",
+        "nom_dep": "Bouake",
+        "cod_reg": "04",
+        "annee": 2021,
+        "latitude": 9.61667,
+        "longitude": -7.41667,
+        "population": 0
+    },
+    {
+        "cod_dep": "014",
+        "nom_dep": "Bouna",
+        "cod_reg": "23",
+        "annee": 2021,
+        "latitude": 9.28822,
+        "longitude": -2.9766,
+        "population": 0
+    },
+    {
+        "cod_dep": "015",
+        "nom_dep": "Boundiali",
+        "cod_reg": "20",
+        "annee": 2021,
+        "latitude": 9.40627,
+        "longitude": -6.64035,
+        "population": 0
+    },
+    {
+        "cod_dep": "096",
+        "nom_dep": "Buyo",
+        "cod_reg": "31",
+        "annee": 2021,
+        "latitude": 6.26335,
+        "longitude": -7.08109,
+        "population": 0
+    },
+    {
+        "cod_dep": "016",
+        "nom_dep": "Dabakala",
+        "cod_reg": "28",
+        "annee": 2021,
+        "latitude": 8.33139,
+        "longitude": -4.36548,
+        "population": 0
+    },
+    {
+        "cod_dep": "054",
+        "nom_dep": "Dabou",
+        "cod_reg": "26",
+        "annee": 2021,
+        "latitude": 5.35466,
+        "longitude": -4.39998,
+        "population": 0
+    },
+    {
+        "cod_dep": "017",
+        "nom_dep": "Daloa",
+        "cod_reg": "02",
+        "annee": 2021,
+        "latitude": 6.86219,
+        "longitude": -6.42071,
+        "population": 0
+    },
+    {
+        "cod_dep": "018",
+        "nom_dep": "Danane",
+        "cod_reg": "06",
+        "annee": 2021,
+        "latitude": 7.25957,
+        "longitude": -8.15498,
+        "population": 78614
+    },
+    {
+        "cod_dep": "019",
+        "nom_dep": "Daoukro",
+        "cod_reg": "29",
+        "annee": 2021,
+        "latitude": 7.22083,
+        "longitude": -3.95417,
+        "population": 148095
+    },
+    {
+        "cod_dep": "097",
+        "nom_dep": "Dianra",
+        "cod_reg": "22",
+        "annee": 2021,
+        "latitude": 8.94333,
+        "longitude": -6.2549,
+        "population": 33548
+    },
+    {
+        "cod_dep": "061",
+        "nom_dep": "Didievi",
+        "cod_reg": "21",
+        "annee": 2021,
+        "latitude": 7.12866,
+        "longitude": -4.89804,
+        "population": 10262
+    },
+    {
+        "cod_dep": "075",
+        "nom_dep": "Dikodougou",
+        "cod_reg": "03",
+        "annee": 2021,
+        "latitude": 8.94574,
+        "longitude": -5.85138,
+        "population": 0
+    },
+    {
+        "cod_dep": "020",
+        "nom_dep": "Dimbokro",
+        "cod_reg": "11",
+        "annee": 2021,
+        "latitude": 6.66261,
+        "longitude": -4.70413,
+        "population": 0
+    },
+    {
+        "cod_dep": "021",
+        "nom_dep": "Divo",
+        "cod_reg": "15",
+        "annee": 2021,
+        "latitude": 5.93333,
+        "longitude": -5.25833,
+        "population": 571688
+    },
+    {
+        "cod_dep": "098",
+        "nom_dep": "Djekanou",
+        "cod_reg": "21",
+        "annee": 2021,
+        "latitude": 6.48389,
+        "longitude": -5.11553,
+        "population": 5160
+    },
+    {
+        "cod_dep": "076",
+        "nom_dep": "Doropo",
+        "cod_reg": "23",
+        "annee": 2021,
+        "latitude": 9.80955,
+        "longitude": -3.34577,
+        "population": 48225
+    },
+    {
+        "cod_dep": "022",
+        "nom_dep": "Duekoue",
+        "cod_reg": "27",
+        "annee": 2021,
+        "latitude": 6.74202,
+        "longitude": -7.34918,
+        "population": 117023
+    },
+    {
+        "cod_dep": "099",
+        "nom_dep": "Facobly",
+        "cod_reg": "27",
+        "annee": 2021,
+        "latitude": 7.37203,
+        "longitude": -7.41851,
+        "population": 0
+    },
+    {
+        "cod_dep": "023",
+        "nom_dep": "Ferkessedougou",
+        "cod_reg": "32",
+        "annee": 2021,
+        "latitude": 9.5928,
+        "longitude": -5.19449,
+        "population": 72476
+    },
+    {
+        "cod_dep": "077",
+        "nom_dep": "Fresco",
+        "cod_reg": "25",
+        "annee": 2021,
+        "latitude": 5.11541,
+        "longitude": -5.67962,
+        "population": 0
+    },
+    {
+        "cod_dep": "024",
+        "nom_dep": "Gagnoa",
+        "cod_reg": "17",
+        "annee": 2021,
+        "latitude": 6.09841,
+        "longitude": -6.04671,
+        "population": 0
+    },
+    {
+        "cod_dep": "100",
+        "nom_dep": "Gbeleban",
+        "cod_reg": "10",
+        "annee": 2021,
+        "latitude": 9.58461,
+        "longitude": -8.13183,
+        "population": 3003
+    },
+    {
+        "cod_dep": "110",
+        "nom_dep": "Gohitafla",
+        "cod_reg": "12",
+        "annee": 2021,
+        "latitude": 7.50268,
+        "longitude": -5.852,
+        "population": 0
+    },
+    {
+        "cod_dep": "055",
+        "nom_dep": "Grand-Bassam",
+        "cod_reg": "13",
+        "annee": 2021,
+        "latitude": 5.22569,
+        "longitude": -3.77635,
+        "population": 124567
+    },
+    {
+        "cod_dep": "025",
+        "nom_dep": "Grand-Lahou",
+        "cod_reg": "26",
+        "annee": 2021,
+        "latitude": 5.32261,
+        "longitude": -4.9557,
+        "population": 77000
+    },
+    {
+        "cod_dep": "078",
+        "nom_dep": "Gueyo",
+        "cod_reg": "31",
+        "annee": 2021,
+        "latitude": 5.6882,
+        "longitude": -6.0712,
+        "population": 15080
+    },
+    {
+        "cod_dep": "026",
+        "nom_dep": "Guiglo",
+        "cod_reg": "18",
+        "annee": 2021,
+        "latitude": 6.40487,
+        "longitude": -7.64119,
+        "population": 171454
+    },
+    {
+        "cod_dep": "079",
+        "nom_dep": "Guitry",
+        "cod_reg": "15",
+        "annee": 2021,
+        "latitude": 5.51952,
+        "longitude": -5.24038,
+        "population": 14836
+    },
+    {
+        "cod_dep": "027",
+        "nom_dep": "Issia",
+        "cod_reg": "02",
+        "annee": 2021,
+        "latitude": 6.47783,
+        "longitude": -6.63211,
+        "population": 126252
+    },
+    {
+        "cod_dep": "056",
+        "nom_dep": "Jacqueville",
+        "cod_reg": "26",
+        "annee": 2021,
+        "latitude": 5.20515,
+        "longitude": -4.4146,
+        "population": 14383
+    },
+    {
+        "cod_dep": "080",
+        "nom_dep": "Kani",
+        "cod_reg": "14",
+        "annee": 2021,
+        "latitude": 8.48364,
+        "longitude": -6.6002,
+        "population": 0
+    },
+    {
+        "cod_dep": "081",
+        "nom_dep": "Kaniasso",
+        "cod_reg": "24",
+        "annee": 2021,
+        "latitude": 9.81471,
+        "longitude": -7.5125,
+        "population": 3299
+    },
+    {
+        "cod_dep": "028",
+        "nom_dep": "Katiola",
+        "cod_reg": "28",
+        "annee": 2021,
+        "latitude": 8.05868,
+        "longitude": -5.12167,
+        "population": 0
+    },
+    {
+        "cod_dep": "101",
+        "nom_dep": "Kong",
+        "cod_reg": "32",
+        "annee": 2021,
+        "latitude": 9.13611,
+        "longitude": -4.68137,
+        "population": 33391
+    },
+    {
+        "cod_dep": "029",
+        "nom_dep": "Korhogo",
+        "cod_reg": "03",
+        "annee": 2021,
+        "latitude": 9.46442,
+        "longitude": -5.73745,
+        "population": 440926
+    },
+    {
+        "cod_dep": "082",
+        "nom_dep": "Koro",
+        "cod_reg": "19",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "cod_dep": "102",
+        "nom_dep": "Kouassi-Kouassikro",
+        "cod_reg": "11",
+        "annee": 2021,
+        "latitude": 7.28186,
+        "longitude": -4.65691,
+        "population": 0
+    },
+    {
+        "cod_dep": "062",
+        "nom_dep": "Kouibly",
+        "cod_reg": "27",
+        "annee": 2021,
+        "latitude": 7.22778,
+        "longitude": -7.29815,
+        "population": 0
+    },
+    {
+        "cod_dep": "069",
+        "nom_dep": "Kounahiri",
+        "cod_reg": "22",
+        "annee": 2021,
+        "latitude": 7.79089,
+        "longitude": -5.83477,
+        "population": 7107
+    },
+    {
+        "cod_dep": "070",
+        "nom_dep": "Koun-Fao",
+        "cod_reg": "08",
+        "annee": 2021,
+        "latitude": 7.48764,
+        "longitude": -3.25249,
+        "population": 7114
+    },
+    {
+        "cod_dep": "083",
+        "nom_dep": "Kouto",
+        "cod_reg": "20",
+        "annee": 2021,
+        "latitude": 9.98462,
+        "longitude": -6.39619,
+        "population": 55893
+    },
+    {
+        "cod_dep": "030",
+        "nom_dep": "Lakota",
+        "cod_reg": "15",
+        "annee": 2021,
+        "latitude": 5.89607,
+        "longitude": -5.69066,
+        "population": 0
+    },
+    {
+        "cod_dep": "067",
+        "nom_dep": "Madinani",
+        "cod_reg": "10",
+        "annee": 2021,
+        "latitude": 9.55196,
+        "longitude": -6.95878,
+        "population": 0
+    },
+    {
+        "cod_dep": "031",
+        "nom_dep": "Man",
+        "cod_reg": "06",
+        "annee": 2021,
+        "latitude": 7.40165,
+        "longitude": -7.64406,
+        "population": 241969
+    },
+    {
+        "cod_dep": "032",
+        "nom_dep": "Mankono",
+        "cod_reg": "22",
+        "annee": 2021,
+        "latitude": 8.08196,
+        "longitude": -6.1461,
+        "population": 74165
+    },
+    {
+        "cod_dep": "033",
+        "nom_dep": "M'Bahiakro",
+        "cod_reg": "29",
+        "annee": 2021,
+        "latitude": 7.50083,
+        "longitude": -4.32803,
+        "population": 0
+    },
+    {
+        "cod_dep": "084",
+        "nom_dep": "M'Batto",
+        "cod_reg": "33",
+        "annee": 2021,
+        "latitude": 6.42388,
+        "longitude": -4.29732,
+        "population": 0
+    },
+    {
+        "cod_dep": "103",
+        "nom_dep": "M'Bengue",
+        "cod_reg": "03",
+        "annee": 2021,
+        "latitude": 10.00244,
+        "longitude": -5.90037,
+        "population": 28832
+    },
+    {
+        "cod_dep": "104",
+        "nom_dep": "Meagui",
+        "cod_reg": "31",
+        "annee": 2021,
+        "latitude": 5.4119,
+        "longitude": -6.5603,
+        "population": 74365
+    },
+    {
+        "cod_dep": "068",
+        "nom_dep": "Minignan",
+        "cod_reg": "24",
+        "annee": 2021,
+        "latitude": 9.99744,
+        "longitude": -7.83593,
+        "population": 8855
+    },
+    {
+        "cod_dep": "063",
+        "nom_dep": "Nassian",
+        "cod_reg": "23",
+        "annee": 2021,
+        "latitude": 8.39913,
+        "longitude": -3.49851,
+        "population": 0
+    },
+    {
+        "cod_dep": "085",
+        "nom_dep": "Niakaramadougou",
+        "cod_reg": "28",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "cod_dep": "034",
+        "nom_dep": "Odienne",
+        "cod_reg": "10",
+        "annee": 2021,
+        "latitude": 9.50511,
+        "longitude": -7.56433,
+        "population": 54669
+    },
+    {
+        "cod_dep": "086",
+        "nom_dep": "Ouangolodougou",
+        "cod_reg": "32",
+        "annee": 2021,
+        "latitude": 9.96837,
+        "longitude": -5.14882,
+        "population": 49248
+    },
+    {
+        "cod_dep": "087",
+        "nom_dep": "Ouaninou",
+        "cod_reg": "19",
+        "annee": 2021,
+        "latitude": 8.2379,
+        "longitude": -7.86638,
+        "population": 8943
+    },
+    {
+        "cod_dep": "111",
+        "nom_dep": "Ouelle",
+        "cod_reg": "29",
+        "annee": 2021,
+        "latitude": 10.35602,
+        "longitude": -6.80896,
+        "population": 6366
+    },
+    {
+        "cod_dep": "035",
+        "nom_dep": "Oume",
+        "cod_reg": "17",
+        "annee": 2021,
+        "latitude": 6.38309,
+        "longitude": -5.41759,
+        "population": 58606
+    },
+    {
+        "cod_dep": "064",
+        "nom_dep": "Prikro",
+        "cod_reg": "29",
+        "annee": 2021,
+        "latitude": 7.67059,
+        "longitude": -4.03016,
+        "population": 0
+    },
+    {
+        "cod_dep": "036",
+        "nom_dep": "Sakassou",
+        "cod_reg": "04",
+        "annee": 2021,
+        "latitude": 7.44167,
+        "longitude": -5.3375,
+        "population": 108110
+    },
+    {
+        "cod_dep": "088",
+        "nom_dep": "Samatiguila",
+        "cod_reg": "10",
+        "annee": 2021,
+        "latitude": 9.81952,
+        "longitude": -7.56085,
+        "population": 6278
+    },
+    {
+        "cod_dep": "089",
+        "nom_dep": "Sandegue",
+        "cod_reg": "08",
+        "annee": 2021,
+        "latitude": 7.98167,
+        "longitude": -3.55458,
+        "population": 0
+    },
+    {
+        "cod_dep": "037",
+        "nom_dep": "San-Pedro",
+        "cod_reg": "09",
+        "annee": 2021,
+        "latitude": 4.76768,
+        "longitude": -6.65033,
+        "population": 826666
+    },
+    {
+        "cod_dep": "038",
+        "nom_dep": "Sassandra",
+        "cod_reg": "25",
+        "annee": 2021,
+        "latitude": 5.33333,
+        "longitude": -6.16667,
+        "population": 0
+    },
+    {
+        "cod_dep": "039",
+        "nom_dep": "Seguela",
+        "cod_reg": "14",
+        "annee": 2021,
+        "latitude": 7.96111,
+        "longitude": -6.67306,
+        "population": 103980
+    },
+    {
+        "cod_dep": "105",
+        "nom_dep": "Seguelon",
+        "cod_reg": "10",
+        "annee": 2021,
+        "latitude": 9.35694,
+        "longitude": -7.12083,
+        "population": 4625
+    },
+    {
+        "cod_dep": "065",
+        "nom_dep": "Sikensi",
+        "cod_reg": "16",
+        "annee": 2021,
+        "latitude": 5.66829,
+        "longitude": -4.57371,
+        "population": 9473
+    },
+    {
+        "cod_dep": "090",
+        "nom_dep": "Sinematiali",
+        "cod_reg": "03",
+        "annee": 2021,
+        "latitude": 9.55833,
+        "longitude": -5.39167,
+        "population": 0
+    },
+    {
+        "cod_dep": "040",
+        "nom_dep": "Sinfra",
+        "cod_reg": "12",
+        "annee": 2021,
+        "latitude": 6.61486,
+        "longitude": -5.8791,
+        "population": 0
+    },
+    {
+        "cod_dep": "106",
+        "nom_dep": "Sipilou",
+        "cod_reg": "06",
+        "annee": 2021,
+        "latitude": 7.8645,
+        "longitude": -8.10143,
+        "population": 7395
+    },
+    {
+        "cod_dep": "041",
+        "nom_dep": "Soubre",
+        "cod_reg": "31",
+        "annee": 2021,
+        "latitude": 5.78377,
+        "longitude": -6.59388,
+        "population": 131181
+    },
+    {
+        "cod_dep": "107",
+        "nom_dep": "Taabo",
+        "cod_reg": "16",
+        "annee": 2021,
+        "latitude": 6.1998,
+        "longitude": -5.10884,
+        "population": 0
+    },
+    {
+        "cod_dep": "042",
+        "nom_dep": "Tabou",
+        "cod_reg": "09",
+        "annee": 2021,
+        "latitude": 4.51784,
+        "longitude": -7.36891,
+        "population": 0
+    },
+    {
+        "cod_dep": "108",
+        "nom_dep": "Tai",
+        "cod_reg": "18",
+        "annee": 2021,
+        "latitude": 5.87366,
+        "longitude": -7.45519,
+        "population": 7670
+    },
+    {
+        "cod_dep": "043",
+        "nom_dep": "Tanda",
+        "cod_reg": "08",
+        "annee": 2021,
+        "latitude": 7.79535,
+        "longitude": -3.11761,
+        "population": 0
+    },
+    {
+        "cod_dep": "091",
+        "nom_dep": "Tehini",
+        "cod_reg": "23",
+        "annee": 2021,
+        "latitude": 9.60542,
+        "longitude": -3.65804,
+        "population": 3461
+    },
+    {
+        "cod_dep": "044",
+        "nom_dep": "Tengrela",
+        "cod_reg": "20",
+        "annee": 2021,
+        "latitude": 10.44167,
+        "longitude": -6.4125,
+        "population": 141761
+    },
+    {
+        "cod_dep": "092",
+        "nom_dep": "Tiapoum",
+        "cod_reg": "13",
+        "annee": 2021,
+        "latitude": 5.13622,
+        "longitude": -3.02308,
+        "population": 5920
+    },
+    {
+        "cod_dep": "045",
+        "nom_dep": "Tiassale",
+        "cod_reg": "16",
+        "annee": 2021,
+        "latitude": 5.89839,
+        "longitude": -4.82293,
+        "population": 35090
+    },
+    {
+        "cod_dep": "057",
+        "nom_dep": "Tiebissou",
+        "cod_reg": "21",
+        "annee": 2021,
+        "latitude": 7.21338,
+        "longitude": -5.14883,
+        "population": 0
+    },
+    {
+        "cod_dep": "046",
+        "nom_dep": "Touba",
+        "cod_reg": "19",
+        "annee": 2021,
+        "latitude": 8.2595,
+        "longitude": -7.61126,
+        "population": 0
+    },
+    {
+        "cod_dep": "058",
+        "nom_dep": "Toulepleu",
+        "cod_reg": "18",
+        "annee": 2021,
+        "latitude": 6.57974,
+        "longitude": -8.41091,
+        "population": 8794
+    },
+    {
+        "cod_dep": "047",
+        "nom_dep": "Toumodi",
+        "cod_reg": "21",
+        "annee": 2021,
+        "latitude": 6.51889,
+        "longitude": -5.00053,
+        "population": 0
+    },
+    {
+        "cod_dep": "093",
+        "nom_dep": "Transua",
+        "cod_reg": "08",
+        "annee": 2021,
+        "latitude": 7.55004,
+        "longitude": -3.01431,
+        "population": 5333
+    },
+    {
+        "cod_dep": "048",
+        "nom_dep": "Vavoua",
+        "cod_reg": "02",
+        "annee": 2021,
+        "latitude": 7.28802,
+        "longitude": -6.52915,
+        "population": 0
+    },
+    {
+        "cod_dep": "094",
+        "nom_dep": "Yakasse-Attobrou",
+        "cod_reg": "30",
+        "annee": 2021,
+        "latitude": 6.18174,
+        "longitude": -3.65111,
+        "population": 14907
+    },
+    {
+        "cod_dep": "049",
+        "nom_dep": "Yamoussoukro",
+        "cod_reg": "07",
+        "annee": 2021,
+        "latitude": 6.81448,
+        "longitude": -5.25312,
+        "population": 0
+    },
+    {
+        "cod_dep": "066",
+        "nom_dep": "Zouan-Hounien",
+        "cod_reg": "06",
+        "annee": 2021,
+        "latitude": 6.86979,
+        "longitude": -8.2614,
+        "population": 0
+    },
+    {
+        "cod_dep": "095",
+        "nom_dep": "Zoukougbeu",
+        "cod_reg": "02",
+        "annee": 2021,
+        "latitude": 6.76229,
+        "longitude": -6.8638,
+        "population": 15375
+    },
+    {
+        "cod_dep": "050",
+        "nom_dep": "Zuenoula",
+        "cod_reg": "12",
+        "annee": 2021,
+        "latitude": 7.43027,
+        "longitude": -6.05054,
+        "population": 44097
+    }
+]

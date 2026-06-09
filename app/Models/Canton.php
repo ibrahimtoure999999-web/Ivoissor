@@ -13,6 +13,7 @@ class Canton extends Model
     protected $fillable = 
     [
         'groupe_ethnique_id',
+        'region_id',
         'nom',
     ];
 
@@ -21,9 +22,14 @@ class Canton extends Model
         return $this->belongsTo(GroupeEthnique::class, 'groupe_ethnique_id', 'id');
     }
 
+    public function region():BelongsTo
+    {
+        return $this->belongsTo(Region::class, 'region_id', 'id');
+    }
+
     public function tribus():HasMany
     {
         return $this->hasMany(Tribu::class, 'canton_id', $this->getKeyName());
     }
-
+    
 }

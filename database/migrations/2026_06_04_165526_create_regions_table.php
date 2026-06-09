@@ -26,6 +26,9 @@ return new class extends Migration
             $table->string('code_reg')->unique();
             $table->string('nom_reg'); 
             $table->unsignedSmallInteger('annee')->nullable();           
+            $table->double('latitude')->nullable();
+            $table->double('longitude')->nullable();
+            $table->integer('population')->nullable();
             $table->timestamps();
         });
     }

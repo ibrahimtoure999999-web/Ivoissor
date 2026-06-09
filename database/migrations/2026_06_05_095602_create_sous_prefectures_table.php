@@ -34,10 +34,11 @@ return new class extends Migration
 
             // Nom officiel de la sous-préfecture (ex: 'Loviguié')
             $table->string('nom_sp');
-
             // Année liée au décret ou à la révision administrative, nullable si non documentée
             $table->unsignedSmallInteger('annee')->nullable();
-
+            $table->double('latitude')->nullable();
+            $table->double('longitude')->nullable();
+            $table->integer('population')->nullable();
             // Génère les colonnes d'historique de modification 'created_at' et 'updated_at'
             $table->timestamps();
         }); 
@@ -48,5 +49,5 @@ return new class extends Migration
     {
         // Supprime proprement la table 'sous_prefectures' si elle existe
         Schema::dropIfExists('sous_prefectures');
-    } // Fin de la méthode down
-}; // Fin de la classe
+    } 
+}; 

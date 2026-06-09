@@ -1,48 +1,40 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Database\Seeders;
 
 use App\Models\User;
-use App\Models\District;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\File;
 
 class DatabaseSeeder extends Seeder
 {
-    use WithoutModelEvents;
-
     /**
      * Seed the application's database.
      */
     public function run(): void
     {
-        // le Chemin d'accès vers notre fichier de données JSON
-       $path = database_path('data/districts.json');
+        // 1. Seed administrative hierarchy
+        $this->call([
+            DistrictSeeder::class,
+            RegionSeeder::class,
+            DepartementSeeder::class,
+            SousPrefectureSeeder::class,
+            CommuneSeeder::class,
+        ]);
 
-       // on Vérifie que le fichier existe bien avant de tenter de le lire
-        if (!File::exists($path)) {
-            return;
-        }
+        // 2. Seed customary/traditional hierarchy
+        $this->call([
+            CustomarySeeder::class,
+        ]);
 
-        // Lecture du contenu du fichier JSON
-        $json = File::get($path);
-
-        // Transformer un texte au format JSON en une liste PHP
-        $districts = json_decode($json, true);
-
-        // On boucle sur chaque district pour l'ajouter ou le mettre à jour
-        foreach ($districts as $district) {
-            District::query()->updateOrCreate(
-                // Si ce code existe déjà en base, on modifie la ligne. Sinon, on en crée une nouvelle.
-                ['code_district' => $district['code_district']],
-
-                // les données à enregistrer
-                [
-                    'nom_district' => $district['nom_district'],
-                    'annee'        => $district['annee'] ?? null,
-                ]
-            );
-        }
+        // 3. Seed default agent for login
+        User::query()->updateOrCreate(
+            ['email' => 'agent@ivoissor.ci'],
+            [
+                'name' => 'Agent Ivoirien',
+                'password' => bcrypt('password'),
+            ]
+        );
     }
 }

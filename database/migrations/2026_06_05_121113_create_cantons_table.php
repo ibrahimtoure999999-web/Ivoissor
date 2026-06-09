@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('cantons', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->foreignId('groupe_ethnique_id')->constrained('groupes_ethniques')->restrictOnDelete();
+            $table->foreignId('region_id')->nullable()->constrained('regions')->nullOnDelete();
             $table->string('nom');
             $table->timestamps();
         });

@@ -1,15 +1,114 @@
 [
-    { "code_district": "DIST_ABJ", "nom_district": "District Autonome d'Abidjan", "annee": 2011 },
-    { "code_district": "DIST_YAK", "nom_district": "District Autonome de Yamoussoukro", "annee": 2011 },
-    { "code_district": "DIST_BAS", "nom_district": "District Bas-Sassandra", "annee": 2011 },
-    { "code_district": "DIST_COM", "nom_district": "District Comoé", "annee": 2011 },
-    { "code_district": "DIST_DEN", "nom_district": "District Denguélé", "annee": 2011 },
-    { "code_district": "DIST_GOH", "nom_district": "District Gôh-Djiboua", "annee": 2011 },
-    { "code_district": "DIST_LAG", "nom_district": "District Lagunes", "annee": 2011 },
-    { "code_district": "DIST_MON", "nom_district": "District Montagnes", "annee": 2011 },
-    { "code_district": "DIST_SAB", "nom_district": "District Sassandra-Marahoué", "annee": 2011 },
-    { "code_district": "DIST_SAV", "nom_district": "District Savanes", "annee": 2011 },
-    { "code_district": "DIST_VAL", "nom_district": "District Vallée du Bandama", "annee": 2011 },
-    { "code_district": "DIST_WOR", "nom_district": "District Woroba", "annee": 2011 },
-    { "code_district": "DIST_ZAN", "nom_district": "District Zanzan", "annee": 2011 }
+    {
+        "code_district": "01",
+        "nom_district": "Autonome D'Abidjan",
+        "annee": 2021,
+        "latitude": 5.36,
+        "longitude": -4.0083,
+        "population": null
+    },
+    {
+        "code_district": "07",
+        "nom_district": "Haut-Sassandra-Marahoue",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "code_district": "11",
+        "nom_district": "Savanes",
+        "annee": 2021,
+        "latitude": 9.48829,
+        "longitude": -5.49419,
+        "population": 2159434
+    },
+    {
+        "code_district": "12",
+        "nom_district": "Vallee Du Bandama",
+        "annee": 2021,
+        "latitude": 8.25011,
+        "longitude": -4.85458,
+        "population": 1964929
+    },
+    {
+        "code_district": "04",
+        "nom_district": "Comoe",
+        "annee": 2021,
+        "latitude": 5.50386,
+        "longitude": -3.25105,
+        "population": 1501336
+    },
+    {
+        "code_district": "10",
+        "nom_district": "Montagnes",
+        "annee": 2021,
+        "latitude": 6.95434,
+        "longitude": -7.62897,
+        "population": 3027023
+    },
+    {
+        "code_district": "02",
+        "nom_district": "Autonome De Yamoussoukro",
+        "annee": 2021,
+        "latitude": 6.8276,
+        "longitude": -5.2893,
+        "population": null
+    },
+    {
+        "code_district": "14",
+        "nom_district": "Zanzan",
+        "annee": 2021,
+        "latitude": 8.50016,
+        "longitude": -3.21384,
+        "population": 1344865
+    },
+    {
+        "code_district": "03",
+        "nom_district": "Bas-Sassandra",
+        "annee": 2021,
+        "latitude": 5.49929,
+        "longitude": -6.66085,
+        "population": 2687176
+    },
+    {
+        "code_district": "05",
+        "nom_district": "Denguele",
+        "annee": 2021,
+        "latitude": 9.49712,
+        "longitude": -7.37629,
+        "population": 436015
+    },
+    {
+        "code_district": "08",
+        "nom_district": "Lacs",
+        "annee": 2021,
+        "latitude": 7.03125,
+        "longitude": -4.44848,
+        "population": 1488531
+    },
+    {
+        "code_district": "13",
+        "nom_district": "Woroba",
+        "annee": 2021,
+        "latitude": 7.99044,
+        "longitude": -6.62544,
+        "population": 1184813
+    },
+    {
+        "code_district": "06",
+        "nom_district": "Gôh-Djiboua",
+        "annee": 2021,
+        "latitude": 6.13184,
+        "longitude": -5.94893,
+        "population": 2088440
+    },
+    {
+        "code_district": "09",
+        "nom_district": "Lagunes",
+        "annee": 2021,
+        "latitude": 5.87068,
+        "longitude": -4.29862,
+        "population": 2042623
+    }
 ]

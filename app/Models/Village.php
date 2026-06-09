@@ -16,12 +16,12 @@ class Village extends Model
         'nom',
     ];
 
-    public function tribu(): BelongsTo
+    public function tribu():BelongsTo
     {
         return $this->belongsTo(Tribu::class, 'tribu_id', 'id');
     }
 
-    public function ressortissants(): HasMany
+    public function ressortissants():HasMany
     {
         return $this->hasMany(Ressortissant::class, 'village_id', $this->getKeyName());
     }

@@ -15,9 +15,12 @@ class Region extends Model
         'code_reg',
         'nom_reg',
         'annee',
+        'latitude',
+        'longitude',
+        'population',
     ];
 
-    public function district(): BelongsTo
+    public function district():BelongsTo
     {
         // 'belongsTo' indique que la clé 'district_id' se trouve dans notre table actuelle 'regions'
         // Nous lions cette clé au modèle District
@@ -30,10 +33,15 @@ class Region extends Model
      *
      *
      */
-    public function departements(): HasMany
+    public function departements():HasMany
     {
         // Nous utilisons 'getKeyName()' pour récupérer dynamiquement le nom de la clé primaire (généralement 'id')
         // Cela respecte scrupuleusement les exigences de la charte de développement fournie
         return $this->hasMany(Departement::class, 'region_id', $this->getKeyName());
+    }
+
+    public function cantons():HasMany
+    {
+        return $this->hasMany(Canton::class, 'region_id', $this->getKeyName());
     }
 }

@@ -16,6 +16,9 @@ class Commune extends Model
         'code_commune',       // Code officiel unique ANStat
         'nom_commune',        // Libellé de la commune / ville
         'annee',
+        'latitude',
+        'longitude',
+        'population',
     ];
 
     public function sousPrefecture():BelongsTo

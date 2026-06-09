@@ -28,7 +28,7 @@ class Tribu extends Model
      * Relation vers le HAUT : Une Tribu appartient à un seul et unique Canton parent.
      * Grâce à cela, on pourra écrire en code : $tribu->canton->nom
      */
-    public function canton(): BelongsTo
+    public function canton():BelongsTo
     {
         // Indique à Laravel que la colonne 'canton_id' de notre table actuelle pointe vers l'id de la table 'cantons'
         return $this->belongsTo(Canton::class, 'canton_id', 'id');
@@ -38,7 +38,7 @@ class Tribu extends Model
      * Relation vers le BAS : Une Tribu possède plusieurs Villages (la toute dernière étape coutumière).
      * Permet de récupérer instantanément tous les villages enfants de la tribu.
      */
-    public function villages(): HasMany
+    public function villages():HasMany
     {
         // Lie notre tribu aux futurs villages enfants en utilisant le nom de notre clé primaire dynamique
         // Cela respecte scrupuleusement les exigences de la charte de développement de notre projet

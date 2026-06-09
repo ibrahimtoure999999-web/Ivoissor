@@ -1,0 +1,299 @@
+[
+    {
+        "cod_reg": "01",
+        "nom_reg": "Abidjan",
+        "code_district": "01",
+        "annee": 2021,
+        "latitude": 5.36289,
+        "longitude": -3.9992,
+        "population": 6321017
+    },
+    {
+        "cod_reg": "16",
+        "nom_reg": "Agneby-Tiassa",
+        "code_district": "09",
+        "annee": 2021,
+        "latitude": 5.79488,
+        "longitude": -4.37187,
+        "population": 865951
+    },
+    {
+        "cod_reg": "19",
+        "nom_reg": "Bafing",
+        "code_district": "13",
+        "annee": 2021,
+        "latitude": 8.40611,
+        "longitude": -7.58048,
+        "population": 205339
+    },
+    {
+        "cod_reg": "20",
+        "nom_reg": "Bagoue",
+        "code_district": "11",
+        "annee": 2021,
+        "latitude": 9.93594,
+        "longitude": -6.40778,
+        "population": 515890
+    },
+    {
+        "cod_reg": "21",
+        "nom_reg": "Belier",
+        "code_district": "08",
+        "annee": 2021,
+        "latitude": 7.02582,
+        "longitude": -5.06744,
+        "population": 415593
+    },
+    {
+        "cod_reg": "22",
+        "nom_reg": "Bere",
+        "code_district": "13",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "cod_reg": "23",
+        "nom_reg": "Bounkani",
+        "code_district": "14",
+        "annee": 2021,
+        "latitude": 9.47841,
+        "longitude": -3.31238,
+        "population": 427037
+    },
+    {
+        "cod_reg": "18",
+        "nom_reg": "Cavally",
+        "code_district": "10",
+        "annee": 2021,
+        "latitude": 6.56343,
+        "longitude": -7.92526,
+        "population": 708241
+    },
+    {
+        "cod_reg": "24",
+        "nom_reg": "Folon",
+        "code_district": "05",
+        "annee": 2021,
+        "latitude": 9.81241,
+        "longitude": -7.51894,
+        "population": 146209
+    },
+    {
+        "cod_reg": "04",
+        "nom_reg": "Gbeke",
+        "code_district": "12",
+        "annee": 2021,
+        "latitude": 7.70271,
+        "longitude": -5.28511,
+        "population": 1010849
+    },
+    {
+        "cod_reg": "25",
+        "nom_reg": "Gbokle",
+        "code_district": "03",
+        "annee": 2021,
+        "latitude": 4.95712,
+        "longitude": -6.09372,
+        "population": 460980
+    },
+    {
+        "cod_reg": "17",
+        "nom_reg": "Gôh",
+        "code_district": "06",
+        "annee": 2021,
+        "latitude": 6.14459,
+        "longitude": -5.92644,
+        "population": 985282
+    },
+    {
+        "cod_reg": "08",
+        "nom_reg": "Gontougo",
+        "code_district": "14",
+        "annee": 2021,
+        "latitude": 7.87132,
+        "longitude": -3.07068,
+        "population": 917828
+    },
+    {
+        "cod_reg": "26",
+        "nom_reg": "Grands-Ponts",
+        "code_district": "09",
+        "annee": 2021,
+        "latitude": 5.30487,
+        "longitude": -4.39247,
+        "population": 450007
+    },
+    {
+        "cod_reg": "27",
+        "nom_reg": "Guemon",
+        "code_district": "10",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "cod_reg": "28",
+        "nom_reg": "Hambol",
+        "code_district": "12",
+        "annee": 2021,
+        "latitude": 8.30368,
+        "longitude": -5.15396,
+        "population": 429977
+    },
+    {
+        "cod_reg": "02",
+        "nom_reg": "Haut-Sassandra",
+        "code_district": "07",
+        "annee": 2021,
+        "latitude": 7.0,
+        "longitude": -6.58333,
+        "population": 1186600
+    },
+    {
+        "cod_reg": "29",
+        "nom_reg": "Iffou",
+        "code_district": "08",
+        "annee": 2021,
+        "latitude": 7.11509,
+        "longitude": -3.95027,
+        "population": 378560
+    },
+    {
+        "cod_reg": "05",
+        "nom_reg": "Indenie-Djuablin",
+        "code_district": "04",
+        "annee": 2021,
+        "latitude": 6.74434,
+        "longitude": -3.494,
+        "population": 716443
+    },
+    {
+        "cod_reg": "10",
+        "nom_reg": "Kabadougou",
+        "code_district": "05",
+        "annee": 2021,
+        "latitude": 9.60571,
+        "longitude": -7.43774,
+        "population": 289806
+    },
+    {
+        "cod_reg": "30",
+        "nom_reg": "La Me",
+        "code_district": "09",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "cod_reg": "15",
+        "nom_reg": "Lôh-Djiboua",
+        "code_district": "06",
+        "annee": 2021,
+        "latitude": 5.82483,
+        "longitude": -5.47668,
+        "population": 1103158
+    },
+    {
+        "cod_reg": "12",
+        "nom_reg": "Marahoue",
+        "code_district": "07",
+        "annee": 2021,
+        "latitude": 7.16667,
+        "longitude": -5.83333,
+        "population": 651700
+    },
+    {
+        "cod_reg": "33",
+        "nom_reg": "Moronou",
+        "code_district": "08",
+        "annee": 2021,
+        "latitude": 6.32043,
+        "longitude": -4.97121,
+        "population": 6017
+    },
+    {
+        "cod_reg": "31",
+        "nom_reg": "Nawa",
+        "code_district": "03",
+        "annee": 2021,
+        "latitude": 9.65,
+        "longitude": -5.03333,
+        "population": 0
+    },
+    {
+        "cod_reg": "11",
+        "nom_reg": "N'Zi",
+        "code_district": "08",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "cod_reg": "03",
+        "nom_reg": "Poro",
+        "code_district": "11",
+        "annee": 2021,
+        "latitude": 4.77587,
+        "longitude": -6.63235,
+        "population": 1208
+    },
+    {
+        "cod_reg": "09",
+        "nom_reg": "San-Pedro",
+        "code_district": "03",
+        "annee": 2021,
+        "latitude": null,
+        "longitude": null,
+        "population": null
+    },
+    {
+        "cod_reg": "13",
+        "nom_reg": "Sud-Comoe",
+        "code_district": "04",
+        "annee": 2021,
+        "latitude": 5.49961,
+        "longitude": -3.2408,
+        "population": 784893
+    },
+    {
+        "cod_reg": "32",
+        "nom_reg": "Tchologo",
+        "code_district": "11",
+        "annee": 2021,
+        "latitude": 9.52717,
+        "longitude": -4.89716,
+        "population": 603084
+    },
+    {
+        "cod_reg": "06",
+        "nom_reg": "Tonkpi",
+        "code_district": "10",
+        "annee": 2021,
+        "latitude": 7.56785,
+        "longitude": -7.60941,
+        "population": 1387909
+    },
+    {
+        "cod_reg": "14",
+        "nom_reg": "Worodougou",
+        "code_district": "13",
+        "annee": 2021,
+        "latitude": 8.5,
+        "longitude": -6.33333,
+        "population": 400200
+    },
+    {
+        "cod_reg": "07",
+        "nom_reg": "Yamoussoukro",
+        "code_district": "02",
+        "annee": 2021,
+        "latitude": 6.85205,
+        "longitude": -5.29854,
+        "population": 0
+    }
+]

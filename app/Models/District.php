@@ -13,6 +13,9 @@ class District extends Model
         'code_district',
         'nom_district',
         'annee',
+        'latitude',
+        'longitude',
+        'population',
     ];
 
     /**
