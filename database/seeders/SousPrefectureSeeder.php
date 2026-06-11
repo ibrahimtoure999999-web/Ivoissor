@@ -18,7 +18,7 @@ class SousPrefectureSeeder extends Seeder
     {
         $path = database_path('data/sous_prefectures.json');
 
-        if (!File::exists($path)) {
+        if (! File::exists($path)) {
             return;
         }
 
@@ -34,11 +34,11 @@ class SousPrefectureSeeder extends Seeder
                     ['cod_sp' => $spData['cod_sp']],
                     [
                         'departement_id' => $departement->id,
-                        'nom_sp'         => $spData['nom_sp'],
-                        'annee'          => $spData['annee'] ?? null,
-                        'latitude'     => $spData['latitude'] ?? null,
-                        'longitude'    => $spData['longitude'] ?? null,
-                        'population'   => $spData['population'] ?? null,
+                        'nom_sp' => $spData['nom_sp'],
+                        'annee' => $spData['annee'] ?? null,
+                        'latitude' => $spData['latitude'] ?? null,
+                        'longitude' => $spData['longitude'] ?? null,
+                        'population' => $spData['population'] ?? null,
                     ]
                 );
             }

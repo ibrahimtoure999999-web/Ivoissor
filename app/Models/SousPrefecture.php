@@ -16,29 +16,26 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  */
 class SousPrefecture extends Model
 {
-    
     protected $fillable = [
-        'departement_id', 
-        'cod_sp',         
-        'nom_sp',         
-        'annee',          
+        'departement_id',
+        'cod_sp',
+        'nom_sp',
+        'annee',
         'latitude',
         'longitude',
         'population',
-    ]; 
+    ];
 
-    
-    public function departement():BelongsTo
+    public function departement(): BelongsTo
     {
         // Définit la liaison inverse : notre table détient la clé 'departement_id' pointant sur l'id de la table 'departements'
         return $this->belongsTo(Departement::class, 'departement_id', 'id');
-    } 
+    }
 
-    
-    public function communes():HasMany
+    public function communes(): HasMany
     {
         // Déclare qu'une sous-préfecture possède plusieurs communes
         // Utilise getKeyName() conformément aux exigences de propreté de notre charte technique
         return $this->hasMany(Commune::class, 'sous_prefecture_id', $this->getKeyName());
-    } 
-} 
+    }
+}

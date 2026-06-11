@@ -12,11 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('villages', function (Blueprint $table) {
-           $table->bigIncrements('id');
-           
-           // Clé étrangère vers la table 'tribus' avec restriction de suppression
-           $table->foreignId('tribu_id')->constrained('tribus')->restrictOnDelete(); 
-           $table->string('nom');
+            $table->bigIncrements('id');
+
+            // Clé étrangère vers la table 'tribus' avec restriction de suppression
+            $table->foreignId('tribu_id')->constrained('tribus')->restrictOnDelete();
+            $table->string('nom');
             $table->timestamps();
         });
     }

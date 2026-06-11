@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('departements', function (Blueprint $table) {
             $table->bigIncrements('id');
-            
+
             // Clé étrangère connectée à la table 'regions'
             $table->foreignId('region_id')->constrained('regions')->restrictOnDelete();
             // Indique la table parente ciblée par ce lien
@@ -23,7 +23,7 @@ return new class extends Migration
 
             $table->string('code_dep')->unique();
             $table->string('nom_dep');
-            $table->unsignedSmallInteger('annee')->nullable();        
+            $table->unsignedSmallInteger('annee')->nullable();
             $table->double('latitude')->nullable();
             $table->double('longitude')->nullable();
             $table->integer('population')->nullable();

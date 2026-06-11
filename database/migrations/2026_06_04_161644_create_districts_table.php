@@ -15,7 +15,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('districts', function (Blueprint $table) {
-           
+
             $table->bigIncrements('id');  // Crée une clé primaire auto-incrémentée
             $table->string('code_district')->unique();
             $table->string('nom_district');

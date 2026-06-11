@@ -1,13 +1,11 @@
 <?php
 
-
 declare(strict_types=1);
 
 // Importation des composants fondamentaux de gestion de bases de données de Laravel
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-
 
 return new class extends Migration
 {
@@ -24,10 +22,9 @@ return new class extends Migration
 
             // Clé étrangère connectée à la table parente 'departements'
             $table->foreignId('departement_id')->constrained('departements')->restrictOnDelete();
-                // Indique la table ciblée par cette clé étrangère
-                
-                // Empêche la suppression du département parent s'il contient encore des sous-préfectures
-                
+            // Indique la table ciblée par cette clé étrangère
+
+            // Empêche la suppression du département parent s'il contient encore des sous-préfectures
 
             // Code officiel unique fourni par l'ANStat (ex: 'SP_LOV') pour assurer la traçabilité métier
             $table->string('cod_sp')->unique();
@@ -41,13 +38,12 @@ return new class extends Migration
             $table->integer('population')->nullable();
             // Génère les colonnes d'historique de modification 'created_at' et 'updated_at'
             $table->timestamps();
-        }); 
-    } 
+        });
+    }
 
-    
     public function down(): void
     {
         // Supprime proprement la table 'sous_prefectures' si elle existe
         Schema::dropIfExists('sous_prefectures');
-    } 
-}; 
+    }
+};

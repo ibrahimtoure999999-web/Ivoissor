@@ -66,7 +66,7 @@ timestamps
 id  bigIncrements
 // Identité
 nom                    string
-prenom                 string
+prenoms                string
 telephone              string nullable
 sexe                   string(1)            // 'M' / 'F' (cast enum Sexe)
 date_naissance         date nullable
@@ -135,7 +135,7 @@ Données de référence **réelles**, pas du Faker.
 
 Contrôleurs **fins** ; logique de persistance déléguée aux **Services**.
 
-- `RessortissantController` (resource complet : index/create/store/show/edit/update/destroy). `index` avec eager loading `with(['commune.sousPrefecture.departement.region.district', 'village.tribu.canton.groupeEthnique'])`, pagination, recherche (nom/prénom/téléphone).
+- `RessortissantController` (resource complet : index/create/store/show/edit/update/destroy). `index` avec eager loading `with(['commune.sousPrefecture.departement.region.district', 'village.tribu.canton.groupeEthnique'])`, pagination, recherche (nom/prénoms/téléphone).
 - **CRUD référentiels** (resource controllers, lecture+écriture) : `DistrictController`, `RegionController`, `DepartementController`, `SousPrefectureController`, `CommuneController`, `GroupeEthniqueController`, `CantonController`, `TribuController`, `VillageController`. Regroupés sous un préfixe `admin/` (ou `referentiels/`).
 - `Api/LocalisationController` — endpoints AJAX pour selects en cascade (JSON, retours `JsonResponse`) :
   - `regions(District)`, `departements(Region)`, `sousPrefectures(Departement)`, `communes(SousPrefecture)`
@@ -151,7 +151,7 @@ Obligatoires (`.cursorrules`). Messages/attributs **en français**.
 
 - `StoreRessortissantRequest` / `UpdateRessortissantRequest` (règles partagées via méthode commune ou trait) :
 ```
-nom, prenom                required|string|max:255
+nom, prenoms               required|string|max:255
 telephone                  nullable|string|max:30
 sexe                       required + Rule::enum(Sexe::class)
 date_naissance             nullable|date|before:today
@@ -212,7 +212,7 @@ Route::middleware('auth')->group(function () {
 - Composants partagés `resources/views/components/` : `input`, `select`, `alert` (messages flash succès/erreur en français).
 
 ### Ressortissants
-- `ressortissants/index.blade.php` — tableau Tailwind (Nom, Prénom, Téléphone, Commune, Village, actions), recherche, pagination, bouton « Nouvel enregistrement ».
+- `ressortissants/index.blade.php` — tableau Tailwind (Nom, Prénoms, Téléphone, Commune, Village, actions), recherche, pagination, bouton « Nouvel enregistrement ».
 - `ressortissants/_form.blade.php` (partial partagé create/edit) en **fieldsets** reflétant la spec : Identité · Rattachement administratif · Rattachement coutumier · Résidence · Autres informations.
 - `ressortissants/create.blade.php`, `edit.blade.php` (incluent `_form`), `show.blade.php` (fiche lecture + chemins admin/coutumier complets).
 

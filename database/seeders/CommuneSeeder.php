@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
-use App\Models\SousPrefecture;
 use App\Models\Commune;
+use App\Models\SousPrefecture;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
 
@@ -18,7 +18,7 @@ class CommuneSeeder extends Seeder
     {
         $path = database_path('data/communes.json');
 
-        if (!File::exists($path)) {
+        if (! File::exists($path)) {
             return;
         }
 
@@ -34,11 +34,11 @@ class CommuneSeeder extends Seeder
                     ['code_commune' => $comData['code_commune']],
                     [
                         'sous_prefecture_id' => $sousPrefecture->id,
-                        'nom_commune'        => $comData['nom_commune'],
-                        'annee'               => $comData['annee'] ?? null,
-                        'latitude'            => $comData['latitude'] ?? null,
-                        'longitude'           => $comData['longitude'] ?? null,
-                        'population'          => $comData['population'] ?? null,
+                        'nom_commune' => $comData['nom_commune'],
+                        'annee' => $comData['annee'] ?? null,
+                        'latitude' => $comData['latitude'] ?? null,
+                        'longitude' => $comData['longitude'] ?? null,
+                        'population' => $comData['population'] ?? null,
                     ]
                 );
             }

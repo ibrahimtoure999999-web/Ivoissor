@@ -21,7 +21,7 @@ return new class extends Migration
             $table->foreignId('sous_prefecture_id')->constrained('sous_prefectures')->restrictOnDelete();
 
             // Code unique fourni par l'ANStat (ex: 'COM_AGB'), optionnel (nullable) et indexé pour les recherches
-            $table->string('code_commune')->nullable()->unique();  
+            $table->string('code_commune')->nullable()->unique();
 
             $table->string('nom_commune');
 
@@ -31,7 +31,7 @@ return new class extends Migration
             $table->double('latitude')->nullable();
             $table->double('longitude')->nullable();
             $table->integer('population')->nullable();
-                
+
             $table->timestamps();
         });
     }

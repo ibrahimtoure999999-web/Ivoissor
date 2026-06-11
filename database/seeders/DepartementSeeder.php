@@ -18,7 +18,7 @@ class DepartementSeeder extends Seeder
     {
         $path = database_path('data/departements.json');
 
-        if (!File::exists($path)) {
+        if (! File::exists($path)) {
             return;
         }
 
@@ -35,11 +35,11 @@ class DepartementSeeder extends Seeder
                     ['code_dep' => $depData['cod_dep']], // Clé d'idempotence
                     [
                         'region_id' => $region->id, // Liaison physique sécurisée
-                        'nom_dep'   => $depData['nom_dep'],
-                        'annee'     => $depData['annee'] ?? null,
-                        'latitude'     => $depData['latitude'] ?? null,
-                        'longitude'    => $depData['longitude'] ?? null,
-                        'population'   => $depData['population'] ?? null,
+                        'nom_dep' => $depData['nom_dep'],
+                        'annee' => $depData['annee'] ?? null,
+                        'latitude' => $depData['latitude'] ?? null,
+                        'longitude' => $depData['longitude'] ?? null,
+                        'population' => $depData['population'] ?? null,
                     ]
                 );
             }

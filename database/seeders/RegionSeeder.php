@@ -18,7 +18,7 @@ class RegionSeeder extends Seeder
     {
         $path = database_path('data/regions.json');
 
-        if (!File::exists($path)) {
+        if (! File::exists($path)) {
             return;
         }
 
@@ -35,11 +35,11 @@ class RegionSeeder extends Seeder
                     ['code_reg' => $regionData['cod_reg']], // Clé d'idempotence
                     [
                         'district_id' => $district->id, // Liaison physique sécurisée
-                        'nom_reg'     => $regionData['nom_reg'],
-                        'annee'        => $regionData['annee'] ?? null,
-                        'latitude'     => $regionData['latitude'] ?? null,
-                        'longitude'    => $regionData['longitude'] ?? null,
-                        'population'   => $regionData['population'] ?? null,
+                        'nom_reg' => $regionData['nom_reg'],
+                        'annee' => $regionData['annee'] ?? null,
+                        'latitude' => $regionData['latitude'] ?? null,
+                        'longitude' => $regionData['longitude'] ?? null,
+                        'population' => $regionData['population'] ?? null,
                     ]
                 );
             }

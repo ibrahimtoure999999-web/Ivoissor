@@ -14,7 +14,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('ressortissants', function (Blueprint $table) {
-           // Identifiant technique unique (Clé primaire auto-incrémentée)
+            // Identifiant technique unique (Clé primaire auto-incrémentée)
             $table->bigIncrements('id');
             $table->string('matricule')->unique();
 
@@ -45,7 +45,7 @@ return new class extends Migration
             // Liaison vers la commune de résidence/rattachement
             $table->foreignId('commune_id')->nullable()->constrained('communes')->nullOnDelete();
 
-            //Liaison vers le village d'origine
+            // Liaison vers le village d'origine
             $table->foreignId('village_id')->nullable()->constrained('villages')->nullOnDelete();
             $table->timestamps();
         });

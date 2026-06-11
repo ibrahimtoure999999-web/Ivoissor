@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 use App\Models\District;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -18,10 +17,10 @@ class DistrictSeeder extends Seeder
     public function run(): void
     {
         // le Chemin d'accès vers notre fichier de données JSON
-       $path = database_path('data/districts.json');
+        $path = database_path('data/districts.json');
 
-       // on Vérifie que le fichier existe bien avant de tenter de le lire
-        if (!File::exists($path)) {
+        // on Vérifie que le fichier existe bien avant de tenter de le lire
+        if (! File::exists($path)) {
             return;
         }
 
@@ -40,10 +39,10 @@ class DistrictSeeder extends Seeder
                 // les données à enregistrer
                 [
                     'nom_district' => $district['nom_district'],
-                    'annee'        => $district['annee'] ?? null,
-                    'latitude'     => $district['latitude'] ?? null,
-                    'longitude'    => $district['longitude'] ?? null,
-                    'population'   => $district['population'] ?? null,
+                    'annee' => $district['annee'] ?? null,
+                    'latitude' => $district['latitude'] ?? null,
+                    'longitude' => $district['longitude'] ?? null,
+                    'population' => $district['population'] ?? null,
                 ]
             );
         }

@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
-use App\Models\GroupeEthnique;
 use App\Models\Canton;
+use App\Models\GroupeEthnique;
+use App\Models\Region;
 use App\Models\Tribu;
 use App\Models\Village;
 use Illuminate\Database\Seeder;
@@ -25,9 +26,9 @@ class CustomarySeeder extends Seeder
                         'Tribu Akyé du Sud' => [
                             'Angré',
                             'Djibi',
-                            'Alépé'
-                        ]
-                    ]
+                            'Alépé',
+                        ],
+                    ],
                 ],
                 'Baoulé' => [
                     'region_code' => '21', // Bélier
@@ -35,10 +36,10 @@ class CustomarySeeder extends Seeder
                         'Tribu Baoulé de Yamoussoukro' => [
                             'Kossou',
                             'Kami',
-                            'N\'Gokro'
-                        ]
-                    ]
-                ]
+                            'N\'Gokro',
+                        ],
+                    ],
+                ],
             ],
             'Krou' => [
                 'Bété' => [
@@ -47,10 +48,10 @@ class CustomarySeeder extends Seeder
                         'Tribu Bété de Daloa' => [
                             'Gadouan',
                             'Gboguhe',
-                            'Zaïbo'
-                        ]
-                    ]
-                ]
+                            'Zaïbo',
+                        ],
+                    ],
+                ],
             ],
             'Gour' => [
                 'Sénoufo' => [
@@ -59,10 +60,10 @@ class CustomarySeeder extends Seeder
                         'Tribu Sénoufo de Korhogo' => [
                             'Nafoun',
                             'Komborodougou',
-                            'Lataha'
-                        ]
-                    ]
-                ]
+                            'Lataha',
+                        ],
+                    ],
+                ],
             ],
             'Mandé' => [
                 'Malinké' => [
@@ -71,11 +72,11 @@ class CustomarySeeder extends Seeder
                         'Tribu Malinké d\'Odienné' => [
                             'Gbéléban',
                             'Kani',
-                            'Seydougou'
-                        ]
-                    ]
-                ]
-            ]
+                            'Seydougou',
+                        ],
+                    ],
+                ],
+            ],
         ];
 
         foreach ($hierarchy as $groupName => $cantons) {
@@ -85,17 +86,17 @@ class CustomarySeeder extends Seeder
 
             foreach ($cantons as $cantonName => $cantonData) {
                 // Find matching region
-                $region = \App\Models\Region::query()
+                $region = Region::query()
                     ->where('code_reg', $cantonData['region_code'])
                     ->first();
 
                 $canton = Canton::query()->updateOrCreate(
                     [
                         'nom' => $cantonName,
-                        'groupe_ethnique_id' => $group->id
+                        'groupe_ethnique_id' => $group->id,
                     ],
                     [
-                        'region_id' => $region ? $region->id : null
+                        'region_id' => $region ? $region->id : null,
                     ]
                 );
 
@@ -103,7 +104,7 @@ class CustomarySeeder extends Seeder
                     $tribu = Tribu::query()->updateOrCreate(
                         [
                             'nom' => $tribuName,
-                            'canton_id' => $canton->id
+                            'canton_id' => $canton->id,
                         ]
                     );
 
@@ -111,7 +112,7 @@ class CustomarySeeder extends Seeder
                         Village::query()->updateOrCreate(
                             [
                                 'nom' => $villageName,
-                                'tribu_id' => $tribu->id
+                                'tribu_id' => $tribu->id,
                             ]
                         );
                     }
