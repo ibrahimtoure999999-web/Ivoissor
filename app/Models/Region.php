@@ -12,7 +12,7 @@ class Region extends Model
 {
     protected $fillable = [
         'district_id',
-        'code_reg',
+        'cod_reg',
         'nom_reg',
         'annee',
         'latitude',

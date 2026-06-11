@@ -32,7 +32,7 @@ class RegionSeeder extends Seeder
 
             if ($district) {
                 Region::query()->updateOrCreate(
-                    ['code_reg' => $regionData['cod_reg']], // Clé d'idempotence
+                    ['cod_reg' => $regionData['cod_reg']], // Clé d'idempotence
                     [
                         'district_id' => $district->id, // Liaison physique sécurisée
                         'nom_reg' => $regionData['nom_reg'],

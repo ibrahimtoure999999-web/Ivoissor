@@ -27,7 +27,7 @@ class DepartementSeeder extends Seeder
         foreach ($departements as $depData) {
             // Extraction dynamique de l'ID parent via le code unique ANStat de la région
             $region = Region::query()
-                ->where('code_reg', $depData['cod_reg'])
+                ->where('cod_reg', $depData['cod_reg'])
                 ->first();
 
             if ($region) {

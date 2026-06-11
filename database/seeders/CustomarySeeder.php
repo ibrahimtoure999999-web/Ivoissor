@@ -43,7 +43,7 @@ class CustomarySeeder extends Seeder
             ],
             'Krou' => [
                 'Bété' => [
-                    'region_code' => '07', // Haut-Sassandra
+                    'region_code' => '02', // Haut-Sassandra
                     'tribus' => [
                         'Tribu Bété de Daloa' => [
                             'Gadouan',
@@ -55,7 +55,7 @@ class CustomarySeeder extends Seeder
             ],
             'Gour' => [
                 'Sénoufo' => [
-                    'region_code' => '28', // Poro
+                    'region_code' => '03', // Poro
                     'tribus' => [
                         'Tribu Sénoufo de Korhogo' => [
                             'Nafoun',
@@ -67,7 +67,7 @@ class CustomarySeeder extends Seeder
             ],
             'Mandé' => [
                 'Malinké' => [
-                    'region_code' => '24', // Kabadougou
+                    'region_code' => '10', // Kabadougou
                     'tribus' => [
                         'Tribu Malinké d\'Odienné' => [
                             'Gbéléban',
@@ -87,7 +87,7 @@ class CustomarySeeder extends Seeder
             foreach ($cantons as $cantonName => $cantonData) {
                 // Find matching region
                 $region = Region::query()
-                    ->where('code_reg', $cantonData['region_code'])
+                    ->where('cod_reg', $cantonData['region_code'])
                     ->first();
 
                 $canton = Canton::query()->updateOrCreate(
