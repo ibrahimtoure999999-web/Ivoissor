@@ -1,4 +1,4 @@
-# Plan d'implémentation — Ivoissor (Enregistrement des Ressortissants Ivoiriens)
+# Plan d'implémentation — (Enregistrement des Ressortissants Ivoiriens)
 
 ## Contexte
 
